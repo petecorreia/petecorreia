@@ -300,11 +300,6 @@ module.exports = function (grunt) {
       server: [
         '.tmp',
         '.jekyll'
-      ],
-      responsive_images: [
-        '<%= yeoman.app %>/img/full-width/_responsive',
-        '<%= yeoman.app %>/img/logo/_responsive',
-        '<%= yeoman.app %>/img/regular/_responsive'
       ]
     },
     compass: {
@@ -473,9 +468,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= yeoman.app %>',
           src: [
-            'img/full-width/_responsive/**/*',
-            'img/logo/_responsive/**/*',
-            'img/regular/_responsive/**/*',
+            'img/**/_responsive/**/*'
           ],
           dest: '<%= yeoman.dist %>'
         }]
@@ -595,9 +588,7 @@ module.exports = function (grunt) {
     'clean',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
-    // generate responsive images
     'responsive_images',
-    // copy responsive images over to dist
     'copy:responsive_images',
     'concurrent:dist',
     'modernizr',
@@ -609,9 +600,10 @@ module.exports = function (grunt) {
     'uglify',
     'imagemin',
     'svgmin',
-    'filerev',
+    // cant use filerev cause usemin doesnt yet support srcset
+    //'filerev',
     'usemin',
-    'htmlmin',
+    'htmlmin'
     ]);
 
   grunt.registerTask('deploy', [
