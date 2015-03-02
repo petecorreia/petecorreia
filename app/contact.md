@@ -16,7 +16,7 @@ title: Contact
 
     <ul class="contact-social list-horizontal">
       <li class="list-item">
-        <a class="contact-social-mail list-item-link link-no-underline" href="mailto:pete@petecorreia.com"><span class="icon-mail" aria-hidden="true"></span><span class="link-text">Mail</span></a>
+        <a class="contact-social-mail list-item-link link-no-underline" href="mailto:pete@petecorreia.com"><span class="icon-mail" aria-hidden="true"></span><span class="link-text">Email</span></a>
       </li>
       <li class="list-item">
         <a class="contact-social-twitter list-item-link link-no-underline" href="https://twitter.com/petecorreia"><span class="icon-twitter" aria-hidden="true"></span><span class="link-text">Twitter</span></a>

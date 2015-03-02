@@ -17,7 +17,7 @@ I was born in sunny Portugal and studied at the University of Aveiro, where I go
 
 My career started in January 2009 before graduating, when I got an **internship as a Front-end Developer at [SAPO Labs](http://labs.sapo.pt/)**, the research division of [SAPO](http://sapo.pt) ([Portugal Telecom](http://www.telecom.pt)). I helped build [SAPO Campus](http://campus.sapo.pt), which provided a set of social platforms like Photos, Videos and Blogs specifically tailored for universities. I relocated to Lisbon to **join [SAPO](http://sapo.pt)** and in the couple of years that followed I worked on both their Blogs and News platforms, which were in the top 10 most visited portuguese websites.
 
-I moved to London at the end October 2011 and **became [Pachube](http://www.haque.co.uk/pachube.php)'s first Front-end Developer**. I led the front-end development in the rebrand as Cosm in 2012. A year later, the company decided to rebrand once again as **[Xively](https://xively.com) (a division of [LogMeIn Inc](https://logmein.com))** but this time they put me in charge of the Design & Front-end team as Creative Director and Lead Front-end Developer. After a successful redesign, the product got important customers and partnerships, won industry awards and got featured in well-regarded international publications.
+I moved to London at the end October 2011 and **became [Pachube](http://www.haque.co.uk/pachube.php)'s first Front-end Developer**, right after the company got acquired by [LogMeIn Inc](https://logmein.com). I led the front-end development in the rebrand as Cosm in 2012. A year later, the company decided to rebrand once again as **[Xively by LogMeIn](https://xively.com)** but this time I was put in charge of the Design & Front-end team as Creative Director and Lead Front-end Developer. After a successful redesign, the product got important customers and partnerships, won industry awards and got featured in well-regarded international publications.
 
 [Read the Xively Case Study](/case-studies/xively)
 
@@ -35,15 +35,8 @@ This passion has driven me to learn and work in different disciplines like brand
 
 Still here? Here are a few facts as a bonus for reading this far:
 
-- Married my first love [Rita](http://heyrita.co.uk) and we own a cat called Yoshi
+- Married my first love [Rita](http://heyrita.co.uk) and we have a cat called Yoshi
 - Toured Europe twice in 2010, playing guitar for a hardcore/metal band called [Hills Have Eyes](https://www.facebook.com/hillshaveeyes){:class="no-orphans"}
 - Me and my wife ran a market stall called [The Mighty Fork](http://themightyfork.co.uk){:class="no-orphans"} selling vegan hotdogs
 - Skateboarded as a kid and still own a couple of boards
 - Played basketball for 8 years
-
-
-
-
-
-
-

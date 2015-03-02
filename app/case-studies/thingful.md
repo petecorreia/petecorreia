@@ -67,7 +67,7 @@ I must say, the user experience research and testing relied a lot on the collect
 
 **Thingful was different beast** though, not only did it have very ambitious deadlines and incredible pace but it was also **a pioneering project** in a nascent industry. That meant little to no time for organising user testing, leading me to improvise methods that were very informal and unscientific with colleagues and friends but it gave me enough to work with. There was also little information available online regarding the interface patterns we were designing. I relied a lot on understanding analytics and making sure **I tracked as many interactions as I could**, like how deep people zoomed in and how far they panned the map.
 
-This was a first for me, and **I’ve learned a lot from it**. An important takeaway was understanding that sometimes constraints lead you to improvise the user experience research and there are ways to do it. Expanding on the improvised methods is a subject for an entire article I might write some day, meanwhile I recommend reading this book.
+This was a first for me, and **I’ve learned a lot from it**. An important takeaway was understanding that sometimes constraints lead you to improvise the user experience research and there are ways to do it. Expanding on the improvised methods is a subject for an entire article I might write some day, meanwhile I recommend reading [this book](http://undercoverux.com/).
 
 {% include content/side-image.html file="thingful-categories.png" alt="The Thingful ontology: Energy, Home, Health, Environment, Flora & Fauna, Transport, Experiment and Miscellaneous." %}
 
@@ -81,7 +81,7 @@ One of the last things I explored was the **anthropomorphisation (personificatio
 
 We instinctively knew right from the start that we wanted Thingful to look like the real world, and we wanted it to be about people, not only things. We wanted users to be able to **mentally bridge the digital and physical world** as they explored the Internet of Things — when you looked at your neighbourhood, the roads would have their unique cracks, there’d be the same shape of the trees, and there’d be a bunch connected devices you never thought could be there. This was one of the pillars guiding the user interface design and had the **biggest impact** in the decisions I made along the way.
 
-As the interaction was briefed to be through a map, we thought satellite imagery would be ideal to convey that concept. We knew the trade-offs of doing so, as it’s not as easy to navigate the world like that but it wasn’t the goal of Thingful. This wasn’t to be a replacement of Google Maps but rather **an uncovering of a new layer of our world**. Another detail was that the map should be slowly rotating as it does in reality. I’ll cover the technical difficulties of the interface later in the development section of this study.
+As the interaction was briefed to be through a map, we thought satellite imagery would be ideal to convey that concept. We knew the trade-offs of doing so, as it’s not as easy to navigate the world like that but it wasn’t the goal of Thingful. This wasn’t to be a replacement of Google Maps but rather **an uncovering of a new layer of our world**. Another detail was that the map should be slowly panning as it does in reality. I’ll cover the technical difficulties of the interface later in the development section of this study.
 
 {% include content/full-image.html file="thingful-interface.jpg" alt="Photo showing the Thingful user interface." %}
 

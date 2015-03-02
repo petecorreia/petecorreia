@@ -48,7 +48,7 @@ Xively is a subsidiary of LogMeIn (LOGM : NASDAQ), and is the industry’s first
 
 When I was hired in 2011, I was the first Front-end Developer to join the team. The company was then known as Pachube and was **at that time the world’s largest Internet of Things open data repository and community**. I had just moved to London from Lisbon, Portugal, after a 2 year job at Portugal Telecom's web team. Initially I was tasked with building the API documentation website and I was excited to include new HTML5 goodies like the History API to make the experience as seamless and easy as possible.
 
-After just a couple of months, the whole team started working on rebranding and redesigning as Cosm. My role in this effort was to **singlehandedly develop the entire front-end**, which included a completely new marketing site and device management interface, and also a re-skinning of the documentation site I'd just built.
+After just a couple of months, the whole team started working on rebranding and redesigning as Cosm. My role in this effort was to **single-handedly develop the entire front-end**, which included a completely new marketing site and device management interface, and also a redesign of the documentation site I'd just built.
 
 The design of the Cosm identity and user interface was done remotely by LogMeIn's design team in Boston but as the work progressed, I began to be included in the design discussions. This was mainly due to the London team picking up on my design skills and sensitivity, and taking the steps to get me in the design discussions.
 
@@ -62,17 +62,17 @@ In early January 2013, I was tasked with **leading both the design and front-end
 
 We tackled a lot of the parts in tandem but for the sake of structure, I'll cover identity first and move down the waterfall. For the Xively identity, **I took a fair amount of time to dive deep in thinking about the brand persona, the values and the principles** we'd follow later on when we'd need to make tough design decisions.
 
-The identity benefited greatly from being designed in parallel with the user interface because, as we applied it, we found some adjustments had to be made to accomodate that important context.
+The identity benefited greatly from being designed in parallel with the user interface because, as we applied it, we found some adjustments had to be made to accommodate that important context.
 
 {% include content/full-image.html file="xively-identity.jpg" alt="Photo of a few applications of the Xively logo." %}
 
-At the end of the identity process, [I designed a brand book](http://issuu.com/petecorreia/docs/xively_identity_guidelines_with_cov/1) that contained not only guidelines to follow but also reflections on the ambitions and thinking behind the brand, with the goal to inpire rather than constrain any designers that would use it later on.
+At the end of the identity process, [I designed a brand book](http://issuu.com/petecorreia/docs/xively_identity_guidelines_with_cov/1) that contained not only guidelines to follow but also reflections on the ambitions and thinking behind the brand, with the goal to inspire rather than constrain any designers that would use it later on.
 
 {% include content/full-image.html file="xively-guidelines.jpg" alt="Photo of the brand book for Xively." %}
 
 # User Experience
 
-We hired a very talented UX designer to the team, [Fee Schmidt-Soltau](https://twitter.com/feeschmidts), who did an outstanding job of **researching the product's personas and finding their needs**. With those in hand, we moved on to **user testing** to dig up problems the previous platform had for those different personas.
+Initially, we took time to **research the product's personas and find out their needs** to make better informed decisions. With those in hand, we moved on to **user testing** to dig up problems the previous platform had for those different personas.
 
 {% include content/side-quote.html quote="I truly believe in jumping quickly into prototyping to experience the product in its final context." %}
 
@@ -102,7 +102,7 @@ These principles heavily influenced the design decisions we made regarding the d
 
 {% include content/full-image.html file="xively-interface.jpg" alt="Photo of the Xively user interface displayed on a computer and smartphone." %}
 
-All of the interfaces were **designed to work across all screen sizes**. This was made possible by carefully crafting a design system that had responsiveness built in right from the start. A method I used was to always start from the most constrained environment, the smartphone, and grow every element to its most complex state in the least contrained, the big screens. I made it a point that no features would be out of reach for any screen size, I was well aware that our users to could not be bucketed easily into distinctly defined contexts of usage.
+All of the interfaces were **designed to work across all screen sizes**. This was made possible by carefully crafting a design system that had responsiveness built in right from the start. A method I used was to always start from the most constrained environment, the smartphone, and grow every element to its most complex state in the least constrained, the big screens. I made it a point that no features would be out of reach for any screen size, I was well aware that our users to could not be bucketed easily into distinctly defined contexts of usage.
 
 {% include content/full-image.html file="xively-devices.jpg" alt="Photo of the Xively user interface displayed on an iPhone and an iPad." %}
 
@@ -112,7 +112,7 @@ As we designed the user experience and interface, I **quickly started building a
 
 {% include content/side-quote.html quote="The UI library was key to meeting the deadline." %}
 
-**I built a custom UI library** with all the elements, modules and page-specific styles that were present in the user interface designs. This was benefitial in many ways, it was highly maintainable and scalable and it allowed the team to create pages much faster without my help. The UI library was key to meeting the deadline.
+**I built a custom UI library** with all the elements, modules and page-specific styles that were present in the user interface designs. This was beneficial in many ways, it was highly maintainable and scalable and it allowed the team to create pages much faster without my help. The UI library was key to meeting the deadline.
 
 The device management application was the **most challenging part of the front-end**, not just by the sheer volume of work that it needed but also by the ambitious user experience we had designed. We used [**Backbone.js**](http://backbonejs.org/) to handle the complexity of the modules' behaviour and to make it easy to work with all the data going back and forth. The modules were developed in conjunction with the backend team to knit them tightly with the RESTful API.
 
