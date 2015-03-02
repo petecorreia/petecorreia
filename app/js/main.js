@@ -120,9 +120,6 @@
     if ( type === 'howisday' )  {
       $this.html("Hope you're having a nice "+ now.format('dddd') +".");
     }
-    else if ( type === 'age' ) {
-      $this.html(moment("19870725", "YYYYMMDD").fromNow());
-    }
   });
 
   // console ascii art
