@@ -1492,14 +1492,13 @@ a.button.button-white:focus {
   max-width: none;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  transition: -webkit-transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  transition: transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  tranform-origin: 50% 50%;
-}
-/* line 151, ../../app/_scss/ui/2-molecules/_projects.scss */
-.project:hover .project-background-image {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
+  }
+
+  .csstransitions .project:hover & {
+    transform: translate(-50%,-50%) scale(1.1);
+  } */
 }
 
 /* line 5, ../../app/_scss/ui/3-cells/_app-header.scss */
@@ -1833,8 +1832,13 @@ a.button.button-white:focus {
     display: none;
   }
 }
+/* line 95, ../../app/_scss/ui/3-cells/_page-header.scss */
+.no-csstransforms .page-header-interface {
+  top: 0;
+  margin-top: 5%;
+}
 
-/* line 100, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 105, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-background {
   position: absolute;
   top: 0;
@@ -1845,7 +1849,7 @@ a.button.button-white:focus {
   overflow: hidden;
 }
 
-/* line 110, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 115, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-background-image {
   position: absolute;
   top: 50%;
@@ -1855,26 +1859,29 @@ a.button.button-white:focus {
   max-width: none;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  transition: -webkit-transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  transition: transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  tranform-origin: 50% 50%;
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
+  }
+
+  .csstransitions .video + & {
+    transition: none;
+  }
+
+  .csstransitions .app-header:hover & {
+    transform: translate(-50%,-50%) scale(1.1);
+  }
+
+  .csstransitions .app-header:hover .video + & {
+    transform: translate(-50%,-50%);
+  } */
 }
-/* line 121, ../../app/_scss/ui/3-cells/_page-header.scss */
-.video + .page-header-background-image {
-  transition: none;
-}
-/* line 125, ../../app/_scss/ui/3-cells/_page-header.scss */
-.app-header:hover .page-header-background-image {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
-}
-/* line 129, ../../app/_scss/ui/3-cells/_page-header.scss */
-.app-header:hover .video + .page-header-background-image {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+/* line 140, ../../app/_scss/ui/3-cells/_page-header.scss */
+.no-csstransforms .page-header-background-image {
+  top: 0;
+  left: 0;
 }
 
-/* line 138, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 150, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-video {
   position: absolute;
   top: 0;
@@ -1885,7 +1892,7 @@ a.button.button-white:focus {
   overflow: hidden;
   opacity: 0.8;
 }
-/* line 148, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 160, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-video .video {
   position: absolute;
   top: 50%;
@@ -3783,14 +3790,13 @@ a.button.button-white:focus {
   max-width: none;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  transition: -webkit-transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  transition: transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  tranform-origin: 50% 50%;
-}
-/* line 151, ../../app/_scss/ui/2-molecules/_projects.scss */
-.project:hover .project-background-image {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
+  }
+
+  .csstransitions .project:hover & {
+    transform: translate(-50%,-50%) scale(1.1);
+  } */
 }
 
 /* line 5, ../../app/_scss/ui/3-cells/_app-header.scss */
@@ -4124,8 +4130,13 @@ a.button.button-white:focus {
     display: none;
   }
 }
+/* line 95, ../../app/_scss/ui/3-cells/_page-header.scss */
+.no-csstransforms .page-header-interface {
+  top: 0;
+  margin-top: 5%;
+}
 
-/* line 100, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 105, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-background {
   position: absolute;
   top: 0;
@@ -4136,7 +4147,7 @@ a.button.button-white:focus {
   overflow: hidden;
 }
 
-/* line 110, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 115, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-background-image {
   position: absolute;
   top: 50%;
@@ -4146,26 +4157,29 @@ a.button.button-white:focus {
   max-width: none;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  transition: -webkit-transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  transition: transform 9s cubic-bezier(0.51, 0.27, 0.6, 0.91);
-  tranform-origin: 50% 50%;
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
+  }
+
+  .csstransitions .video + & {
+    transition: none;
+  }
+
+  .csstransitions .app-header:hover & {
+    transform: translate(-50%,-50%) scale(1.1);
+  }
+
+  .csstransitions .app-header:hover .video + & {
+    transform: translate(-50%,-50%);
+  } */
 }
-/* line 121, ../../app/_scss/ui/3-cells/_page-header.scss */
-.video + .page-header-background-image {
-  transition: none;
-}
-/* line 125, ../../app/_scss/ui/3-cells/_page-header.scss */
-.app-header:hover .page-header-background-image {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
-}
-/* line 129, ../../app/_scss/ui/3-cells/_page-header.scss */
-.app-header:hover .video + .page-header-background-image {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+/* line 140, ../../app/_scss/ui/3-cells/_page-header.scss */
+.no-csstransforms .page-header-background-image {
+  top: 0;
+  left: 0;
 }
 
-/* line 138, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 150, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-video {
   position: absolute;
   top: 0;
@@ -4176,7 +4190,7 @@ a.button.button-white:focus {
   overflow: hidden;
   opacity: 0.8;
 }
-/* line 148, ../../app/_scss/ui/3-cells/_page-header.scss */
+/* line 160, ../../app/_scss/ui/3-cells/_page-header.scss */
 .page-header-video .video {
   position: absolute;
   top: 50%;

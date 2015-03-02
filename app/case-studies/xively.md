@@ -42,7 +42,7 @@ small: In a rush?<br>Read the emphasized bits.
 
 ---
 
-Xively is a subsidiary of LogMeIn (LOGM : NASDAQ), and is the industry’s first public cloud, purpose-built for developing and managing commercial products on the Internet of Things. The Internet of Things is projected to be the next big wave of technology innovation – as billions of devices become “connected products”. Xively simplifies the interconnection of devices, data, people and places, accelerating the creation of compelling connected products.
+Xively is a subsidiary of LogMeIn (LOGM : NASDAQ), and is the industry’s first public cloud, purpose-built for developing and managing commercial products on the Internet of Things. It simplifies the interconnection of devices, data, people and places, accelerating the creation of compelling connected products.
 
 # Pachube and Cosm
 
