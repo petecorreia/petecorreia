@@ -145,10 +145,12 @@
   height: auto;
   max-width: none;
   transform: translate(-50%,-50%);
-  transition: transform 9s $animation-ease;
-  tranform-origin: 50% 50%;
 
-  .project:hover & {
-    transform: translate(-50%,-50%) scale(1.1);
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
   }
+
+  .csstransitions .project:hover & {
+    transform: translate(-50%,-50%) scale(1.1);
+  } */
 }

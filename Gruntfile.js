@@ -179,6 +179,9 @@ module.exports = function (grunt) {
       dist: {
         devFile    : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         outputFile : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
+        tests: [
+          'csstransitions'
+        ],
         files      : {
           src : [
             '<%= yeoman.app %>/js/{,*/}*.js',

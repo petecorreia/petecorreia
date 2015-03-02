@@ -115,20 +115,22 @@
   height: auto;
   max-width: none;
   transform: translate(-50%,-50%);
-  transition: transform 9s $animation-ease;
-  tranform-origin: 50% 50%;
 
-  .video + & {
+  /* .csstransitions & {
+    transition: transform 9s $animation-ease;
+  }
+
+  .csstransitions .video + & {
     transition: none;
   }
 
-  .app-header:hover & {
+  .csstransitions .app-header:hover & {
     transform: translate(-50%,-50%) scale(1.1);
   }
 
-  .app-header:hover .video + & {
+  .csstransitions .app-header:hover .video + & {
     transform: translate(-50%,-50%);
-  }
+  } */
 }
 
 //
