@@ -66,11 +66,11 @@
         if ( ($context.width() / $context.height()) < ratio ) {
           $this.css({
             width  : 'auto',
-            height : '100%'
+            height : '101%'
           })
         } else {
           $this.css({
-            width  : '100%',
+            width  : '101%',
             height : 'auto'
           })
         }

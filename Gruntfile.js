@@ -180,7 +180,8 @@ module.exports = function (grunt) {
         devFile    : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         outputFile : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         tests: [
-          'csstransitions'
+          'csstransitions',
+          'csstransforms'
         ],
         files      : {
           src : [

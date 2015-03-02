@@ -91,6 +91,11 @@
   @media (max-width: em(600px)) {
     display: none;
   }
+
+  .no-csstransforms & {
+    top: 0;
+    margin-top: 5%;
+  }
 }
 
 //
@@ -131,6 +136,11 @@
   .csstransitions .app-header:hover .video + & {
     transform: translate(-50%,-50%);
   } */
+
+  .no-csstransforms & {
+    top: 0;
+    left: 0;
+  }
 }
 
 //
