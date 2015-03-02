@@ -1,0 +1,88 @@
+//
+// APP FOOTER
+//
+
+.app-footer {
+  position: relative;
+  padding-top: em($layout-padding*1.5);
+  padding-bottom: em($layout-padding*1.5);
+  background: $color-gray-lightest;
+  color: $color-gray;
+
+  @media (min-width: em($breakpoint-minor)) {
+    padding-top: em($layout-padding*2);
+    padding-bottom: em($layout-padding*2);
+  }
+}
+
+.footer-nav {
+  @include clearfix;
+
+  @media (min-width: em(600px)) {
+    float: left;
+  }
+}
+
+.footer-nav-site {
+  margin: 0;
+  white-space: nowrap;
+
+  .list-item {
+    margin-right: em($type-spacing/2);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: em($breakpoint-minor)) {
+      margin-right: em($type-spacing);
+    }
+  }
+}
+
+.footer-nav-social {
+  margin: em($type-spacing) 0 0;
+  white-space: nowrap;
+
+  .list-item {
+    margin-right: em($type-spacing/3,$type-size-large);
+    font-size: em($type-size-large);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .list-item-link {
+    color: $color-gray;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+
+      .icon-mail { color: $color-mail; }
+      .icon-twitter { color: $color-twitter; }
+      .icon-github { color: $color-github; }
+      .icon-linkedin { color: $color-linkedin; }
+      .icon-instagram { color: $color-instagram; }
+    }
+  }
+}
+
+.footer-right {
+  margin: em($layout-padding) 0 0;
+
+  @media (min-width: em(600px)) {
+    float: right;
+    margin: 0;
+  }
+}
+
+.footer-available {
+  margin: 0;
+}
+
+.footer-legal {
+  margin: em($type-spacing) 0 0;
+}
+

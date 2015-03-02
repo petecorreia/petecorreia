@@ -1,0 +1,30 @@
+//
+// APP NAVIGATION
+//
+
+.app-navigation {
+  float: right;
+
+  .list {
+    margin: em($type-size-medium) 0;
+  }
+
+  .list-item {
+    margin-right: em($type-size-base);
+    font-weight: bold;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: em($breakpoint-minor)) {
+      margin-right: em($layout-padding,$type-size-medium);
+      font-size: em($type-size-medium);
+    }
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+}
+

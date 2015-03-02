@@ -1,0 +1,13 @@
+{
+  "name": "petecorreia",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "picturefill": "~2.2.0",
+    "respond": "~1.4.2",
+    "selectivizr": "~1.0.2",
+    "jquery": "~2.1.3",
+    "jquery-1.9.1": "http://code.jquery.com/jquery-1.9.1.js",
+    "moment": "~2.9.0"
+  }
+}

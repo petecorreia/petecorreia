@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Pete Correia -- Designer / Front-end Developer -- @petecorreia
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, Picturefill, Respond, Selectivizr, Grunt, Yeoman, Jekyll

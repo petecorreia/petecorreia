@@ -1,0 +1,14 @@
+//
+// LIST VERTICAL
+//
+
+.list-vertical {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}

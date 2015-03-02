@@ -1,0 +1,73 @@
+<header class="app-header {% if page.hero-theme %}app-header-{{ page.hero-theme }}{% endif %} {% unless page.hero-image or page.hero-video %}app-header-no-image{% endunless %} {% if page.hero-video %}app-header-type-video{% endif %}" role="banner" data-bg-context>
+
+  <div class="app-header-floating">
+    <div class="app-header-content layout-contain layout-clear">
+      <h1 class="logo">
+        <a href="/">
+          <strong class="logo-text visuallyhidden">{{ site.name }}</strong>
+          <img
+            class="logo-img"
+            sizes="100vw"
+            srcset="/img/logo/_responsive/logo{% if page.hero-theme == 'dark' %}-white{% endif %}-@1x.png 50w,
+                    /img/logo/_responsive/logo{% if page.hero-theme == 'dark' %}-white{% endif %}-@2x.png 100w"
+            alt="{{ site.name }} logo">
+        </a>
+      </h1>
+
+      <nav class="app-navigation" role="navigation">
+        <ul class="list list-horizontal">
+          <li class="list-item">
+            <a class="list-item-link link-no-underline" data-scrollto="#case-studies" href="/#case-studies">Case Studies</a>
+          </li>
+          <li class="list-item">
+            <a class="list-item-link link-no-underline {% if page.url == '/about/' %}active{% endif %}" href="/about/">About</a>
+          </li>
+          <li class="list-item">
+            <a class="list-item-link link-no-underline {% if page.url == '/contact/' %}active{% endif %}" href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <div class="page-header-content layout-contain">
+      {% if page.title or page.hero-title %}
+      <h2 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ page.hero-title }}{% endif %}</h2>
+      {% endif %}
+
+      {% if page.description %}
+      <p class="page-description">{{ page.description }}</p>
+      {% endif %}
+
+      {% if page.type or page.year %}
+      <p class="page-meta">{{ page.type }}{% if page.type and page.year %} / {% endif %}{{ page.year }}</p>
+      {% endif %}
+
+      {% if page.hero-image %}
+      {% unless page.hero-video %}
+        <img itemprop="image" class="page-header-interface" sizes="100vw" srcset="/img/retina/_responsive/{{ page.id }}-interface-@1x.png 785w, /img/retina/_responsive/{{ page.id }}-interface-@2x.png 1570w" alt="Image showing an example of the user interface for {{ page.id }}.">
+      {% endunless %}
+      {% endif %}
+    </div>
+
+    {% if page.hero-image or page.hero-video %}
+
+    <div class="page-header-background responsive-image responsive-image-full-width">
+      {% if page.hero-video %}
+      <div class="page-header-video" data-bgvideo="/img/videos/{{ page.hero-video }}"></div>
+      {% endif %}
+
+      {% if page.hero-image %}
+
+      {% capture imagefile %}hero-{{ page.id }}-bg.jpg{% endcapture %}
+      {% capture imagealt %}Faded background image about {{ page.title }}.{% endcapture %}
+
+      {% include image/responsive.html class="page-header-background-image" file=imagefile alt=imagealt type="full-width" sizes="100vw" ratio="1.667" %}
+
+      {% endif %}
+    </div>
+
+    {% endif %}
+  </div>
+</header>

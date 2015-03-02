@@ -1,0 +1,419 @@
+//
+// TYPOGRAPHY
+//
+
+// SCALE: http://www.modularscale.com/?16,60&&1.5&web&text
+
+
+body {
+  color: $color-black;
+  font-size: em($type-size-base);
+  line-height: em($type-line-height);
+  font-family: $webfont-name, "Helvetica Neue", helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: em($breakpoint-major)) {
+    font-size: em($type-size-mobile);
+  }
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $color-black;
+}
+
+* {
+  font-style: normal;
+  outline: 0;
+}
+
+//
+// Headings
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  // OT kerning is buggy on chrome, fix on the way, if uncomment then check if there are random line breaks in buttons
+  /* font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-kerning: normal; */
+}
+
+// Heading 1
+
+@mixin h1($margins: true) {
+  font-size: em($type-heading-1);
+  line-height: 1.11em;
+  letter-spacing: tracking(-15);
+
+  @if ($margins) {
+    margin-top: em($type-spacing*2,$type-heading-1);
+    margin-bottom: em($type-spacing,$type-heading-1);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h1,
+.heading-1 { @include h1; }
+
+// Heading 2
+
+@mixin h2($margins: true) {
+  font-size: em($type-heading-2);
+  line-height: 1.23em;
+  letter-spacing: tracking(-10);
+
+  @if ($margins) {
+    margin-top: em($type-spacing*2,$type-heading-2);
+    margin-bottom: em($type-spacing,$type-heading-2);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h2,
+.heading-2 { @include h2; }
+
+// Heading 3
+
+@mixin h3($margins: true) {
+  font-size: em($type-heading-3);
+  line-height: 1.29em;
+  letter-spacing: tracking(-5);
+
+  @if ($margins) {
+    margin-top: em($type-spacing*2,$type-heading-3);
+    margin-bottom: em($type-spacing,$type-heading-3);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h3,
+.heading-3 { @include h3; }
+
+// Heading 4
+
+@mixin h4($margins: true) {
+  font-size: em($type-heading-4);
+  line-height: em($type-line-height);
+
+  @if ($margins) {
+    margin-top: em($type-spacing,$type-heading-4);
+    margin-bottom: em($type-spacing,$type-heading-4);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h4,
+.heading-4 { @include h4; }
+
+// Heading 5
+
+@mixin h5($margins: true) {
+  font-size: em($type-heading-5);
+  line-height: em($type-line-height);
+
+  @if ($margins) {
+    margin-top: em($type-spacing,$type-heading-5);
+    margin-bottom: em($type-spacing,$type-heading-5);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h5,
+.heading-5 { @include h5; }
+
+// Heading 6
+
+@mixin h6($margins: true) {
+  font-size: em($type-heading-6);
+  line-height: em($type-line-height);
+
+  @if ($margins) {
+    margin-top: em($type-spacing,$type-heading-6);
+    margin-bottom: em($type-spacing,$type-heading-6);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+h6,
+.heading-6 { @include h6; }
+
+// Heading Big
+
+@mixin heading-big($margins: true) {
+  font-size: em($type-heading-big);
+  line-height: 1.11em;
+  letter-spacing: tracking(-30);
+
+  @if ($margins) {
+    margin-top: em($type-spacing*2,$type-heading-big);
+    margin-bottom: em($type-spacing,$type-heading-big);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: em($breakpoint-final)) {
+    font-size: em(54px);
+  }
+
+  @media (max-width: em($breakpoint-minor)) {
+    font-size: em($type-size-xxlarge);
+  }
+
+  /* @media (max-width: em(830px)) {
+    @include h1;
+  } */
+}
+
+.heading-big { @include heading-big; }
+
+// Heading Huge
+
+@mixin heading-huge($margins: true) {
+  font-size: em($type-heading-huge);
+  line-height: 1.11em;
+  letter-spacing: tracking(-50);
+
+  @if ($margins) {
+    margin-top: em($type-spacing*2,$type-heading-huge);
+    margin-bottom: em($type-spacing,$type-heading-huge);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: em($breakpoint-final)) {
+    font-size: em(90px);
+    letter-spacing: tracking(-45);
+  }
+
+  @media (max-width: em(960px)) {
+    font-size: em(81px);
+    letter-spacing: tracking(-40);
+  }
+
+  @media (max-width: em($breakpoint-major)) {
+    @include heading-big;
+  }
+
+  @media (max-width: em(630)) {
+    font-size: em(54px);
+  }
+}
+
+.heading-huge {
+  @include heading-huge;
+}
+
+//
+// Lead
+//
+
+.lead {
+  @include h2;
+  font-weight: normal;
+}
+
+//
+// Paragraphs
+//
+
+p {
+  margin: em($type-spacing) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//
+// Links
+//
+
+a {
+  text-decoration: underline;
+  color: $color-black;
+  transition: color 0.135s $animation-ease;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+@mixin link-no-underline {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.link-no-underline {
+  @include link-no-underline;
+}
+
+//
+// Horizontal rule
+//
+
+hr {
+  margin: em($layout-padding) 0;
+  border: none;
+  border-bottom: em($border-size) solid $color-gray-light;
+}
+
+//
+// Blockquote
+//
+
+blockquote,
+.blockquote {
+  position: relative;
+  @include h2(false);
+  margin: em($layout-padding,$type-heading-2) 0;
+  font-weight: 300;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: em($breakpoint-major + 1px)) {
+    padding-bottom: em($layout-padding,$type-heading-2);
+  }
+
+  &.blockquote-big {
+    @media (min-width: em($breakpoint-minor + 1px)) {
+      font-size: em(27px);
+      margin-top: em($layout-padding,27px);
+      margin-bottom: em($layout-padding,27px);
+    }
+
+    @media (min-width: em($breakpoint-major + 1px)) {
+      @include h1(false);
+      padding-bottom: em($layout-padding,$type-heading-1);
+      margin-top: em($layout-padding,$type-heading-1);
+      margin-bottom: em($layout-padding,$type-heading-1);
+    }
+  }
+}
+
+//
+// Lists
+//
+
+ul,
+ol {
+  margin: em($type-spacing) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: em(27px);
+
+  li {
+    position: relative;
+
+    &:before {
+      content: "—";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      margin-right: 1em;
+    }
+  }
+}
+
+dl {
+  margin-top: em($type-spacing);
+  margin-bottom: em($type-spacing);
+
+  dt {
+    margin-top: em($type-spacing/2);
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+}
+
+//
+// Code
+//
+
+pre {
+  padding: em($type-spacing/2);
+  margin: em($type-spacing) 0;
+  background-color: $color-gray-lightest;
+}
+
+//
+// Textarea
+//
+
+textarea {
+  resize: vertical;
+}
+
+//
+// Small
+//
+
+small {
+  font-size: em($type-size-small);
+  line-height: 1.23em;
+  color: $color-gray;
+}
+
+//
+// No Orphans
+//
+
+.no-orphans {
+  white-space: nowrap;
+}

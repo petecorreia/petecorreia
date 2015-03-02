@@ -1,0 +1,112 @@
+//
+// CONTACT
+//
+
+.contact-callout {
+  margin: 0;
+
+  @media (min-width: em($breakpoint-final + 1px)) {
+    margin-top: em($type-spacing);
+  }
+}
+
+.contact-blockquote {
+  &,
+  &.blockquote-big {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 0;
+  }
+}
+
+.contact-availability {
+  color: $color-gray;
+}
+
+.contact-social {
+  margin-top: em($type-spacing);
+  margin-bottom: 0;
+
+  .list-item {
+    display: block;
+    margin-bottom: em($type-spacing);
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .list-item-link {
+    line-height: em(32px);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      .link-text {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  [class*="icon-"] {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: em(-2px,$type-size-xlarge);
+    margin-right: em($type-spacing/2,$type-size-xlarge);
+    font-size: em($type-size-xlarge);
+  }
+
+  .icon-mail { color: $color-mail; }
+  .icon-twitter { color: $color-twitter; }
+  .icon-github { color: $color-github; }
+  .icon-linkedin { color: $color-linkedin; }
+  .icon-instagram { color: $color-instagram; }
+
+  @media (min-width: em($breakpoint-minor + 1px)) {
+    margin-top: em($layout-padding);
+
+    .list-item {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: em($type-spacing*1.5);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .list-item-link {
+      display: inline-block;
+      text-align: center;
+    }
+
+    [class*="icon-"] {
+      display: block;
+      top: 0;
+      margin-right: 0;
+      margin-bottom: em($type-spacing/2,$type-size-xxlarge);
+      font-size: em($type-size-xxlarge);
+    }
+  }
+
+  @media (min-width: em($breakpoint-major + 1px)) {
+    margin-top: em($layout-padding*1.5);
+
+    .list-item {
+      margin-right: em($type-spacing*2);
+    }
+
+    [class*="icon-"] {
+      margin-bottom: em($type-spacing/2,$type-size-big);
+      font-size: em($type-size-big);
+    }
+  }
+
+  @media (min-width: em($breakpoint-final + 1px)) {
+    margin-bottom: em($type-spacing);
+  }
+
+}

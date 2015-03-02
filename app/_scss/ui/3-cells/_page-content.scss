@@ -1,0 +1,25 @@
+//
+// PAGE CONTENT
+//
+
+.page-wrapper {
+  margin-top: em($layout-padding);
+  margin-bottom: em($layout-padding);
+
+  @media (min-width: em($breakpoint-major)) {
+    margin-top: em($type-size-big);
+    margin-bottom: em($type-size-big);
+  }
+
+  .app-header-no-image + .app-content &:first-child {
+    //margin-top: 0;
+  }
+}
+
+.content-full {
+  @media (min-width: em($breakpoint-major)) {
+    .content-blockquote {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{::nomarkdown}
+    </div>
+  </div>
+  <div class="layout-block layout-clear">
+
+    <div class="content-enrich layout-sidebar">
+      <section class="sidebar-section">
+
+        {% capture type %}{% if include.type %}{{ include.type }}{% else %}regular{% endif %}{% endcapture %}
+        {% capture sizes %}{% if include.sizes %}{{ include.sizes }}{% else %}(min-width: 43.75em) 33vw, (min-width: 69em) 22.750em, 100vw{% endif %}{% endcapture %}
+        {% capture class %}sidebar-image {{ include.class }}{% endcapture %}
+
+        {% include image/responsive.html class=class file=include.file alt=include.alt type=type sizes=sizes %}
+
+      </section>
+    </div>
+
+    <div class="page-content content layout-content">
+{:/nomarkdown}

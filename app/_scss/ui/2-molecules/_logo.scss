@@ -1,0 +1,15 @@
+//
+// LOGO
+//
+
+.logo {
+  float: left;
+  width: em(50px);
+  margin: 0;
+  font-size: em($type-size-base);
+}
+
+.logo-img {
+  display: block;
+  width: em(50px);
+}

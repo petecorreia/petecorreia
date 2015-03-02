@@ -1,0 +1,83 @@
+//
+// LAYOUT
+//
+
+body {
+  min-width: $layout-width-min;
+}
+
+.layout-contain {
+  max-width: rem($layout-width-max);
+  max-width: $layout-width-max;
+  padding-left: em($type-spacing);
+  padding-right: em($type-spacing);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: em($breakpoint-minor + 1px)) {
+    padding-left: em($layout-padding);
+    padding-right: em($layout-padding);
+  }
+}
+
+.layout-block {
+  margin: em($type-spacing) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.layout-clear {
+  @include clearfix;
+}
+
+.layout-content {
+  .layout-block + .layout-block & {
+    margin-top: em($layout-padding);
+  }
+
+  @media (min-width: em($breakpoint-major + 1px)) {
+    float: right;
+    width: $layout-content;
+
+    .layout-block + .layout-block & {
+      margin-top: 0;
+    }
+  }
+
+}
+
+.layout-content-full {
+  margin: em($layout-padding) 0;
+
+  .layout-block + .layout-block & {
+    margin-top: em($layout-padding - $type-spacing);
+  }
+
+  @media (min-width: em($breakpoint-major + 1px)) {
+    .layout-block + .layout-block & {
+      margin-top: em($layout-padding);
+      margin-bottom: em($layout-padding + $type-spacing);
+    }
+  }
+}
+
+.layout-sidebar {
+  .layout-block + .layout-block & {
+    margin-top: em($layout-padding - $type-spacing);
+  }
+
+  @media (min-width: em($breakpoint-major + 1px)) {
+    float: left;
+    width: $layout-sidebar;
+
+    .layout-block + .layout-block & {
+      margin-top: 0;
+    }
+  }
+}

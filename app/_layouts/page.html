@@ -1,0 +1,120 @@
+---
+layout: application
+---
+<div class="page-wrapper layout-contain layout-clear">
+  <div class="layout-block layout-clear">
+
+    {% if page.sidebar-at-bottom %}
+    <div class="page-content content layout-content">
+      {% if page.lead %}
+      <p class="lead">{{ page.lead }}</p>
+      {% endif %}
+
+      {{ content }}
+    </div>
+    {% endif %}
+
+    <aside class="page-sidebar sidebar {% if page.sidebar-at-bottom %}sidebar-at-bottom{% endif %} layout-sidebar" role="complementary">
+
+      {% if page.mugshot %}
+      <section class="sidebar-section">
+        <img class="sidebar-mugshot" sizes="100vw" srcset="/img/retina/_responsive/mugshot-@1x.jpg 785w, /img/retina/_responsive/mugshot-@2x.jpg 1570w" alt="Photo of yours truly, looking like a mugshot.">
+      </section>
+      {% endif %}
+
+      {% if page.website %}
+      <section class="sidebar-section">
+        <a href="{{ page.website }}" class="sidebar-website"><span class="sidebar-website-inner">{{ page.website | replace:'http://' | replace:'https://' }}</span>{% if page.website-changed %}<span class="sidebar-website-changed">— has since updated</span>{% endif %}</a>
+      </section>
+      {% endif %}
+
+      {% if page.skills %}
+      <section class="sidebar-section skills-section">
+        <ul class="sidebar-list list-vertical skills">
+          <li class="skill"><span class="skill-box">UI</span><span class="visuallyhidden"> -</span> User Interface</li>
+          <li class="skill"><span class="skill-box">JS</span><span class="visuallyhidden"> -</span> Javascript</li>
+          <li class="skill skill-minor"><span class="skill-box">UX</span><span class="visuallyhidden"> -</span> User Experience</li>
+          <li class="skill skill-minor"><span class="skill-box">BR</span><span class="visuallyhidden"> -</span> Branding</li>
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.contribution %}
+      <section class="sidebar-section">
+        <h1 class="sidebar-title">Contribution</h1>
+
+        <ul class="sidebar-list list-vertical">
+          {% for contribution in page.contribution %}
+          <li>{{ contribution }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.roles %}
+      <section class="sidebar-section">
+        <h1 class="sidebar-title">Roles</h1>
+
+        <ul class="sidebar-list list-vertical">
+          {% for role in page.roles %}
+          <li>{{ role }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.sections %}
+      <section class="sidebar-section">
+        <h1 class="sidebar-title">Sections</h1>
+
+        <ul class="sidebar-list list-vertical">
+          {% for section in page.sections %}
+          <li><a href="#{{ section | remove:'&' | replace:' ','-' | downcase }}" data-scrollto>{{ section }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.social %}
+      <section class="sidebar-section">
+        <h1 class="sidebar-title">Social</h1>
+
+        <ul class="sidebar-social sidebar-list list-vertical">
+          <li class="list-item">
+            <a class="sidebar-social-mail list-item-link link-no-underline" href="mailto:pete@petecorreia.com"><span class="icon-mail" aria-hidden="true"></span><span class="link-text">Mail</span></a>
+          </li>
+          <li class="list-item">
+            <a class="sidebar-social-twitter list-item-link link-no-underline" href="https://twitter.com/petecorreia"><span class="icon-twitter" aria-hidden="true"></span><span class="link-text">Twitter</span></a>
+          </li>
+          <li class="list-item">
+            <a class="sidebar-social-github list-item-link link-no-underline" href="https://github.com/petecorreia"><span class="icon-github" aria-hidden="true"></span><span class="link-text">Github</span></a>
+          </li>
+          <li class="list-item">
+            <a class="sidebar-social-linkedin list-item-link link-no-underline" href="https://www.linkedin.com/in/petecorreia"><span class="icon-linkedin" aria-hidden="true"></span><span class="link-text">LinkedIn</span></a>
+          </li>
+          <li class="list-item">
+            <a class="sidebar-social-instagram list-item-link link-no-underline" href="https://www.instagram.com/pete.correia"><span class="icon-instagram" aria-hidden="true"></span><span class="link-text">Instagram</span></a>
+          </li>
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.small %}
+      <section class="sidebar-section">
+        <small class="sidebar-small">{{ page.small }}</small>
+      </section>
+      {% endif %}
+    </aside>
+
+    {% unless page.sidebar-at-bottom %}
+    <div class="page-content content layout-content">
+      {% if page.lead %}
+      <p class="lead">{{ page.lead }}</p>
+      {% endif %}
+
+      {{ content }}
+    </div>
+    {% endunless %}
+
+  </div>
+</div>

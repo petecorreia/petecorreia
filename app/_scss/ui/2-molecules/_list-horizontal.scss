@@ -1,0 +1,19 @@
+//
+// LIST HORIZONTAL
+//
+
+.list-horizontal {
+  list-style: none;
+  padding-left: 0;
+  white-space: nowrap;
+
+  .list-item {
+    display: inline;
+  }
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
