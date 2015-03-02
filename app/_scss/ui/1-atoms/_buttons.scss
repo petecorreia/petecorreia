@@ -5,6 +5,7 @@
 .button,
 a.button {
   position: relative;
+  z-index: 1;
   display: inline-block;
   padding: em($type-spacing/2) em($type-spacing);
   color: $color-black;

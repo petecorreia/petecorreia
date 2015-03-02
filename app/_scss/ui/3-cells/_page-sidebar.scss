@@ -25,7 +25,7 @@
     margin-top: 0;
   }
 
-  .page-sidebar & + .sidebar-section:not(.skills-section) {
+  .page-sidebar & + .sidebar-section:not(.skills-section):not(.sidebar-cv) {
     @media (min-width: em(400)) and (max-width: em($breakpoint-major)) {
       width: 45%;
       margin-top: 0;
