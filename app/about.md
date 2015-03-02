@@ -31,6 +31,8 @@ In September 2013, I **joined [Umbrellium](http://umbrellium.co.uk) to build inn
 
 This passion has driven me to learn and work in different disciplines like branding, UX and UI design, and front-end development. Having an understanding of all that goes into crafting a product allows me to have a holistic approach to solving a problem. It also makes it easy to communicate with the various specialised teams.
 
+In terms of front-end development, I've worked extensively with bleeding edge **HTML5 and CSS3**. I've been a fervent supporter of using [Sass](http://sass-lang.com/) as a pre-processor. I've also been coding **Javascript for 6 years**, building my own frameworks and libraries and using popular ones like [Backbone.js](http://backbonejs.org/). With Thingful, I had to dive deeply into online mapping libraries like [CartoDB.js](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) and [Leaflet.js](http://leafletjs.com/). I used [D3.js](http://d3js.org/) and [Raphael.js](http://raphaeljs.com/) for creating visualisations while working for the News platform team at SAPO.
+
 <hr>
 
 Still here? Here are a few facts as a bonus for reading this far:
