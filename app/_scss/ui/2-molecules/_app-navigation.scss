@@ -10,15 +10,19 @@
   }
 
   .list-item {
-    margin-right: em($type-size-base);
+    margin-right: em($type-size-base,$type-size-mobile);
     font-weight: bold;
 
     &:last-child {
       margin-right: 0;
     }
 
-    @media (min-width: em($breakpoint-minor)) {
-      margin-right: em($layout-padding,$type-size-medium);
+    @media (min-width: em(370px)) {
+      margin-right: em($type-spacing,$type-size-mobile);
+    }
+
+    @media (min-width: em($breakpoint-minor + 1px)) {
+      //margin-right: em($layout-padding,$type-size-medium);
       font-size: em($type-size-medium);
     }
   }
