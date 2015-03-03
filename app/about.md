@@ -9,7 +9,7 @@ skills: add them in
 
 CV: let em have it
 
-lead: Front-end Developer and User Interface Designer living and working in London, UK.
+lead: Freelance Senior Front-end Developer and User Interface Designer living and working in London, UK.
 
 ---
 

@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Pete Correia -- Designer / Front-end Developer -- @petecorreia
+    Pete Correia - Freelance Senior Front-end Developer and User Interface Designer - @petecorreia
 
 # TECHNOLOGY COLOPHON
 

@@ -1204,21 +1204,26 @@ a.button.button-white:focus {
 }
 /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .list-item {
-  margin-right: 1em;
+  margin-right: 1.14286em;
   font-weight: bold;
 }
 /* line 16, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .list-item:last-child {
   margin-right: 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 23.125em) {
   /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
   .app-navigation .list-item {
-    margin-right: 2.24997em;
+    margin-right: 1.71429em;
+  }
+}
+@media (min-width: 30.0625em) {
+  /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
+  .app-navigation .list-item {
     font-size: 1.11112em;
   }
 }
-/* line 26, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
+/* line 30, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .active {
   text-decoration: underline;
 }
@@ -3592,21 +3597,26 @@ a.button.button-white:focus {
 }
 /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .list-item {
-  margin-right: 1em;
+  margin-right: 1.14286em;
   font-weight: bold;
 }
 /* line 16, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .list-item:last-child {
   margin-right: 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 23.125em) {
   /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
   .app-navigation .list-item {
-    margin-right: 2.24997em;
+    margin-right: 1.71429em;
+  }
+}
+@media (min-width: 30.0625em) {
+  /* line 12, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
+  .app-navigation .list-item {
     font-size: 1.11112em;
   }
 }
-/* line 26, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
+/* line 30, ../../app/_scss/ui/2-molecules/_app-navigation.scss */
 .app-navigation .active {
   text-decoration: underline;
 }
