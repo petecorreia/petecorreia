@@ -1963,17 +1963,17 @@ a.button.button-white:focus {
 }
 @media (min-width: 25em) and (max-width: 43.75em) {
   /* line 28, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv) {
     width: 45%;
     margin-top: 0;
   }
   /* line 33, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):nth-child(even) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv):nth-child(even) {
     float: left;
     clear: left;
   }
   /* line 38, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):nth-child(odd) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv):nth-child(odd) {
     float: right;
     clear: right;
   }
@@ -2084,6 +2084,11 @@ html {
 /* line 10, ../../app/_scss/ui/4-organisms/_application.scss */
 body {
   background: #fff;
+}
+
+/* line 6, ../../app/_scss/ui/4-organisms/_about.scss */
+.about .sidebar-cv {
+  margin-bottom: 0;
 }
 
 /* line 5, ../../app/_scss/ui/4-organisms/_contact.scss */
@@ -3396,6 +3401,7 @@ img {
 .button,
 a.button {
   position: relative;
+  z-index: 1;
   display: inline-block;
   padding: 0.75em 1.5em;
   color: #000;
@@ -3404,7 +3410,7 @@ a.button {
   border: 0.1875em solid #000;
   transition: color 0.333s cubic-bezier(0.51, 0.27, 0.6, 0.91);
 }
-/* line 17, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 18, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button:after,
 a.button:after {
   content: "";
@@ -3421,32 +3427,32 @@ a.button:after {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
-/* line 31, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 32, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button:hover, .button:focus,
 a.button:hover,
 a.button:focus {
   text-decoration: none;
   color: #fff;
 }
-/* line 36, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 37, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button:hover:after, .button:focus:after,
 a.button:hover:after,
 a.button:focus:after {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
-/* line 41, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 42, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button.button-white,
 a.button.button-white {
   color: #fff;
   border-color: #fff;
 }
-/* line 45, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 46, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button.button-white:after,
 a.button.button-white:after {
   background: #fff;
 }
-/* line 49, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 50, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button.button-white:hover, .button.button-white:focus,
 a.button.button-white:hover,
 a.button.button-white:focus {
@@ -4261,17 +4267,17 @@ a.button.button-white:focus {
 }
 @media (min-width: 25em) and (max-width: 43.75em) {
   /* line 28, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv) {
     width: 45%;
     margin-top: 0;
   }
   /* line 33, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):nth-child(even) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv):nth-child(even) {
     float: left;
     clear: left;
   }
   /* line 38, ../../app/_scss/ui/3-cells/_page-sidebar.scss */
-  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):nth-child(odd) {
+  .page-sidebar .sidebar-section + .sidebar-section:not(.skills-section):not(.sidebar-cv):nth-child(odd) {
     float: right;
     clear: right;
   }
@@ -4382,6 +4388,11 @@ html {
 /* line 10, ../../app/_scss/ui/4-organisms/_application.scss */
 body {
   background: #fff;
+}
+
+/* line 6, ../../app/_scss/ui/4-organisms/_about.scss */
+.about .sidebar-cv {
+  margin-bottom: 0;
 }
 
 /* line 5, ../../app/_scss/ui/4-organisms/_contact.scss */

@@ -135,7 +135,7 @@
       " |_|                                                   \n"+
       "                                                       \n"+
       " Interested in the code?                               \n"+
-      " Visit https://github.com/petecorreia/petecorreia.com  \n"+
+      " Visit https://github.com/petecorreia/petecorreia      \n"+
       "                                                       "+
     "");
   }

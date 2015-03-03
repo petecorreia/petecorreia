@@ -7,7 +7,7 @@
 
   @media (max-width: em($breakpoint-major)) {
     margin-bottom: em($layout-padding);
-    border-bottom: em($border-size) solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-light;
 
     &.sidebar-at-bottom {
       margin-top: em($layout-padding);
@@ -80,9 +80,8 @@
   }
 }
 
-.sidebar-mugshot {
-  width: em(250px);
-  max-width: 85%;
+.sidebar-mugshot-image {
+  max-width: em(150px);
   border-radius: 50%;
 }
 

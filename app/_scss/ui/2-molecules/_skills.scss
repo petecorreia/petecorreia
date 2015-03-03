@@ -18,6 +18,7 @@
 
 .skills {
   width: 100%;
+  @include clearfix;
 
   &,
   &.sidebar-list {

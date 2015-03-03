@@ -1251,13 +1251,23 @@ a.button.button-white:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000319}}
 .skills {
   width: 100%;
+  *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/0-origin\/_helpers\.scss}line{font-family:\00003100}}
+.skills:before, .skills:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/0-origin\/_helpers\.scss}line{font-family:\00003101}}
+.skills:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000323}}
 .skills, .skills.sidebar-list {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000329}}
 .skill {
   font-size: 1.11112em;
   line-height: 1.29em;
@@ -1270,31 +1280,31 @@ a.button.button-white:focus {
   line-height: 3.43121em;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000339}}
 .skill:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 30.0625em) and (max-width: 43.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000329}}
   .skill {
     width: 45%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000346}}
   .skill.skill-minor {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000350}}
   .skill:nth-child(odd) {
     float: left;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000355}}
   .skill:nth-child(even) {
     float: right;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000361}}
 .skill-box {
   position: absolute;
   top: 0;
@@ -1306,11 +1316,11 @@ a.button.button-white:focus {
   border: 0.16875em solid #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000372}}
 .skill-minor {
   color: #a3aaae;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_skills\.scss}line{font-family:\0000375}}
 .skill-minor .skill-box {
   border-color: #a3aaae;
 }
@@ -1942,7 +1952,7 @@ a.button.button-white:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\000035}}
   .page-sidebar {
     margin-bottom: 2.5em;
-    border-bottom: 0.0625em solid #d0d3d4;
+    border-bottom: 1px solid #d0d3d4;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000312}}
   .page-sidebar.sidebar-at-bottom {
@@ -2024,29 +2034,28 @@ a.button.button-white:focus {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000383}}
-.sidebar-mugshot {
-  width: 15.625em;
-  max-width: 85%;
+.sidebar-mugshot-image {
+  max-width: 9.375em;
   border-radius: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000389}}
 .sidebar-social .list-item {
   margin-bottom: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000392}}
 .sidebar-social .list-item:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\0000398}}
 .sidebar-social .list-item-link:hover, .sidebar-social .list-item-link:focus {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003102}}
 .sidebar-social .list-item-link:hover .link-text, .sidebar-social .list-item-link:focus .link-text {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003108}}
 .sidebar-social [class*="icon-"] {
   position: relative;
   top: 0.16667em;
@@ -2054,23 +2063,23 @@ a.button.button-white:focus {
   font-size: 1.5em;
   color: #a3aaae;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003116}}
 .sidebar-social .icon-mail {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003117}}
 .sidebar-social .icon-twitter {
   color: #55acee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003118}}
 .sidebar-social .icon-github {
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003119}}
 .sidebar-social .icon-linkedin {
   color: #0976b4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-sidebar\.scss}line{font-family:\00003120}}
 .sidebar-social .icon-instagram {
   color: #3f729b;
 }
@@ -2087,8 +2096,83 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\000036}}
-.about .sidebar-cv {
-  margin-bottom: 0;
+.about .page-sidebar {
+  position: relative;
+}
+@media (max-width: 43.75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000311}}
+  .about .sidebar-mugshot {
+    float: left;
+    width: 19%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000316}}
+  .about .sidebar-mugshot-image {
+    max-width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000320}}
+  .about .skills-section.sidebar-section {
+    float: right;
+    width: 80%;
+    margin-top: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000326}}
+  .about .skills {
+    padding-left: 10%;
+    width: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000331}}
+  .about .sidebar-cv {
+    clear: both;
+  }
+}
+@media (max-width: 35em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000337}}
+  .about .sidebar-mugshot {
+    width: 14%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000341}}
+  .about .skills-section.sidebar-section {
+    width: 85%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000345}}
+  .about .skills {
+    padding-left: 5%;
+  }
+}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000351}}
+  .about .sidebar-mugshot {
+    float: right;
+    width: 19%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000356}}
+  .about .skills-section.sidebar-section {
+    float: left;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000361}}
+  .about .skills {
+    padding-left: 0;
+  }
+}
+@media (max-width: 23.75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000367}}
+  .about .sidebar-mugshot {
+    position: absolute;
+    top: -4.64286em;
+    left: -0.21429em;
+    float: none;
+    width: 3.57143em;
+    height: 3.57143em;
+    border: 0.21429em solid #fff;
+    border-radius: 50%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_about\.scss}line{font-family:\0000378}}
+  .about .skills-section.sidebar-section {
+    float: none;
+    width: auto;
+    margin-top: 1.5em;
+  }
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/4-organisms\/_contact\.scss}line{font-family:\000035}}
