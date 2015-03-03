@@ -86,3 +86,6 @@ markdown: kramdown
 #     coderay_css: style
 
 highlighter: null
+
+gems:
+  - jekyll-sitemap
