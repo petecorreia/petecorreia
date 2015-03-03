@@ -545,12 +545,6 @@ module.exports = function (grunt) {
 
   // Define Tasks
 
-  // Generate responsive assets
-  grunt.registerTask('generate-images', [
-    'clean:responsive_images',
-    'responsive_images'
-  ]);
-
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'browserSync:dist']);
