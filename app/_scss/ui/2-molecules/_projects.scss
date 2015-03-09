@@ -18,6 +18,14 @@
   a:not(.button) {
     color: $color-white;
   }
+
+  &.project-dark {
+    color: $color-black;
+
+    a:not(.button) {
+      color: $color-black;
+    }
+  }
 }
 
 .project-content {
@@ -60,16 +68,18 @@
 
 .project-title {
   @include heading-big;
+  font-weight: 300;
 }
 
 .project-title-small {
   font-size: em($type-size-small,$type-heading-big);
+  font-weight: bold;
   letter-spacing: 0;
   color: $color-white;
   white-space: nowrap;
 
   .project-dark & {
-    color: $color-white;
+    color: $color-black;
   }
 }
 

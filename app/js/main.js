@@ -62,6 +62,8 @@
         $context = $this.parent();
       }
 
+      console.log(ratio, $context.width() / $context.height());
+
       function resizeBg() {
         if ( ($context.width() / $context.height()) < ratio ) {
           $this.css({

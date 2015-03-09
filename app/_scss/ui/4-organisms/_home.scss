@@ -7,3 +7,21 @@
     //top: calc(50% + 30px);
   }
 }
+
+.homepage-service {
+  display: block;
+
+  @media (min-width: em(630px)) {
+    display: inline;
+  }
+}
+
+.homepage-service-separator {
+  display: none;
+
+  @media (min-width: em(630px)) {
+    display: inline;
+    font-weight: normal;
+    margin: 0 0.5em;
+  }
+}

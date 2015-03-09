@@ -13,7 +13,6 @@ year: 2011 — 13
 lead: From joining as the first Front-end Developer in the team to leading the ambitious redesign of the most popular Internet of Things platform.
 
 hero-image: hero-xively.jpg
-hero-theme: dark
 
 website: https://xively.com
 website-changed: they ruined it :(

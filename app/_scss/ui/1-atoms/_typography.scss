@@ -183,11 +183,11 @@ h6,
   }
 
   @media (max-width: em($breakpoint-final)) {
-    font-size: em(54px);
+    font-size: em(60px);
   }
 
   @media (max-width: em($breakpoint-minor)) {
-    font-size: em($type-size-xxlarge);
+    font-size: em(54px);
   }
 
   /* @media (max-width: em(830px)) {
@@ -273,6 +273,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: underline;
+    color: $color-primary;
   }
 }
 
@@ -281,7 +282,7 @@ a {
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

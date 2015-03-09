@@ -43,12 +43,6 @@
       {% if page.type or page.year %}
       <p class="page-meta">{{ page.type }}{% if page.type and page.year %} / {% endif %}{{ page.year }}</p>
       {% endif %}
-
-      {% if page.hero-image %}
-      {% unless page.hero-video %}
-        <img itemprop="image" class="page-header-interface" sizes="100vw" srcset="/img/retina/_responsive/{{ page.id }}-interface-@1x.png 785w, /img/retina/_responsive/{{ page.id }}-interface-@2x.png 1570w" alt="Image showing an example of the user interface for {{ page.id }}.">
-      {% endunless %}
-      {% endif %}
     </div>
 
     {% if page.hero-image or page.hero-video %}
@@ -63,7 +57,7 @@
       {% capture imagefile %}hero-{{ page.id }}-bg.jpg{% endcapture %}
       {% capture imagealt %}Faded background image about {{ page.title }}.{% endcapture %}
 
-      {% include image/responsive.html class="page-header-background-image" file=imagefile alt=imagealt type="full-width" sizes="100vw" ratio="1.667" %}
+      {% include image/responsive.html class="page-header-background-image" file=imagefile alt=imagealt type="full-width" sizes="100vw" ratio="1.668" %}
 
       {% endif %}
     </div>
