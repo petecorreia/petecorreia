@@ -684,7 +684,7 @@ h6:first-child,
 .heading-big {
   font-size: 5.0625em;
   line-height: 1.11em;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   margin-top: 0.59259em;
   margin-bottom: 0.2963em;
   /* @media (max-width: em(830px)) {
@@ -708,11 +708,11 @@ h6:first-child,
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003237}}
 .heading-huge {
   font-size: 8.4375em;
   line-height: 1.11em;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   margin-top: 0.35556em;
   margin-bottom: 0.17778em;
 }
@@ -721,57 +721,35 @@ h6:first-child,
   margin-top: 0;
 }
 @media (max-width: 69em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003237}}
+  .heading-huge {
+    font-size: 7.5em;
+    letter-spacing: -0.05em;
+  }
+}
+@media (max-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003237}}
   .heading-huge {
     font-size: 5.625em;
     letter-spacing: -0.045em;
   }
 }
-@media (max-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
+@media (max-width: 43.75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003237}}
   .heading-huge {
     font-size: 5.0625em;
     letter-spacing: -0.04em;
   }
 }
-@media (max-width: 43.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
-  .heading-huge {
-    font-size: 5.0625em;
-    line-height: 1.11em;
-    letter-spacing: -0.03em;
-    margin-top: 0.59259em;
-    margin-bottom: 0.2963em;
-    /* @media (max-width: em(830px)) {
-      @include h1;
-    } */
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003180}}
-  .heading-huge:first-child {
-    margin-top: 0;
-  }
-}
-@media (max-width: 43.75em) and (max-width: 69em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
+@media (max-width: 39.375em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003237}}
   .heading-huge {
     font-size: 3.75em;
-  }
-}
-@media (max-width: 43.75em) and (max-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
-  .heading-huge {
-    font-size: 3.375em;
+    letter-spacing: -0.035em;
   }
 }
 
-@media (max-width: 39.375em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003235}}
-  .heading-huge {
-    font-size: 3.375em;
-  }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003245}}
 .lead {
   font-size: 1.5em;
   line-height: 1.23em;
@@ -785,48 +763,48 @@ h6:first-child,
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003254}}
 p {
   margin: 1.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003257}}
 p:first-child {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003261}}
 p:last-child {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003270}}
 a {
   text-decoration: underline;
   color: #000;
   transition: color 0.135s cubic-bezier(0.51, 0.27, 0.6, 0.91);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003275}}
 a:hover, a:focus {
   text-decoration: underline;
   color: #1cd4c6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003291}}
 .link-no-underline {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003285}}
 .link-no-underline:hover, .link-no-underline:focus {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003299}}
 hr {
   margin: 2.5em 0;
   border: none;
   border-bottom: 0.0625em solid #d0d3d4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003309}}
 blockquote,
 .blockquote {
   position: relative;
@@ -836,25 +814,25 @@ blockquote,
   margin: 1.66667em 0;
   font-weight: 300;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003316}}
 blockquote:first-child,
 .blockquote:first-child {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003320}}
 blockquote:last-child,
 .blockquote:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 43.8125em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003309}}
   blockquote,
   .blockquote {
     padding-bottom: 1.66667em;
   }
 }
 @media (min-width: 30.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003328}}
   blockquote.blockquote-big,
   .blockquote.blockquote-big {
     font-size: 1.6875em;
@@ -863,7 +841,7 @@ blockquote:last-child,
   }
 }
 @media (min-width: 43.8125em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003328}}
   blockquote.blockquote-big,
   .blockquote.blockquote-big {
     font-size: 2.25em;
@@ -875,27 +853,27 @@ blockquote:last-child,
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003348}}
 ul,
 ol {
   margin: 1.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003352}}
 ul:first-child,
 ol:first-child {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003357}}
 ul {
   list-style: none;
   padding-left: 1.6875em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003361}}
 ul li {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003364}}
 ul li:before {
   content: "—";
   position: absolute;
@@ -904,41 +882,41 @@ ul li:before {
   margin-right: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003374}}
 dl {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003378}}
 dl dt {
   margin-top: 0.75em;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003383}}
 dl dd {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003392}}
 pre {
   padding: 0.75em;
   margin: 1.5em 0;
   background-color: #e6e9eb;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003400}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003402}}
 textarea {
   resize: vertical;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003410}}
 small {
   font-size: 0.875em;
   line-height: 1.23em;
   color: #a3aaae;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003418}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003420}}
 .no-orphans {
   white-space: nowrap;
 }
@@ -1373,7 +1351,7 @@ a.button:focus {
 .project-title {
   font-size: 5.0625em;
   line-height: 1.11em;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   margin-top: 0.59259em;
   margin-bottom: 0.2963em;
   /* @media (max-width: em(830px)) {
@@ -1717,7 +1695,7 @@ a.button:focus {
 .page-title {
   font-size: 8.4375em;
   line-height: 1.11em;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   margin-top: 0.35556em;
   margin-bottom: 0.17778em;
   font-weight: 300;
@@ -1730,51 +1708,29 @@ a.button:focus {
 @media (max-width: 69em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
   .page-title {
-    font-size: 5.625em;
-    letter-spacing: -0.045em;
+    font-size: 7.5em;
+    letter-spacing: -0.05em;
   }
 }
 @media (max-width: 60em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
   .page-title {
-    font-size: 5.0625em;
-    letter-spacing: -0.04em;
+    font-size: 5.625em;
+    letter-spacing: -0.045em;
   }
 }
 @media (max-width: 43.75em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
   .page-title {
     font-size: 5.0625em;
-    line-height: 1.11em;
-    letter-spacing: -0.03em;
-    margin-top: 0.59259em;
-    margin-bottom: 0.2963em;
-    /* @media (max-width: em(830px)) {
-      @include h1;
-    } */
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/1-atoms\/_typography\.scss}line{font-family:\00003180}}
-  .page-title:first-child {
-    margin-top: 0;
+    letter-spacing: -0.04em;
   }
 }
-@media (max-width: 43.75em) and (max-width: 69em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
-  .page-title {
-    font-size: 3.75em;
-  }
-}
-@media (max-width: 43.75em) and (max-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
-  .page-title {
-    font-size: 3.375em;
-  }
-}
-
 @media (max-width: 39.375em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000351}}
   .page-title {
-    font-size: 3.375em;
+    font-size: 3.75em;
+    letter-spacing: -0.035em;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/3-cells\/_page-header\.scss}line{font-family:\0000356}}

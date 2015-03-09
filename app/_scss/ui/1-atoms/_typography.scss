@@ -171,7 +171,7 @@ h6,
 @mixin heading-big($margins: true) {
   font-size: em($type-heading-big);
   line-height: 1.11em;
-  letter-spacing: tracking(-30);
+  letter-spacing: tracking(-40);
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-big);
@@ -202,7 +202,7 @@ h6,
 @mixin heading-huge($margins: true) {
   font-size: em($type-heading-huge);
   line-height: 1.11em;
-  letter-spacing: tracking(-50);
+  letter-spacing: tracking(-60);
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-huge);
@@ -214,21 +214,23 @@ h6,
   }
 
   @media (max-width: em($breakpoint-final)) {
+    font-size: em(120px);
+    letter-spacing: tracking(-50);
+  }
+
+  @media (max-width: em(960px)) {
     font-size: em(90px);
     letter-spacing: tracking(-45);
   }
 
-  @media (max-width: em(960px)) {
+  @media (max-width: em($breakpoint-major)) {
     font-size: em(81px);
     letter-spacing: tracking(-40);
   }
 
-  @media (max-width: em($breakpoint-major)) {
-    @include heading-big;
-  }
-
   @media (max-width: em(630)) {
-    font-size: em(54px);
+    font-size: em(60px);
+    letter-spacing: tracking(-35);
   }
 }
 
