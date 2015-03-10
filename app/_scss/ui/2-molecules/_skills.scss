@@ -31,7 +31,7 @@
   position: relative;
   box-sizing: border-box;
   padding-left: em(78px,$type-heading-3);
-  margin-bottom: em($type-spacing,$type-heading-3);
+  margin-bottom: em($type-spacing/1.25,$type-heading-3);
   font-weight: bold;
   line-height: em(61px,$type-heading-3);
   white-space: nowrap;
