@@ -13,7 +13,6 @@ a.button {
   line-height: em($type-spacing);
   border: em(3px) solid $color-black;
   border-radius: em($type-spacing*2);
-  transition: color 0.135s $animation-ease, border 0.135s $animation-ease;
 
   &.button-white {
     color: $color-white;
@@ -23,7 +22,5 @@ a.button {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $color-primary;
-    border-color: $color-primary;
   }
 }

@@ -25,7 +25,7 @@ contribution:
   - Front-end Development
 
 roles:
-  - Senior Designer
+  - Creative Technologist
   - Lead Front-end Developer
 
 sections:

@@ -7,7 +7,7 @@ mugshot: yep
 
 skills: add them in
 
-lead: Freelance Senior Front-end Developer and User Interface Designer living and working in London, UK.
+lead: Freelance Creative Technologist & Front-end Developer based in London, UK.
 
 ---
 

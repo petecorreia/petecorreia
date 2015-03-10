@@ -780,12 +780,12 @@ p:last-child {
 a {
   text-decoration: underline;
   color: #000;
-  transition: color 0.135s cubic-bezier(0.51, 0.27, 0.6, 0.91);
+  transition: opacity 0.135s cubic-bezier(0.51, 0.27, 0.6, 0.91);
 }
 /* line 275, ../../app/_scss/ui/1-atoms/_typography.scss */
 a:hover, a:focus {
   text-decoration: underline;
-  color: #1cd4c6;
+  opacity: 0.5;
 }
 
 /* line 291, ../../app/_scss/ui/1-atoms/_typography.scss */
@@ -1084,21 +1084,18 @@ a.button {
   line-height: 1.5em;
   border: 0.1875em solid #000;
   border-radius: 3em;
-  transition: color 0.135s cubic-bezier(0.51, 0.27, 0.6, 0.91), border 0.135s cubic-bezier(0.51, 0.27, 0.6, 0.91);
 }
-/* line 18, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 17, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button.button-white,
 a.button.button-white {
   color: #fff;
   border-color: #fff;
 }
-/* line 23, ../../app/_scss/ui/1-atoms/_buttons.scss */
+/* line 22, ../../app/_scss/ui/1-atoms/_buttons.scss */
 .button:hover, .button:focus,
 a.button:hover,
 a.button:focus {
   text-decoration: none;
-  color: #1cd4c6;
-  border-color: #1cd4c6;
 }
 
 /* line 5, ../../app/_scss/ui/2-molecules/_logo.scss */

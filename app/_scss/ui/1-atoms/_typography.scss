@@ -270,12 +270,12 @@ p {
 a {
   text-decoration: underline;
   color: $color-black;
-  transition: color 0.135s $animation-ease;
+  transition: opacity 0.135s $animation-ease;
 
   &:hover,
   &:focus {
     text-decoration: underline;
-    color: $color-primary;
+    opacity: 0.5;
   }
 }
 
