@@ -6,7 +6,7 @@ class: home
 
 description: <span class="homepage-service no-orphans">Creative Technology</span><span class="homepage-service-separator"> — </span><span class="homepage-service no-orphans">User Interface Design</span><span class="homepage-service-separator"> — </span><span class="homepage-service no-orphans">Front-end Development</span>
 
-type: Available from July 2015
+type: <span class="homepage-greeting typist"></span>
 
 hero-title: Holistic
 hero-video: flicker.mp4
@@ -31,7 +31,7 @@ hero-theme: light
   </aside>
 
   <div class="page-content content layout-content">
-    <p>For the past 6 years, I’ve been designing and building <strong>complex, responsive and cross-platform</strong> applications. I’ve worked extensively with <strong>bleeding edge HTML5, CSS3/Sass and Javascript</strong>, including frameworks like <strong>Backbone.js</strong>, <strong>Node.js</strong>, <strong>Cordova</strong> and <strong>D3.js</strong>.</p>
+    <p>For the past 6 years, I’ve been designing and building <strong>complex, responsive and cross-platform</strong> applications. I’ve worked extensively with <strong>bleeding edge HTML5, CSS3/Sass and Javascript</strong>, including frameworks like <strong>Angular.js</strong>, <strong>Backbone.js</strong>, <strong>Node.js</strong>, <strong>Cordova</strong> and <strong>D3.js</strong>.</p>
 
     <p>I’m also passionate about design. I’ve created <strong>pioneering user interfaces and experiences</strong> for popular products in the <strong>Internet of Things industry</strong>, with one innovation in a <strong>US Patent Pending</strong>.</p>
 
@@ -42,7 +42,55 @@ hero-theme: light
 
 </section>
 
-<section id="case-studies" class="case-studies projects">
+<section id="work" class="work projects">
+
+  <article class="project" itemscope itemtype="http://schema.org/WebSite">
+    <div class="project-content layout-contain">
+      <h2 class="project-title"><span itemprop="name">Barclays</span> <small itemprop="dateModified" class="project-date project-title-small">2015</small></h2>
+
+      <div class="project-description">
+        <p>Barclays is a multinational banking and financial services company headquartered in London. It is a universal bank with operations in retail, wholesale and investment banking, as well as wealth management, mortgage lending and credit cards. It has operations in over 50 countries and territories and has around 48 million customers.</p>
+
+        <p>I helped <strong>develop a complex events/rewards platform</strong> built with <strong>Angular.js</strong>, and also worked on bringing Barclays Wealth to all devices by <strong>implementing a responsive strategy</strong>.</p>
+      </div>
+
+      <p class="project-meta project-meta-list">
+        <a itemprop="url" href="http://littlebookofwonders.com" class="project-link">littlebookofwonders.com</a>
+        <a itemprop="url" href="http://wealth.barclays.com" class="project-link">wealth.barclays.com</a>
+      </p>
+    </div>
+
+    <a itemprop="url" href="http://littlebookofwonders.com" class="project-interface">
+      <img itemprop="image" class="project-interface-img" srcset="/img/retina/_responsive/barclays-interface-@1x.jpg, /img/retina/_responsive/barclays-interface-@2x.jpg 2x" alt="Image showing an example of the user interface for Barclays.">
+      <img class="project-interface-bg" srcset="/img/retina/_responsive/interface-bg-@1x.png, /img/retina/_responsive/interface-bg-@2x.png 2x" alt="Complementary image showing an outline of a laptop computer.">
+    </a>
+
+    <div class="project-background responsive-image responsive-image-full-width">
+      {% include image/responsive.html class="project-background-image" file="hero-barclays-bg.jpg" alt="Faded background composition for Barclays." type="full-width" sizes="100vw" ratio="1.667" %}
+    </div>
+  </article>
+
+  <article class="project project-dark" itemscope itemtype="http://schema.org/WebSite">
+    <div class="project-content project-content-split layout-contain">
+      <h2 class="project-title"><span itemprop="name">Seymourpowell</span> <small itemprop="dateModified" class="project-date project-title-small">2015</small></h2>
+
+      <div class="project-description">
+        <p>Seymourpowell is one of the world’s leading Design &amp; Innovation Consultancies with a track record of imagining and then creating world-first innovation solutions stretching over 30 years, from the first cordless kettle and pocket mobile phone, to 21st Century solutions in sustainable transportation, e-payment and water filtration.</p>
+
+        <p><strong>Developed a brochure website</strong> for an innovative product, featuring <strong>state-of-the-art front-end tooling and techniques</strong>, making use of <strong>responsive images and custom SVG animations</strong>. During implementation I also provided <strong>input for design decisions</strong>.</p>
+      </div>
+
+      <p class="project-meta project-meta-list">
+        <span class="project-calltoaction"><a href="/contact/">Get in touch</a> for more info.</span>
+        <a itemprop="url" href="http://seymourpowell.com" class="project-link">seymourpowell.com</a>
+      </p>
+    </div>
+
+    <div class="project-background responsive-image responsive-image-full-width">
+      {% include image/responsive.html class="project-background-image" file="hero-seymourpowell-bg.jpg" alt="Faded background composition for Seymourpowell." type="full-width" sizes="100vw" ratio="1.667" %}
+    </div>
+  </article>
+
   <article class="project" itemscope itemtype="http://schema.org/WebSite">
     <div class="project-content layout-contain">
       <h2 class="project-title"><a href="/case-studies/thingful" class="link-no-underline" itemprop="name">Thingful</a> <small itemprop="dateModified" class="project-date project-title-small">2013 — 15</small></h2>
@@ -59,7 +107,10 @@ hero-theme: light
       </p>
     </div>
 
-    <img itemprop="image" class="project-interface" sizes="100vw" srcset="/img/retina/_responsive/thingful-interface-@1x.png 785w, /img/retina/_responsive/thingful-interface-@2x.png 1570w" alt="Image showing an example of the user interface for Thingful.">
+    <a itemprop="workExample" href="/case-studies/thingful" class="project-interface">
+      <img itemprop="image" class="project-interface-img" srcset="/img/retina/_responsive/thingful-interface-@1x.jpg, /img/retina/_responsive/thingful-interface-@2x.jpg 2x" alt="Image showing an example of the user interface for Thingful.">
+      <img class="project-interface-bg" srcset="/img/retina/_responsive/interface-bg-@1x.png, /img/retina/_responsive/interface-bg-@2x.png 2x" alt="Complementary image showing an outline of a laptop computer.">
+    </a>
 
     <div class="project-background responsive-image responsive-image-full-width">
       {% include image/responsive.html class="project-background-image" file="hero-thingful-bg.jpg" alt="Faded background composition for Thingful." type="full-width" sizes="100vw" ratio="1.667" %}
@@ -67,7 +118,7 @@ hero-theme: light
   </article>
 
   <article class="project project-dark" itemscope itemtype="http://schema.org/WebSite">
-    <div class="project-content project-content-right layout-contain">
+    <div class="project-content layout-contain">
       <h2 class="project-title"><a href="/case-studies/xively" class="link-no-underline" itemprop="name">Xively</a> <small itemprop="dateModified" class="project-date project-title-small">2011 — 13</small></h2>
 
       <div class="project-description">
@@ -82,7 +133,10 @@ hero-theme: light
       </p>
     </div>
 
-    <img itemprop="image" class="project-interface" sizes="100vw" srcset="/img/retina/_responsive/xively-interface-@1x.png 785w, /img/retina/_responsive/xively-interface-@2x.png 1570w" alt="Image showing an example of the user interface for Xively.">
+    <a itemprop="workExample" href="/case-studies/xively" class="project-interface">
+      <img itemprop="image" class="project-interface-img" srcset="/img/retina/_responsive/xively-interface-@1x.jpg, /img/retina/_responsive/xively-interface-@2x.jpg 2x" alt="Image showing an example of the user interface for Xively.">
+      <img class="project-interface-bg" srcset="/img/retina/_responsive/interface-bg-@1x.png, /img/retina/_responsive/interface-bg-@2x.png 2x" alt="Complementary image showing an outline of a laptop computer.">
+    </a>
 
     <div class="project-background responsive-image responsive-image-full-width">
       {% include image/responsive.html class="project-background-image" file="hero-xively-bg.jpg" alt="Faded background composition for Xively." type="full-width" sizes="100vw" ratio="1.667" %}
@@ -99,16 +153,26 @@ hero-theme: light
         <p>I <strong>designed the identity</strong> of the company, and also <strong>designed and developed interactive art applications</strong> including the monumental interactive light installation <a href="https://youtube.com/watch?v=MjoumVT070A"><span class="no-orphans">Mini Burble Paris</span>, commissioned by Samsung</a>.</p>
       </div>
 
-      <p class="project-meta">
-        <span class="project-calltoaction">Coming soon.</span>
+      <p class="project-meta project-meta-list">
         <a itemprop="url" href="http://umbrellium.co.uk" class="project-link">umbrellium.co.uk</a>
+        <a itemprop="url" href="https://www.youtube.com/watch?v=MjoumVT070A" class="project-link">mini-burble video (worth your time!)</a>
       </p>
     </div>
 
-    <img itemprop="image" class="project-interface" sizes="100vw" srcset="/img/retina/_responsive/umbrellium-interface-@1x.png 785w, /img/retina/_responsive/umbrellium-interface-@2x.png 1570w" alt="Image showing an example of the user interface for Umbrellium.">
+    <a itemprop="url" href="http://umbrellium.co.uk" class="project-interface">
+      <img itemprop="image" class="project-interface-img" srcset="/img/retina/_responsive/umbrellium-interface-@1x.jpg, /img/retina/_responsive/umbrellium-interface-@2x.jpg 2x" alt="Image showing an example of the user interface for Umbrellium.">
+      <img class="project-interface-bg" srcset="/img/retina/_responsive/interface-bg-@1x.png, /img/retina/_responsive/interface-bg-@2x.png 2x" alt="Complementary image showing an outline of a laptop computer.">
+    </a>
 
     <div class="project-background responsive-image responsive-image-full-width">
       {% include image/responsive.html class="project-background-image" file="hero-umbrellium-bg.jpg" alt="Faded background composition for Umbrellium." type="full-width" sizes="100vw" ratio="1.667" %}
     </div>
   </article>
+
+  <footer class="projects-more">
+    <div class="layout-contain">
+      <p>For more information, work examples or to discuss working together &mdash; <a href="/contact/">get in touch</a> and I'm sure I'll get back to you quickly.</p>
+    </div>
+  </footer>
+
 </section>

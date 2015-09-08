@@ -6,7 +6,22 @@
   position: relative;
   margin: em($layout-padding) 0 0;
   background: $color-black;
+  color: $color-white;
   overflow: hidden;
+
+  a {
+    color: $color-white;
+  }
+}
+
+.projects-more {
+  padding-top: em($layout-padding);
+  background: $color-gray-lightest;
+  color: $color-gray-dark;
+
+  a {
+    color: $color-black;
+  }
 }
 
 .project {
@@ -14,6 +29,7 @@
   z-index: 1;
   overflow: hidden;
   color: $color-white;
+  //border-bottom: em(3px) solid $color-white;
 
   a:not(.button) {
     color: $color-white;
@@ -26,6 +42,10 @@
       color: $color-black;
     }
   }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .project-content {
@@ -37,6 +57,21 @@
   @media (min-width: em(601px)) {
     padding-top: em($layout-padding*3);
     padding-bottom: em($layout-padding*3);
+
+    &.project-content-split {
+      @include clearfix;
+
+      .project-description {
+        float: left;
+        width: 60%;
+      }
+
+      .project-meta {
+        float: right;
+        width: 35%;
+        margin-top: 0;
+      }
+    }
   }
 
   @media (min-width: em(900px)) {
@@ -69,6 +104,7 @@
 .project-title {
   @include heading-big;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .project-title-small {
@@ -103,10 +139,21 @@
   margin: em($layout-padding,$type-size-small) 0 0;
   font-size: em($type-size-small);
   color: $color-white;
+
+  &.project-meta-list {
+    .project-link {
+      display: block;
+    }
+  }
 }
 
 .project-calltoaction {
   margin-right: em($type-spacing);
+  color: $color-white;
+
+  .project-dark & {
+    color: $color-black;
+  }
 }
 
 //
@@ -120,6 +167,40 @@
   max-height: 60%;
   z-index: 2;
   transform: translateY(-50%);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    .project-interface-img,
+    .project-interface-bg {
+      transform: scale(1.025);
+    }
+  }
+
+  .project-interface-img,
+  .project-interface-bg {
+    transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
+  }
+
+  .project-interface-img {
+    position: absolute;
+    top: em(34px);
+    left: em(107px);
+    width: em(572px);
+    z-index: 2;
+
+    @media (max-width: em($breakpoint-major)) {
+      top: em(34px,$type-size-mobile);
+      left: em(107px,$type-size-mobile);
+      width: em(572px,$type-size-mobile);
+    }
+  }
+
+  .project-interface-bg {
+    max-width: none;
+    z-index: 1;
+  }
 
   @media (max-width: em(600px)) {
     display: none;

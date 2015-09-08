@@ -12,7 +12,7 @@
   display: block;
 
   @media (min-width: em(630px)) {
-    display: inline;
+    display: inline-block;
   }
 }
 
@@ -20,8 +20,23 @@
   display: none;
 
   @media (min-width: em(630px)) {
-    display: inline;
+    display: inline-block;
     font-weight: normal;
     margin: 0 0.5em;
+  }
+}
+
+.homepage-greeting {
+  display: inline-block;
+  padding-top: 0.5em;
+  min-height: em(48.1px,14px);
+  line-height: 1.75em;
+
+  span {
+    font-size: 1em;
+  }
+
+  @media (min-width: em(630px)) {
+    min-height: em(56px);
   }
 }

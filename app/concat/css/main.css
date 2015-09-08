@@ -1287,21 +1287,22 @@ a.button:focus {
   z-index: 1;
   overflow: hidden;
   color: #fff;
+  border-bottom: 0.125em solid #000;
 }
-/* line 18, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 19, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project a:not(.button) {
   color: #fff;
 }
-/* line 22, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 23, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project.project-dark {
   color: #000;
 }
-/* line 25, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 26, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project.project-dark a:not(.button) {
   color: #000;
 }
 
-/* line 31, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 32, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-content {
   position: relative;
   padding-top: 5em;
@@ -1309,42 +1310,42 @@ a.button:focus {
   z-index: 2;
 }
 @media (min-width: 37.5625em) {
-  /* line 31, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 32, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content {
     padding-top: 7.5em;
     padding-bottom: 7.5em;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 31, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 32, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content {
     padding-top: 6.75em;
     padding-bottom: 6.75em;
   }
 }
 @media (min-width: 64.0625em) {
-  /* line 31, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 32, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content {
     padding-top: 9em;
     padding-bottom: 9em;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 54, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 55, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content.project-content-right .project-title,
   .project-content.project-content-right .project-description,
   .project-content.project-content-right .project-lead,
   .project-content.project-content-right .project-meta {
     margin-left: 55%;
   }
-  /* line 61, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 62, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content.project-content-right .project-interface {
     left: auto;
     right: 55%;
   }
 }
 
-/* line 69, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 70, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-title {
   font-size: 5.0625em;
   line-height: 1.11em;
@@ -1361,19 +1362,19 @@ a.button:focus {
   margin-top: 0;
 }
 @media (max-width: 69em) {
-  /* line 69, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 70, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-title {
     font-size: 3.75em;
   }
 }
 @media (max-width: 30em) {
-  /* line 69, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 70, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-title {
     font-size: 3.375em;
   }
 }
 
-/* line 74, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 75, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-title-small {
   font-size: 0.17284em;
   font-weight: bold;
@@ -1381,42 +1382,46 @@ a.button:focus {
   color: #fff;
   white-space: nowrap;
 }
-/* line 81, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 82, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-dark .project-title-small {
   color: #000;
 }
 
 @media (min-width: 37.5625em) {
-  /* line 86, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 87, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-description {
     width: 50%;
     max-width: 25em;
   }
-  /* line 91, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 92, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-floating-right .project-description {
     width: 100%;
   }
 }
 
-/* line 97, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 98, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-lead {
   font-size: 1.11112em;
   line-height: 1.29em;
 }
 
-/* line 102, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 103, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-meta {
   margin: 2.85714em 0 0;
   font-size: 0.875em;
   color: #fff;
 }
+/* line 109, ../../app/_scss/ui/2-molecules/_projects.scss */
+.project-meta.project-meta-list .project-link {
+  display: block;
+}
 
-/* line 108, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 115, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-calltoaction {
   margin-right: 1.5em;
 }
 
-/* line 116, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 123, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-interface {
   position: absolute;
   top: 50%;
@@ -1427,20 +1432,20 @@ a.button:focus {
           transform: translateY(-50%);
 }
 @media (max-width: 37.5em) {
-  /* line 116, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 123, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-interface {
     display: none;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 129, ../../app/_scss/ui/2-molecules/_projects.scss */
+  /* line 136, ../../app/_scss/ui/2-molecules/_projects.scss */
   .project-content-right + .project-interface {
     left: auto;
     right: 55%;
   }
 }
 
-/* line 140, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 147, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-background {
   position: absolute;
   top: 0;
@@ -1451,7 +1456,7 @@ a.button:focus {
   overflow: hidden;
 }
 
-/* line 150, ../../app/_scss/ui/2-molecules/_projects.scss */
+/* line 157, ../../app/_scss/ui/2-molecules/_projects.scss */
 .project-background-image {
   position: absolute;
   top: 50%;
@@ -3635,21 +3640,22 @@ a.button:focus {
   z-index: 1;
   overflow: hidden;
   color: #fff;
+  border-bottom: 0.125em solid #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000319}}
 .project a:not(.button) {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000323}}
 .project.project-dark {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000326}}
 .project.project-dark a:not(.button) {
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000332}}
 .project-content {
   position: relative;
   padding-top: 5em;
@@ -3657,42 +3663,42 @@ a.button:focus {
   z-index: 2;
 }
 @media (min-width: 37.5625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000332}}
   .project-content {
     padding-top: 7.5em;
     padding-bottom: 7.5em;
   }
 }
 @media (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000332}}
   .project-content {
     padding-top: 6.75em;
     padding-bottom: 6.75em;
   }
 }
 @media (min-width: 64.0625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000332}}
   .project-content {
     padding-top: 9em;
     padding-bottom: 9em;
   }
 }
 @media (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000355}}
   .project-content.project-content-right .project-title,
   .project-content.project-content-right .project-description,
   .project-content.project-content-right .project-lead,
   .project-content.project-content-right .project-meta {
     margin-left: 55%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000362}}
   .project-content.project-content-right .project-interface {
     left: auto;
     right: 55%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000370}}
 .project-title {
   font-size: 5.0625em;
   line-height: 1.11em;
@@ -3709,19 +3715,19 @@ a.button:focus {
   margin-top: 0;
 }
 @media (max-width: 69em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000370}}
   .project-title {
     font-size: 3.75em;
   }
 }
 @media (max-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000370}}
   .project-title {
     font-size: 3.375em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000375}}
 .project-title-small {
   font-size: 0.17284em;
   font-weight: bold;
@@ -3729,42 +3735,46 @@ a.button:focus {
   color: #fff;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000382}}
 .project-dark .project-title-small {
   color: #000;
 }
 
 @media (min-width: 37.5625em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000387}}
   .project-description {
     width: 50%;
     max-width: 25em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000392}}
   .project-floating-right .project-description {
     width: 100%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\0000398}}
 .project-lead {
   font-size: 1.11112em;
   line-height: 1.29em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003103}}
 .project-meta {
   margin: 2.85714em 0 0;
   font-size: 0.875em;
   color: #fff;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003109}}
+.project-meta.project-meta-list .project-link {
+  display: block;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003115}}
 .project-calltoaction {
   margin-right: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003123}}
 .project-interface {
   position: absolute;
   top: 50%;
@@ -3775,20 +3785,20 @@ a.button:focus {
           transform: translateY(-50%);
 }
 @media (max-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003123}}
   .project-interface {
     display: none;
   }
 }
 @media (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003136}}
   .project-content-right + .project-interface {
     left: auto;
     right: 55%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003147}}
 .project-background {
   position: absolute;
   top: 0;
@@ -3799,7 +3809,7 @@ a.button:focus {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pete\/Work\/petecorreia\/app\/_scss\/ui\/2-molecules\/_projects\.scss}line{font-family:\00003157}}
 .project-background-image {
   position: absolute;
   top: 50%;

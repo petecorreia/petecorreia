@@ -112,14 +112,39 @@
   //
   // dynamic sentence making
 
+  var now   = moment();
+
   $('[data-anthro]').each(function(){
     var $this = $(this);
     var type  = $this.data().anthro;
-    var now   = moment();
 
     if ( type === 'howisday' )  {
-      $this.html("Hope you're having a nice "+ now.format('dddd') +".");
+      $this.html("How's your "+ now.format('dddd') +" going?");
     }
+  });
+
+  //
+  // homepage typing animation
+  //
+
+  $( document ).on( 'ready' , function(){
+
+    $('.typist.homepage-greeting')
+      .typist({ speed: 20 })
+      .typistPause(500)
+      .typistAdd("Hope you")
+      .typistPause(125)
+      .typistAdd("'re having a nice ")
+      .typistPause(75)
+      .typistAdd(now.format('dddd') +".\n")
+      .typistPause(2000)
+      .typistAdd(" I'm available for work from ")
+      .typistPause(75)
+      .typistAdd("November ")
+      .typistPause(50)
+      .typistAdd("2015.")
+      .typistStop();
+
   });
 
   // console ascii art

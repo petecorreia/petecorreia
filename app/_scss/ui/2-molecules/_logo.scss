@@ -9,6 +9,17 @@
   font-size: em($type-size-base);
 }
 
+.logo-link {
+  display: inline-block;
+  transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
 .logo-img {
   display: block;
   width: em(50px);

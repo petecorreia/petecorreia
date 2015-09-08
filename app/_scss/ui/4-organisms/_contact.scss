@@ -38,11 +38,15 @@
   }
 
   .list-item-link {
+    display: inline-block;
     line-height: em(32px);
+    transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
 
     &:hover,
     &:focus {
       text-decoration: none;
+      opacity: 1;
+      transform: scale(1.075);
 
       .link-text {
         text-decoration: underline;
@@ -79,7 +83,6 @@
     }
 
     .list-item-link {
-      display: inline-block;
       text-align: center;
     }
 

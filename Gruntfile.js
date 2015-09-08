@@ -31,55 +31,55 @@ module.exports = function (grunt) {
           sizes: [{
             name        : 'w1920@1x',
             width       : 1920,
-            quality     : 60
+            quality     : 75
           }, {
             name        : 'w1440@2x',
             width       : 2880,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w1440@1x',
             width       : 1440,
-            quality     : 60
+            quality     : 75
           }, {
             name        : 'w1280@2x',
             width       : 2560,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w1280@1x',
             width       : 1280,
-            quality     : 60
+            quality     : 75
           }, {
             name        : 'w1024@2x',
             width       : 2048,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w1024@1x',
             width       : 1024,
-            quality     : 60
+            quality     : 75
           }, {
             name        : 'w768@2x',
             width       : 1536,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w768@1x',
             width       : 768,
-            quality     : 60
+            quality     : 75
           },{
             name        : 'w480@2x',
             width       : 960,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w480@1x',
             width       : 480,
-            quality     : 60
+            quality     : 75
           }, {
             name        : 'w320@2x',
             width       : 640,
-            quality     : 40
+            quality     : 60
           }, {
             name        : 'w320@1x',
             width       : 320,
-            quality     : 60
+            quality     : 75
           }]
         },
         files: [{

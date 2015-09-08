@@ -187,7 +187,7 @@ h6,
   }
 
   @media (max-width: em($breakpoint-minor)) {
-    font-size: em(54px);
+    font-size: em(44px, $type-size-mobile);
   }
 
   /* @media (max-width: em(830px)) {
@@ -275,7 +275,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: underline;
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
 

@@ -13,6 +13,7 @@ a.button {
   line-height: em($type-spacing);
   border: em(3px) solid $color-black;
   border-radius: em($type-spacing*2);
+  transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
 
   &.button-white {
     color: $color-white;
@@ -22,5 +23,7 @@ a.button {
   &:hover,
   &:focus {
     text-decoration: none;
+    opacity: 1;
+    transform: scale(1.05);
   }
 }
