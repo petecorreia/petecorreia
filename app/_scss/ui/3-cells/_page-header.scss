@@ -6,44 +6,53 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding-top: em(94px);
-}
-
-.page-header-content {
-  position: relative;
-  padding-top: em($layout-padding*2);
-  padding-bottom: em($layout-padding*2);
-  z-index: 2;
-  text-align: center;
+  height: em(740px);
+  height: 100vh;
+  min-height: 480px;
+  max-height: 1024px;
 
   @media (min-width: em($breakpoint-major + 1px)) {
-    padding-top: em($layout-padding*3);
-    padding-bottom: em($layout-padding*3);
-  }
-
-  @media (min-width: em(900px)) {
-    padding-top: em($layout-padding*4);
-    padding-bottom: em($layout-padding*4);
-  }
-
-  @media (min-width: em(1200px)) {
-    padding-top: em($layout-padding*4.5);
-    padding-bottom: em($layout-padding*4.5);
+    min-height: 600px;
   }
 
   .app-header-no-image & {
-    padding-top: em($layout-padding*1.5);
-    padding-bottom: em($layout-padding*1.5);
+    height: em(480px);
+    min-height: 0;
+    max-height: none;
+
+    @media (max-width: em($breakpoint-major)) {
+      height: em(300px);
+    }
+  }
+}
+
+.page-header-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  z-index: 2;
+  text-align: center;
+
+  .csstransforms & {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  .app-header-no-image & {
+    box-sizing: content-box;
+    position: static;
+    transform: none;
+    max-width: rem($layout-width-max);
+    max-width: $layout-width-max;
+    padding-top: em(200px);
     text-align: left;
 
-    @media (min-width: em(900px)) {
-      padding-top: em($layout-padding*1.75);
-      padding-bottom: em($layout-padding*1.75);
-    }
-
-    @media (min-width: em(1200px)) {
-      padding-top: em($layout-padding*2);
-      padding-bottom: em($layout-padding*2);
+    @media (max-width: em($breakpoint-major)) {
+      padding-top: em(125px);
     }
   }
 }
@@ -51,19 +60,21 @@
 .page-title {
   @include heading-huge;
   font-weight: 300;
-  margin-bottom: em($layout-padding,$type-heading-huge);
+  //margin-bottom: em($layout-padding,$type-heading-huge);
+  margin-bottom: 32px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-height: em(600px)) {
+    margin-bottom: 64px;
+  }
+
 }
 
 .page-description {
   margin: 0 auto;
-  font-size: em($type-size-small);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: tracking(100);
 
   @media (min-width: em(601px)) {
     width: 50%;
@@ -77,8 +88,13 @@
 }
 
 .page-meta {
-  margin: em($type-spacing/2) 0 0;
-  opacity: 0.75;
+  //margin: em($type-spacing/2) 0 0;
+  opacity: 0.5;
+
+  &,
+  &:last-child {
+    margin: 16px 0 -16px;
+  }
 }
 
 //

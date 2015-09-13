@@ -10,8 +10,7 @@
   }
 
   .list-item {
-    margin-right: em($type-size-base,$type-size-mobile);
-    font-weight: bold;
+    margin-right: em(24px,$type-size-mobile);
 
     &:last-child {
       margin-right: 0;
@@ -22,19 +21,16 @@
     }
 
     @media (min-width: em($breakpoint-minor + 1px)) {
-      //margin-right: em($layout-padding,$type-size-medium);
+      margin-right: em($type-size-xlarge*2,$type-size-medium);
       font-size: em($type-size-medium);
     }
   }
 
   .list-item-link {
     display: inline-block;
-    transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
 
     &:hover,
     &:focus {
-      opacity: 1;
-      transform: scale(1.05);
       text-decoration: underline;
     }
   }

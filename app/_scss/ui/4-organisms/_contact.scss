@@ -40,7 +40,7 @@
   .list-item-link {
     display: inline-block;
     line-height: em(32px);
-    transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
+    transition: transform 0.333s $animation-ease;
 
     &:hover,
     &:focus {

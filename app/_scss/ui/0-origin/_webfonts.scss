@@ -2,44 +2,88 @@
 // WEB FONTS
 //
 
-$webfont-name : 'neuzeit';
+$webfont-name            : 'NeueHaasUnica';
+$webfont-name-light      : 'NeueHaasUnicaPro-Light';
+$webfont-name-thin       : 'NeueHaasUnicaPro-Thin';
+$webfont-name-ultralight : 'NeueHaasUnicaPro-UltraLight';
+
+$custom-font            : $webfont-name, "Helvetica Neue", helvetica, arial, sans-serif;
+$custom-font-light      : $webfont-name-light, "Helvetica Neue", helvetica, arial, sans-serif;
+$custom-font-thin       : $webfont-name-thin, "Helvetica Neue", helvetica, arial, sans-serif;
+$custom-font-ultralight : $webfont-name-ultralight, "Helvetica Neue", helvetica, arial, sans-serif;
+
+.font-light {
+  font-family: $custom-font-light;
+}
+
+.font-thin {
+  font-family: $custom-font-thin;
+}
+
+.font-ultralight {
+  font-family: $custom-font-ultralight;
+}
 
 /**
  * @license
- * MyFonts Webfont Build ID 2963650, 2015-02-01T07:07:41-0500
+ * MyFonts Webfont Build ID 3090297, 2015-09-13T06:38:57-0400
  *
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed Webfonts(s).
+ * explicitly restricted from using the Licensed /fonts/neuehaasunica(s).
  *
  * You may obtain a valid license at the URLs below.
  *
- * Webfont: NeuzeitGro-Bol by URW++
- * URL: http://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-bold/
+ * Webfont: NeueHaasUnicaPro-Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/bold/
  *
- * Webfont: NeuzeitGro-Lig by URW++
- * URL: http://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-light/
+ * Webfont: NeueHaasUnicaPro-BoldItalic by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/bold-italic/
  *
- * Webfont: NeuzeitGro-Reg by URW++
- * URL: http://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-regular/
+ * Webfont: NeueHaasUnicaPro-Italic by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/italic/
+ *
+ * Webfont: NeueHaasUnicaPro-Light by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/light/
+ *
+ * Webfont: NeueHaasUnicaPro-Regular by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/regular/
+ *
+ * Webfont: NeueHaasUnicaPro-Thin by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/thin/
+ *
+ * Webfont: NeueHaasUnicaPro-UltraLight by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-haas-unica/ultra-light/
  *
  *
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2963650
- * Licensed pageviews: 10,000
- * Webfonts copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3090297
+ * Licensed pageviews: 250,000
+ * /fonts/neuehaasunica copyright: Copyright &#x00A9; 2015 Monotype Imaging Inc.  All rights reserved.
  *
  * © 2015 MyFonts Inc
 */
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/2d38c2");
+@import url("//hello.myfonts.net/count/2f2779");
 
 
-@font-face {font-family: $webfont-name; font-weight: bold; font-style: normal; src: url('/fonts/2D38C2_0_0.eot');src: url('/fonts/2D38C2_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2D38C2_0_0.woff2') format('woff2'),url('/fonts/2D38C2_0_0.woff') format('woff'),url('/fonts/2D38C2_0_0.ttf') format('truetype');}
+@font-face {font-family: 'NeueHaasUnica';font-weight: bold;font-style: normal;src: url('/fonts/neuehaasunica/2F2779_0_0.eot');src: url('/fonts/neuehaasunica/2F2779_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_0_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_0_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_0_0.ttf') format('truetype');}
 
 
-@font-face {font-family: $webfont-name; font-weight: normal; font-style: normal; src: url('/fonts/2D38C2_2_0.eot');src: url('/fonts/2D38C2_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2D38C2_2_0.woff2') format('woff2'),url('/fonts/2D38C2_2_0.woff') format('woff'),url('/fonts/2D38C2_2_0.ttf') format('truetype');}
+@font-face {font-family: 'NeueHaasUnica';font-weight: bold;font-style: italic;src: url('/fonts/neuehaasunica/2F2779_1_0.eot');src: url('/fonts/neuehaasunica/2F2779_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_1_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_1_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_1_0.ttf') format('truetype');}
 
 
-@font-face {font-family: $webfont-name; font-weight: 300; font-style: normal; src: url('/fonts/2D38C2_1_0.eot');src: url('/fonts/2D38C2_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2D38C2_1_0.woff2') format('woff2'),url('/fonts/2D38C2_1_0.woff') format('woff'),url('/fonts/2D38C2_1_0.ttf') format('truetype');}
+@font-face {font-family: 'NeueHaasUnica';font-weight: normal;font-style: italic;src: url('/fonts/neuehaasunica/2F2779_2_0.eot');src: url('/fonts/neuehaasunica/2F2779_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_2_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_2_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_2_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeueHaasUnicaPro-Light';src: url('/fonts/neuehaasunica/2F2779_3_0.eot');src: url('/fonts/neuehaasunica/2F2779_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_3_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_3_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_3_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeueHaasUnica';font-weight: normal;font-style: normal;src: url('/fonts/neuehaasunica/2F2779_4_0.eot');src: url('/fonts/neuehaasunica/2F2779_4_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_4_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_4_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_4_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeueHaasUnicaPro-Thin';src: url('/fonts/neuehaasunica/2F2779_5_0.eot');src: url('/fonts/neuehaasunica/2F2779_5_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_5_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_5_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_5_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'NeueHaasUnicaPro-UltraLight';src: url('/fonts/neuehaasunica/2F2779_6_0.eot');src: url('/fonts/neuehaasunica/2F2779_6_0.eot?#iefix') format('embedded-opentype'),url('/fonts/neuehaasunica/2F2779_6_0.woff2') format('woff2'),url('/fonts/neuehaasunica/2F2779_6_0.woff') format('woff'),url('/fonts/neuehaasunica/2F2779_6_0.ttf') format('truetype');}

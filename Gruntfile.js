@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Load Tasks
-  grunt.loadNpmTasks('grunt-modernizr');
+  // grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-devcode');
 
@@ -175,24 +175,23 @@ module.exports = function (grunt) {
         }]
       }
     },
-    modernizr: {
-      dist: {
-        devFile    : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
-        outputFile : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
-        tests: [
-          'csstransitions',
-          'csstransforms'
-        ],
-        files      : {
-          src : [
-            '<%= yeoman.app %>/js/{,*/}*.js',
-            '<%= yeoman.app %>/_scss/{,*/}*.scss',
-            '!<%= yeoman.app %>/js/plugins.js'
-          ],
-        },
-        uglify     : true
-      }
-    },
+
+    // modernizr: {
+    //   dist: {
+    //     devFile    : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
+    //     outputFile : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
+    //     files : {
+    //       src : [
+    //         '<%= yeoman.app %>/js/{,*/}*.js',
+    //         '<%= yeoman.app %>/_scss/**/*.scss',
+    //         '!<%= yeoman.app %>/js/plugins.js'
+    //       ],
+    //     },
+    //     matchCommunityTests : true,
+    //     uglify : true
+    //   }
+    // },
+
     devcode: {
       options: {
         html: true,
@@ -222,13 +221,13 @@ module.exports = function (grunt) {
         files: ['.tmp/**/*.css'],
         tasks: ['autoprefixer:dist']
       },
-      modernizr: {
-        files: [
-          '<%= yeoman.app %>/_scss/**/*.{scss,sass}',
-          '<%= yeoman.app %>/js/**/*.js'
-        ],
-        tasks: ['modernizr']
-      },
+      // modernizr: {
+      //   files: [
+      //     '<%= yeoman.app %>/_scss/**/*.{scss,sass}',
+      //     '<%= yeoman.app %>/js/**/*.js'
+      //   ],
+      //   tasks: ['modernizr']
+      // },
       jekyll: {
         files: [
           '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
@@ -256,14 +255,16 @@ module.exports = function (grunt) {
               "<%= yeoman.app %>"
             ]
           },
-          watchTask: true
+          watchTask: true,
+          notify: false
         }
       },
       dist: {
         options: {
           server: {
             baseDir: "<%= yeoman.dist %>"
-          }
+          },
+          notify: false
         }
       },
       test: {
@@ -284,7 +285,8 @@ module.exports = function (grunt) {
               "<%= yeoman.app %>"
             ]
           },
-          watchTask: true
+          watchTask: true,
+          notify: false
         }
       }
     },
@@ -553,7 +555,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'responsive_images',
-      'modernizr',
+      // 'modernizr',
       'concurrent:server',
       'autoprefixer:dist',
       'browserSync:server',
@@ -589,7 +591,7 @@ module.exports = function (grunt) {
     'responsive_images',
     'copy:responsive_images',
     'concurrent:dist',
-    'modernizr',
+    // 'modernizr',
     'devcode:dist',
     'useminPrepare',
     'concat',

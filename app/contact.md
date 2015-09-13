@@ -11,7 +11,7 @@ title: Contact
   <div class="layout-block layout-clear">
     <div class="contact-callout content-enrich content-full layout-content-full">
       <p class="contact-blockquote blockquote blockquote-big content-blockquote">Let's build great products together.</p>
-      <p class="contact-availability">Available from March 2015.</p>
+      <p class="contact-availability">Available from {{ site.available }}.</p>
     </div>
 
     <ul class="contact-social list-horizontal">

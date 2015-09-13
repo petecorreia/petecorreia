@@ -11,7 +11,7 @@
 
 .logo-link {
   display: inline-block;
-  transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
+  transition: transform 0.333s $animation-ease;
 
   &:hover,
   &:focus {

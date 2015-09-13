@@ -96,7 +96,7 @@
     if ( $target.length ) {
       $('html, body').animate({
         scrollTop: offset
-      }, 300);
+      }, 750, 'easeOutQuint');
     }
     else {
       window.location = $this.attr("href");
@@ -113,37 +113,45 @@
   // dynamic sentence making
 
   var now   = moment();
+  var hours = now.hours();
+  var timeofday = "morning";
+
+  if ( hours <= 6 ) {
+    timeofday = "night";
+  }
+  else if ( hours >= 13 && hours < 19 ) {
+    timeofday = "afternoon";
+  }
+  else if ( hours >= 19 ) {
+    timeofday = "evening";
+  }
+
+  var greetings = [
+    "Hope you're having a nice "+ now.format('dddd') + " "+ timeofday +".",
+    "How's this "+ now.format('dddd') + " "+ timeofday +" treating you?",
+    "How's your "+ now.format('dddd') + " "+ timeofday +" going?"
+  ];
+
+  var getRandomGreeting = function() {
+    return greetings[Math.floor(Math.random()*greetings.length)];
+  };
 
   $('[data-anthro]').each(function(){
     var $this = $(this);
     var type  = $this.data().anthro;
 
     if ( type === 'howisday' )  {
-      $this.html("How's your "+ now.format('dddd') +" going?");
+      $this.html( getRandomGreeting() );
     }
   });
 
   //
-  // homepage typing animation
+  // on ready
   //
 
   $( document ).on( 'ready' , function(){
 
-    $('.typist.homepage-greeting')
-      .typist({ speed: 20 })
-      .typistPause(500)
-      .typistAdd("Hope you")
-      .typistPause(125)
-      .typistAdd("'re having a nice ")
-      .typistPause(75)
-      .typistAdd(now.format('dddd') +".\n")
-      .typistPause(2000)
-      .typistAdd(" I'm available for work from ")
-      .typistPause(75)
-      .typistAdd("November ")
-      .typistPause(50)
-      .typistAdd("2015.")
-      .typistStop();
+    $('[data-animate-onready]').addClass('animate');
 
   });
 
@@ -151,13 +159,6 @@
 
   if ( console && console.log ) {
     console.log(""+
-      "                                                       \n"+
-      "             _                               _         \n"+
-      "  _ __   ___| |_ ___  ___ ___  _ __ _ __ ___(_) __ _   \n"+
-      " | '_ \\ / _ \\ __/ _ \\/ __/ _ \\| '__| '__/ _ \\ |/ _` |  \n"+
-      " | |_) |  __/ ||  __/ (_| (_) | |  | | |  __/ | (_| |  \n"+
-      " | .__/ \\___|\\__\\___|\\___\\___/|_|  |_|  \\___|_|\\__,_|  \n"+
-      " |_|                                                   \n"+
       "                                                       \n"+
       " Interested in the code?                               \n"+
       " Visit https://github.com/petecorreia/petecorreia      \n"+

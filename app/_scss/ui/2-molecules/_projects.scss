@@ -103,11 +103,12 @@
 
 .project-title {
   @include heading-big;
-  font-weight: 300;
   white-space: nowrap;
+  margin-bottom: em($type-size-xlarge,$type-heading-big);
 }
 
 .project-title-small {
+  font-family: $custom-font-thin;
   font-size: em($type-size-small,$type-heading-big);
   font-weight: bold;
   letter-spacing: 0;
@@ -120,6 +121,8 @@
 }
 
 .project-description {
+  opacity: 0.85;
+
   @media (min-width: em(601px)) {
     width: 50%;
     max-width: em($type-size-base * 25);
@@ -180,7 +183,7 @@
 
   .project-interface-img,
   .project-interface-bg {
-    transition: transform 0.333s cubic-bezier(0.000, 0.995, 0.750, 1.140);
+    transition: transform 0.333s $animation-ease;
   }
 
   .project-interface-img {

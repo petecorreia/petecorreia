@@ -9,7 +9,7 @@ body {
   color: $color-black;
   font-size: em($type-size-base);
   line-height: em($type-line-height);
-  font-family: $webfont-name, "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: $custom-font;
   -webkit-font-smoothing: antialiased;
 
   @media (max-width: em($breakpoint-major)) {
@@ -55,6 +55,8 @@ h6 {
   font-size: em($type-heading-1);
   line-height: 1.11em;
   letter-spacing: tracking(-15);
+  font-family: $custom-font-light;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-1);
@@ -75,6 +77,8 @@ h1,
   font-size: em($type-heading-2);
   line-height: 1.23em;
   letter-spacing: tracking(-10);
+  font-family: $custom-font-light;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-2);
@@ -95,6 +99,8 @@ h2,
   font-size: em($type-heading-3);
   line-height: 1.29em;
   letter-spacing: tracking(-5);
+  font-family: $custom-font-light;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-3);
@@ -114,6 +120,8 @@ h3,
 @mixin h4($margins: true) {
   font-size: em($type-heading-4);
   line-height: em($type-line-height);
+  font-family: $custom-font;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing,$type-heading-4);
@@ -133,6 +141,7 @@ h4,
 @mixin h5($margins: true) {
   font-size: em($type-heading-5);
   line-height: em($type-line-height);
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing,$type-heading-5);
@@ -152,6 +161,7 @@ h5,
 @mixin h6($margins: true) {
   font-size: em($type-heading-6);
   line-height: em($type-line-height);
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing,$type-heading-6);
@@ -172,6 +182,8 @@ h6,
   font-size: em($type-heading-big);
   line-height: 1.11em;
   letter-spacing: tracking(-40);
+  font-family: $custom-font-ultralight;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-big);
@@ -187,12 +199,9 @@ h6,
   }
 
   @media (max-width: em($breakpoint-minor)) {
+    font-family: $custom-font-thin;
     font-size: em(44px, $type-size-mobile);
   }
-
-  /* @media (max-width: em(830px)) {
-    @include h1;
-  } */
 }
 
 .heading-big { @include heading-big; }
@@ -200,9 +209,11 @@ h6,
 // Heading Huge
 
 @mixin heading-huge($margins: true) {
-  font-size: em($type-heading-huge);
+  font-size: em($type-heading-gigantic);
   line-height: 1.11em;
   letter-spacing: tracking(-60);
+  font-family: $custom-font-ultralight;
+  font-weight: normal;
 
   @if ($margins) {
     margin-top: em($type-spacing*2,$type-heading-huge);
@@ -214,23 +225,11 @@ h6,
   }
 
   @media (max-width: em($breakpoint-final)) {
-    font-size: em(120px);
-    letter-spacing: tracking(-50);
-  }
-
-  @media (max-width: em(960px)) {
-    font-size: em(90px);
-    letter-spacing: tracking(-45);
+    font-size: em($type-heading-huge);
   }
 
   @media (max-width: em($breakpoint-major)) {
-    font-size: em(81px);
-    letter-spacing: tracking(-40);
-  }
-
-  @media (max-width: em(630)) {
-    font-size: em(60px);
-    letter-spacing: tracking(-35);
+    font-size: em($type-heading-big,$type-size-mobile);
   }
 }
 
@@ -310,6 +309,7 @@ blockquote,
 .blockquote {
   position: relative;
   @include h2(false);
+  font-family: $custom-font-thin;
   margin: em($layout-padding,$type-heading-2) 0;
   font-weight: 300;
 
@@ -334,6 +334,7 @@ blockquote,
 
     @media (min-width: em($breakpoint-major + 1px)) {
       @include h1(false);
+      font-family: $custom-font-thin;
       padding-bottom: em($layout-padding,$type-heading-1);
       margin-top: em($layout-padding,$type-heading-1);
       margin-bottom: em($layout-padding,$type-heading-1);

@@ -27,12 +27,10 @@
 }
 
 .skill {
-  @include h3(false);
   position: relative;
   box-sizing: border-box;
   padding-left: em(78px,$type-heading-3);
   margin-bottom: em($type-spacing/1.25,$type-heading-3);
-  font-weight: bold;
   line-height: em(61px,$type-heading-3);
   white-space: nowrap;
 
@@ -66,7 +64,7 @@
   height: em(54px,$type-heading-3);
   line-height: em(57px,$type-heading-3);
   text-align: center;
-  border: em(3px,$type-heading-3) solid $color-black;
+  border: em(2px,$type-heading-3) solid $color-black;
 }
 
 .skill-minor {

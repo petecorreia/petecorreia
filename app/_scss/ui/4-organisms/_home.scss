@@ -10,9 +10,11 @@
 
 .homepage-service {
   display: block;
+  margin-top: $spacing-vertical-small/2;
 
   @media (min-width: em(630px)) {
     display: inline-block;
+    margin-top: 0;
   }
 }
 
@@ -27,16 +29,25 @@
 }
 
 .homepage-greeting {
-  display: inline-block;
+  display: block;
   padding-top: 0.5em;
-  min-height: em(48.1px,14px);
+  min-height: 1.75em;
   line-height: 1.75em;
 
   span {
     font-size: 1em;
   }
 
-  @media (min-width: em(630px)) {
-    min-height: em(56px);
+  .csstransforms.csstransitions & {
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .25s $animation-ease .25s, transform .25s $animation-ease .25s;
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
   }
 }
