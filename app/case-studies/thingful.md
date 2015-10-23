@@ -10,7 +10,7 @@ type: Case Study
 
 year: 2013 — 15
 
-lead: An in-depth look at the reasoning, process and obstacles of designing and development the world’s first Internet of Things search engine.
+lead: An in-depth look at the reasoning, process and obstacles of designing and developing the world’s first Internet of Things search engine.
 
 hero-image: hero-thingful.jpg
 hero-theme: dark
@@ -65,13 +65,13 @@ As the product evolved, the identity grew to accommodate sub-brands and all the 
 
 I must say, the user experience research and testing relied a lot on the collective experience, instinct and bias of the Umbrellium team and friends. **This isn’t what I preach**, to be frank, as I firmly believe in user research of target users and I’ve relied on that method successfully in other applications I’ve worked on.
 
-**Thingful was different beast** though, not only did it have very ambitious deadlines and incredible pace but it was also **a pioneering project** in a nascent industry. That meant little to no time for organising user testing, leading me to improvise methods that were very informal and unscientific with colleagues and friends but it gave me enough to work with. There was also little information available online regarding the interface patterns we were designing. I relied a lot on understanding analytics and making sure **I tracked as many interactions as I could**, like how deep people zoomed in and how far they panned the map.
+**Thingful was a different beast** though, not only did it have very ambitious deadlines and incredible pace but it was also **a pioneering project** in a nascent industry. That meant little to no time for organising user testing, leading me to improvise methods that were very informal and unscientific with colleagues and friends but it gave me enough to work with. There was also little information available online regarding the interface patterns we were designing. I relied a lot on understanding analytics and making sure **I tracked as many interactions as I could**, like how deep people zoomed in and how far they panned the map.
 
 This was a first for me, and **I’ve learned a lot from it**. An important takeaway was understanding that sometimes constraints lead you to improvise the user experience research and there are ways to do it. Expanding on the improvised methods is a subject for an entire article I might write some day, meanwhile I recommend reading [this book](http://undercoverux.com/).
 
 {% include content/side-image.html file="thingful-categories.png" alt="The Thingful ontology: Energy, Home, Health, Environment, Flora & Fauna, Transport, Experiment and Miscellaneous." %}
 
-**The toughest nut to crack was ontology**. The task was to categorise everything that can potentially be connected to the internet, knowing already that odd things like sharks and turtles were part of that, and also that the future could bring even more uncommon stuff. The amount of categories was a crucial constraint, there were to be seven at most so that they’d easy to memorise. I must say that Usman Haque’s contribution here was absolutely key and the ontology we came up with has stood the test of time.
+**The toughest nut to crack was ontology**. The task was to categorise everything that can potentially be connected to the internet, knowing already that odd things like sharks and turtles were part of that, and also that the future could bring even more uncommon stuff. The amount of categories was a crucial constraint, there were to be seven at most so that they’d be easy to memorise. I must say that Usman Haque’s contribution here was absolutely key and the ontology we came up with has stood the test of time.
 
 One of the last things I explored was the **anthropomorphisation (personification) of the Things** for the potential that might hold as a different means of communication and interaction. I created a prototype cross-platform mobile application called Contextful that used geolocation and natural language to let you know what Things around you have to say for themselves as you walk down the street. It was incredible to experience this — a bike-share station who shouts at you that it hasn’t been used as you walk by it, or a Raspberry Pi that is very friendly and knows that it’s a famous credit-card sized computer somewhere in a building. It was an interaction model strictly based on human (not machine) communication and it felt **deeply engaging**.
 

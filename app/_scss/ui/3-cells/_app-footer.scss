@@ -28,7 +28,7 @@
   white-space: nowrap;
 
   .list-item {
-    margin-right: em($type-spacing/2);
+    margin-right: em($type-spacing, $type-size-mobile);
 
     &:last-child {
       margin-right: 0;

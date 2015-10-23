@@ -24,7 +24,7 @@ layout: application
 
       {% if page.website %}
       <section class="sidebar-section">
-        <a href="{{ page.website }}" class="sidebar-website"><span class="sidebar-website-inner">{{ page.website | replace:'http://' | replace:'https://' }}</span>{% if page.website-changed %}<span class="sidebar-website-changed">— has since updated</span>{% endif %}</a>
+        <a href="{{ page.website }}" class="sidebar-website"><span class="sidebar-website-inner">{{ page.website | replace:'http://' | replace:'https://' }}</span>{% if page.website-changed %}<span class="sidebar-website-changed">— has since been updated</span>{% endif %}</a>
       </section>
       {% endif %}
 

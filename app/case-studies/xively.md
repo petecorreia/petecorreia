@@ -85,9 +85,9 @@ We spent a lot of energy **crafting an immersive onboarding process** that would
 
 # User Interface
 
-{% include content/side-quote.html quote="I made it a point that no features would be out of reach for any screen size." %}
-
 The challenges in designing the user interface were some of **the most difficult and complex I had faced so far** in my career and the deadline was very aggressive. The redesign encompassed a device management platform, a documentation website, a marketing website and finally a blog.
+
+{% include content/side-quote.html quote="I made it a point that no features would be out of reach for any screen size." %}
 
 The device management platform was designed following a strict set of principles that I outlined before we got started:
 
