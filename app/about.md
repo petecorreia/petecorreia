@@ -27,7 +27,7 @@ In September 2013, I **joined [Umbrellium](http://umbrellium.co.uk) to build inn
 
 As of mid 2015, I'm providing **consultancy services** to collaborate with more companies than before. From making sure tight deadlines are met, to cooperating with teams on more complex deep-dives, I've helped well-known clients such as **[Barclays](http://barclays.com)** and **[Seymourpowell](http://seymourpowell.com)** ship **world-class digital products and experiences**.
 
-I'm available for work from {{ site.available }} &mdash; <a href="/contact/">Get in touch</a>.
+{{ site.available }} &mdash; <a href="/contact/">Get in touch</a>.
 
 <hr>
 
