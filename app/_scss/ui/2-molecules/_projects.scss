@@ -104,12 +104,12 @@
 .project-title {
   @include heading-big;
   white-space: nowrap;
-  margin-bottom: em($type-size-xlarge,$type-heading-big);
+  margin-bottom: em($type-size-xlarge, $type-heading-big);
 }
 
 .project-title-small {
   font-family: $custom-font-thin;
-  font-size: em($type-size-small,$type-heading-big);
+  font-size: em($type-size-small, $type-heading-big);
   font-weight: bold;
   letter-spacing: 0;
   color: $color-white;
@@ -139,7 +139,7 @@
 }
 
 .project-meta {
-  margin: em($layout-padding,$type-size-small) 0 0;
+  margin: em($layout-padding, $type-size-small) 0 0;
   font-size: em($type-size-small);
   color: $color-white;
 
@@ -194,9 +194,9 @@
     z-index: 2;
 
     @media (max-width: em($breakpoint-major)) {
-      top: em(34px,$type-size-mobile);
-      left: em(107px,$type-size-mobile);
-      width: em(572px,$type-size-mobile);
+      top: em(34px, $type-size-mobile);
+      left: em(107px, $type-size-mobile);
+      width: em(572px, $type-size-mobile);
     }
   }
 
@@ -236,9 +236,10 @@
   top: 50%;
   left: 50%;
   width: auto;
+  min-width: 100%;
   height: auto;
   max-width: none;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   /* .csstransitions & {
     transition: transform 9s $animation-ease;

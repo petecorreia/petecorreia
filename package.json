@@ -23,7 +23,7 @@
     "grunt-contrib-watch": "0.6.1",
     "grunt-devcode": "0.0.4-c",
     "grunt-filerev": "~0.2.1",
-    "grunt-jekyll": "~0.4.2",
+    "grunt-jekyll": "^0.4.6",
     "grunt-modernizr": "^0.6.0",
     "grunt-responsive-images": "^0.1.5",
     "grunt-svgmin": "~0.4.0",

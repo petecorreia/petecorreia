@@ -2,6 +2,13 @@
 
 Curious about the system behind [petecorreia.com](http://petecorreia.com)?
 
+## Run it
+```bash
+bundle install
+npm install
+bower install
+```
+
 ## Jekyll
 
 I use [Jekyll](http://jekyllrb.com/) as the static generator. The app was scaffolded using a [Yeoman](http://yeoman.io/) generator, which you can find [here](https://github.com/robwierzbowski/generator-jekyllrb).
