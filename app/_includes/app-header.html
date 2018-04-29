@@ -44,26 +44,24 @@
       <p class="page-meta">{{ page.type }}{% if page.type and page.year %} / {% endif %}{{ page.year }}</p>
       {% endif %}
 
+      {% if page.meta %}
+      <p class="page-meta">{{ page.meta }}</p>
+      {% endif %}
+
       {% if page.show-availability %}
       <p class="page-meta"><span class="homepage-greeting" data-animate-onready>{{ site.available }}</span></p>
       {% endif %}
     </div>
 
-    {% if page.hero-image or page.hero-video %}
+    {% if page.hero-image %}
 
     <div class="page-header-background responsive-image responsive-image-full-width">
-      {% if page.hero-video %}
-      <!-- <div class="page-header-video" data-bgvideo="/img/videos/{{ page.hero-video }}"></div> -->
-      {% endif %}
-
-      {% if page.hero-image %}
 
       {% capture imagefile %}hero-{{ page.id }}-bg.jpg{% endcapture %}
       {% capture imagealt %}Faded background image about {{ page.title }}.{% endcapture %}
 
       {% include image/responsive.html class="page-header-background-image" file=imagefile alt=imagealt type="full-width" sizes="100vw" ratio="1.668" %}
 
-      {% endif %}
     </div>
 
     {% endif %}

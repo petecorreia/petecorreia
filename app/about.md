@@ -7,7 +7,7 @@ mugshot: yep
 
 skills: add them in
 
-lead: Consultant Creative Technologist & Front-end Developer based in London, UK.
+lead: Head of Technology, London at <a href="https://fathomlondon.com">Fathom</a>
 
 ---
 
@@ -25,9 +25,9 @@ In September 2013, I **joined [Umbrellium](http://umbrellium.co.uk) to build inn
 
 [Read the Thingful Case Study](/case-studies/thingful)
 
-As of mid 2015, I'm providing **consultancy services** to collaborate with more companies than before. From making sure tight deadlines are met, to cooperating with teams on more complex deep-dives, I've helped well-known clients such as **[Barclays](http://barclays.com)** and **[Seymourpowell](http://seymourpowell.com)** ship **world-class digital products and experiences**.
+In mid 2015, I decide to start a **consultancy service** to collaborate with more companies than before. From making sure tight deadlines are met, to cooperating with teams on more complex deep-dives, I've helped well-known clients such as **[Barclays](http://barclays.com)** and **[Seymourpowell](http://seymourpowell.com)** ship **world-class digital products and experiences**.
 
-{{ site.available }} &mdash; <a href="/contact/">Get in touch</a>.
+One of the contracts was with **[Fathom](https://fathom.com)**, and it turned out to be my last. I initially joined as a consultant to help build complex data-heavy web apps for their clients (who range from tech start-ups to Tier 1 investment banks). Initially, my focus was on custom data visualisations, and these were usually the centre-piece of the design and a crucial function of the apps. Along the way I was given more and more responsibility and eventually joined the team. As of January 2018, I became the Head of Technology for the London office — managing a team of 20+ top-tier frontend engineers. I'm constantly in awe by how talented the folks are at Fathom and how, despite growth, it all feels like one big family.
 
 <hr>
 
@@ -35,13 +35,11 @@ As of mid 2015, I'm providing **consultancy services** to collaborate with more 
 
 This passion has driven me to learn and work in different disciplines like branding, UX and UI design, and front-end development. Having an understanding of all that goes into crafting a product allows me to have a holistic approach to solving a problem. It also makes it easy to communicate with the various specialised teams.
 
-In terms of front-end development, I've worked extensively with bleeding edge **HTML5 and CSS3**. I've been a fervent supporter of using [Sass](http://sass-lang.com/) as a pre-processor. I've also been coding **Javascript for 6 years**, building my own frameworks and libraries and using popular ones like [Backbone.js](http://backbonejs.org/). With Thingful, I had to dive deeply into online mapping libraries like [CartoDB.js](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) and [Leaflet.js](http://leafletjs.com/). I used [D3.js](http://d3js.org/) and [Raphael.js](http://raphaeljs.com/) for creating visualisations while working for the News platform team at SAPO.
-
 <hr>
 
 Still here? Here are a few facts as a bonus for reading this far:
 
-- Married my first love [Rita](http://heyrita.co.uk) and we have a cat called Yoshi
+- Married my first love [Rita](http://heyrita.co.uk), we have a beautiful daughter named June and a lovely cat named Ozzy
 - Toured Europe twice in 2010, playing guitar for a hardcore/metal band called [Hills Have Eyes](https://www.facebook.com/hillshaveeyes){:class="no-orphans"}
 - Me and my wife ran a market stall called [The Mighty Fork](http://themightyfork.co.uk){:class="no-orphans"} selling vegan hotdogs
 - Skateboarded as a kid and still own a couple of boards

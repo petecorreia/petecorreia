@@ -160,8 +160,8 @@
   if ( console && console.log ) {
     console.log(""+
       "                                                       \n"+
-      " Interested in the code?                               \n"+
-      " Visit https://github.com/petecorreia/petecorreia      \n"+
+      " Interested in code?                               \n"+
+      " Visit https://github.com/petecorreia      \n"+
       "                                                       "+
     "");
   }
