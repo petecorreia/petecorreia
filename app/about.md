@@ -27,7 +27,7 @@ In September 2013, I **joined [Umbrellium](http://umbrellium.co.uk) to build inn
 
 In mid 2015, I decide to start a **consultancy service** to collaborate with more companies than before. From making sure tight deadlines are met, to cooperating with teams on more complex deep-dives, I've helped well-known clients such as **[Barclays](http://barclays.com)** and **[Seymourpowell](http://seymourpowell.com)** ship **world-class digital products and experiences**.
 
-One of the contracts was with **[Fathom](https://fathom.com)**, and it turned out to be my last. I initially joined as a consultant to help build complex data-heavy web apps for their clients (who range from tech start-ups to Tier 1 investment banks). Initially, my focus was on custom data visualisations, and these were usually the centre-piece of the design and a crucial function of the apps. Along the way I was given more and more responsibility and eventually joined the team as Lead Engineer. I'm constantly in awe by how talented the folks are at Fathom and how, despite growth, it all feels like one big family.
+One of the contracts was with **[Fathom](https://fathom.com)**, and it turned out to be my last. I initially joined as a consultant to help build complex data-heavy web apps for their clients, who range from tech start-ups to Tier 1 investment banks. Initially, my focus was on custom data visualisations, and these were usually the centre-piece of the design and a crucial function of the apps. Along the way I was given more and more responsibility and eventually joined the team as Lead Engineer. I'm constantly in awe by how talented the folks are at Fathom and how, despite growth, it all feels like one big family.
 
 <hr>
 
