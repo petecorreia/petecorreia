@@ -1,29 +1,49 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { normalize } from 'polished';
+import { Box } from 'rebass';
 
-const Layout = ({ location, title, children }) => {
-	const rootPath = `${__PATH_PREFIX__}/`;
-	let header;
+const primary = '#07c';
 
-	if (location.pathname === rootPath) {
-		header = (
-			<h1>
-				<Link to={'/'}>{title}</Link>
-			</h1>
-		);
-	} else {
-		header = (
-			<h3>
-				<Link to={'/'}>{title}</Link>
-			</h3>
-		);
-	}
-	return (
-		<div>
-			{header}
-			{children}
-		</div>
-	);
+const theme = {
+	fontSizes: [12, 14, 16, 24, 32, 48, 64],
+	buttons: {
+		primary: {
+			color: '#fff',
+			backgroundColor: primary,
+		},
+	},
 };
+
+const GlobalStyle = createGlobalStyle`
+	${normalize()};
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+		font-style: normal !important;
+	}
+
+	body {
+		font-family: "NeueHaasUnica", "Helvetica Neue", helvetica, arial, sans-serif;
+	}
+`;
+
+const Layout = ({ children }) => (
+	<ThemeProvider theme={theme}>
+		<Box
+			as="main"
+			mx="auto"
+			p={5}
+			css={{
+				maxWidth: '1440',
+			}}
+		>
+			<GlobalStyle />
+			{children}
+		</Box>
+	</ThemeProvider>
+);
 
 export default Layout;

@@ -1,18 +1,14 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { formatReadingTime } from '../utils/helpers';
-
-const GITHUB_USERNAME = 'petecorreia';
-const GITHUB_REPO_NAME = 'petecorreia';
+import { formatReadingTime } from '../utils';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
 	const siteTitle = get(data, 'site.siteMetadata.title');
-	const { previous, next, slug } = pageContext;
+	const { previous, next } = pageContext;
 	return (
 		<Layout location={location} title={siteTitle}>
 			<SEO
@@ -21,38 +17,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 				slug={post.fields.slug}
 			/>
 			<h1>{post.frontmatter.title}</h1>
-			<p
-				style={{
-					display: 'block',
-				}}
-			>
+			<p>
 				{post.frontmatter.date}
 				{` • ${formatReadingTime(post.timeToRead)}`}
 			</p>
 			<div dangerouslySetInnerHTML={{ __html: post.html }} />
 
 			<h3>
-				<Link
-					style={{
-						boxShadow: 'none',
-						textDecoration: 'none',
-						color: '#ffa7c4',
-					}}
-					to={'/'}
-				>
-					petecorreia
-				</Link>
+				<Link to={'/'}>petecorreia</Link>
 			</h3>
-			<Bio />
-			<ul
-				style={{
-					display: 'flex',
-					flexWrap: 'wrap',
-					justifyContent: 'space-between',
-					listStyle: 'none',
-					padding: 0,
-				}}
-			>
+			<ul>
 				<li>
 					{previous && (
 						<Link to={previous.fields.slug} rel="prev">

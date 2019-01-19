@@ -1,21 +1,31 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import Bio from '../components/Bio';
+import { Flex, Box, Text } from 'rebass';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer';
-import { formatReadingTime } from '../utils/helpers';
+import { formatReadingTime, greeting } from '../utils';
 
 const BlogIndex = ({ data, location }) => {
 	const siteTitle = get(data, 'site.siteMetadata.title');
-	const siteDescription = get(data, 'site.siteMetadata.description');
 	const posts = get(data, 'allMarkdownRemark.edges');
 
 	return (
 		<Layout location={location} title={siteTitle}>
 			<SEO />
-			<Bio />
+			<Flex>
+				<Box width={1 / 2}>
+					<Text as="p" m={0}>
+						Hey there, I'm Pete.
+					</Text>
+					<Text as="p" m={0} mt={2}>
+						{greeting()}
+					</Text>
+				</Box>
+				<Box width={1 / 2}>Work</Box>
+			</Flex>
+
 			{posts.map(({ node }) => {
 				const title = get(node, 'frontmatter.title') || node.fields.slug;
 				return (
