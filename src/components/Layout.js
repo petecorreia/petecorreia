@@ -7,6 +7,10 @@ const primary = '#07c';
 
 const theme = {
 	fontSizes: [12, 14, 16, 24, 32, 48, 64],
+	colors: {
+		blue: '#000',
+		lightgray: '#666',
+	},
 	buttons: {
 		primary: {
 			color: '#fff',
@@ -28,6 +32,16 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		font-family: "NeueHaasUnica", "Helvetica Neue", helvetica, arial, sans-serif;
 	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 `;
 
 const Layout = ({ children }) => (
@@ -35,9 +49,8 @@ const Layout = ({ children }) => (
 		<Box
 			as="main"
 			mx="auto"
-			p={5}
 			css={{
-				maxWidth: '1440',
+				maxWidth: 1290,
 			}}
 		>
 			<GlobalStyle />
