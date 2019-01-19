@@ -19,7 +19,7 @@ const Footer = () => (
 		<Flex mt={7} css={{ justifyContent: 'flex-end', textAlign: 'left' }}>
 			<Box width={1 / 2}>
 				<Text>Making something very complex, very simple.</Text>
-				<Text as="small" mt={2} css={{ display: 'block' }}>
+				<Text as="small" mt={2} css={{ display: 'block', color: '#666' }}>
 					© {new Date().getFullYear()} Pete Correia
 				</Text>
 			</Box>

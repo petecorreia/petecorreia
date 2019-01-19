@@ -122,7 +122,11 @@ const BlogIndex = ({ data }) => {
 								return (
 									<ListItem key={node.fields.slug} mt={!index ? 0 : 3}>
 										<AppLink to={node.fields.slug}>{title}</AppLink>
-										<Text as="small" css={{ display: 'block' }} mt={2}>
+										<Text
+											as="small"
+											css={{ display: 'block', color: '#666' }}
+											mt={2}
+										>
 											{node.frontmatter.date}
 											{` — ${formatReadingTime(node.timeToRead)}`}
 										</Text>
