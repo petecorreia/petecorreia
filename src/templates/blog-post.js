@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { formatReadingTime } from '../utils/helpers';
-import { rhythm, scale } from '../utils/typography';
 
 const GITHUB_USERNAME = 'petecorreia';
 const GITHUB_REPO_NAME = 'petecorreia';
@@ -26,10 +24,7 @@ class BlogPostTemplate extends React.Component {
 				<h1>{post.frontmatter.title}</h1>
 				<p
 					style={{
-						...scale(-1 / 5),
 						display: 'block',
-						marginBottom: rhythm(1),
-						marginTop: rhythm(-4 / 5),
 					}}
 				>
 					{post.frontmatter.date}
@@ -37,12 +32,7 @@ class BlogPostTemplate extends React.Component {
 				</p>
 				<div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-				<h3
-					style={{
-						fontFamily: 'Montserrat, sans-serif',
-						marginTop: rhythm(0.25),
-					}}
-				>
+				<h3>
 					<Link
 						style={{
 							boxShadow: 'none',

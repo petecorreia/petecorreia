@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: 'petecorreia',
+		title: 'Pete Correia',
 		author: 'Pete Correia',
-		description: 'Pete Correia. Making something very complex, very simple.',
+		description: 'Making something very complex, very simple.',
 		siteUrl: 'https://petecorreia.com',
 		social: {
 			twitter: '@petecorreia',
@@ -136,12 +136,6 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-react-helmet`,
-		{
-			resolve: 'gatsby-plugin-typography',
-			options: {
-				pathToConfigModule: 'src/utils/typography',
-			},
-		},
 		`gatsby-plugin-styled-components`,
 	],
 };
