@@ -1,1 +1,1 @@
-import './src/utils/theme.css';
+import './src/utils/code-theme.css';

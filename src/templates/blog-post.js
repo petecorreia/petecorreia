@@ -9,70 +9,68 @@ import { formatReadingTime } from '../utils/helpers';
 const GITHUB_USERNAME = 'petecorreia';
 const GITHUB_REPO_NAME = 'petecorreia';
 
-class BlogPostTemplate extends React.Component {
-	render() {
-		const post = this.props.data.markdownRemark;
-		const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-		const { previous, next, slug } = this.props.pageContext;
-		return (
-			<Layout location={this.props.location} title={siteTitle}>
-				<SEO
-					title={post.frontmatter.title}
-					description={post.frontmatter.spoiler}
-					slug={post.fields.slug}
-				/>
-				<h1>{post.frontmatter.title}</h1>
-				<p
-					style={{
-						display: 'block',
-					}}
-				>
-					{post.frontmatter.date}
-					{` • ${formatReadingTime(post.timeToRead)}`}
-				</p>
-				<div dangerouslySetInnerHTML={{ __html: post.html }} />
+const BlogPostTemplate = ({ data, pageContext, location }) => {
+	const post = data.markdownRemark;
+	const siteTitle = get(data, 'site.siteMetadata.title');
+	const { previous, next, slug } = pageContext;
+	return (
+		<Layout location={location} title={siteTitle}>
+			<SEO
+				title={post.frontmatter.title}
+				description={post.frontmatter.spoiler}
+				slug={post.fields.slug}
+			/>
+			<h1>{post.frontmatter.title}</h1>
+			<p
+				style={{
+					display: 'block',
+				}}
+			>
+				{post.frontmatter.date}
+				{` • ${formatReadingTime(post.timeToRead)}`}
+			</p>
+			<div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-				<h3>
-					<Link
-						style={{
-							boxShadow: 'none',
-							textDecoration: 'none',
-							color: '#ffa7c4',
-						}}
-						to={'/'}
-					>
-						petecorreia
-					</Link>
-				</h3>
-				<Bio />
-				<ul
+			<h3>
+				<Link
 					style={{
-						display: 'flex',
-						flexWrap: 'wrap',
-						justifyContent: 'space-between',
-						listStyle: 'none',
-						padding: 0,
+						boxShadow: 'none',
+						textDecoration: 'none',
+						color: '#ffa7c4',
 					}}
+					to={'/'}
 				>
-					<li>
-						{previous && (
-							<Link to={previous.fields.slug} rel="prev">
-								← {previous.frontmatter.title}
-							</Link>
-						)}
-					</li>
-					<li>
-						{next && (
-							<Link to={next.fields.slug} rel="next">
-								{next.frontmatter.title} →
-							</Link>
-						)}
-					</li>
-				</ul>
-			</Layout>
-		);
-	}
-}
+					petecorreia
+				</Link>
+			</h3>
+			<Bio />
+			<ul
+				style={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'space-between',
+					listStyle: 'none',
+					padding: 0,
+				}}
+			>
+				<li>
+					{previous && (
+						<Link to={previous.fields.slug} rel="prev">
+							← {previous.frontmatter.title}
+						</Link>
+					)}
+				</li>
+				<li>
+					{next && (
+						<Link to={next.fields.slug} rel="next">
+							{next.frontmatter.title} →
+						</Link>
+					)}
+				</li>
+			</ul>
+		</Layout>
+	);
+};
 
 export default BlogPostTemplate;
 

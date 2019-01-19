@@ -7,43 +7,34 @@ import SEO from '../components/SEO';
 import Footer from '../components/Footer';
 import { formatReadingTime } from '../utils/helpers';
 
-class BlogIndex extends React.Component {
-	render() {
-		const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-		const siteDescription = get(
-			this,
-			'props.data.site.siteMetadata.description'
-		);
-		const posts = get(this, 'props.data.allMarkdownRemark.edges');
+const BlogIndex = ({ data, location }) => {
+	const siteTitle = get(data, 'site.siteMetadata.title');
+	const siteDescription = get(data, 'site.siteMetadata.description');
+	const posts = get(data, 'allMarkdownRemark.edges');
 
-		return (
-			<Layout location={this.props.location} title={siteTitle}>
-				<SEO />
-				<Bio />
-				{posts.map(({ node }) => {
-					const title = get(node, 'frontmatter.title') || node.fields.slug;
-					return (
-						<div key={node.fields.slug}>
-							<h3>
-								<Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-									{title}
-								</Link>
-							</h3>
-							<small>
-								{node.frontmatter.date}
-								{` • ${formatReadingTime(node.timeToRead)}`}
-							</small>
-							<p
-								dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
-							/>
-						</div>
-					);
-				})}
-				<Footer />
-			</Layout>
-		);
-	}
-}
+	return (
+		<Layout location={location} title={siteTitle}>
+			<SEO />
+			<Bio />
+			{posts.map(({ node }) => {
+				const title = get(node, 'frontmatter.title') || node.fields.slug;
+				return (
+					<div key={node.fields.slug}>
+						<h3>
+							<Link to={node.fields.slug}>{title}</Link>
+						</h3>
+						<small>
+							{node.frontmatter.date}
+							{` • ${formatReadingTime(node.timeToRead)}`}
+						</small>
+						<p dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }} />
+					</div>
+				);
+			})}
+			<Footer />
+		</Layout>
+	);
+};
 
 export default BlogIndex;
 
