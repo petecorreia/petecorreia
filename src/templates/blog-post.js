@@ -5,12 +5,12 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { formatReadingTime } from '../utils';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 	const siteTitle = get(data, 'site.siteMetadata.title');
 	const { previous, next } = pageContext;
 	return (
-		<Layout location={location} title={siteTitle}>
+		<Layout title={siteTitle}>
 			<SEO
 				title={post.frontmatter.title}
 				description={post.frontmatter.spoiler}

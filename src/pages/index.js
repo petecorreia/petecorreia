@@ -7,12 +7,12 @@ import SEO from '../components/SEO';
 import Footer from '../components/Footer';
 import { formatReadingTime, greeting } from '../utils';
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data }) => {
 	const siteTitle = get(data, 'site.siteMetadata.title');
 	const posts = get(data, 'allMarkdownRemark.edges');
 
 	return (
-		<Layout location={location} title={siteTitle}>
+		<Layout title={siteTitle}>
 			<SEO />
 			<Flex>
 				<Box width={1 / 2}>
