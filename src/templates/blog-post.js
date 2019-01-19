@@ -1,22 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
 
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import Signup from '../components/Signup'
-import { formatReadingTime } from '../utils/helpers'
-import { rhythm, scale } from '../utils/typography'
+import Bio from '../components/Bio';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import { formatReadingTime } from '../utils/helpers';
+import { rhythm, scale } from '../utils/typography';
 
-const GITHUB_USERNAME = 'petecorreia'
-const GITHUB_REPO_NAME = 'petecorreia'
+const GITHUB_USERNAME = 'petecorreia';
+const GITHUB_REPO_NAME = 'petecorreia';
 
 class BlogPostTemplate extends React.Component {
 	render() {
-		const post = this.props.data.markdownRemark
-		const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-		const { previous, next, slug } = this.props.pageContext
+		const post = this.props.data.markdownRemark;
+		const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+		const { previous, next, slug } = this.props.pageContext;
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
 				<SEO
@@ -81,11 +80,11 @@ class BlogPostTemplate extends React.Component {
 					</li>
 				</ul>
 			</Layout>
-		)
+		);
 	}
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
 	query BlogPostBySlug($slug: String!) {
@@ -109,4 +108,4 @@ export const pageQuery = graphql`
 			}
 		}
 	}
-`
+`;
