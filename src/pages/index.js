@@ -41,7 +41,7 @@ const BlogIndex = ({ data }) => {
 	return (
 		<Layout title={siteTitle}>
 			<SEO />
-			<Flex px={4} pt={6} pb={4}>
+			<Flex px={4} pt={6}>
 				<Box as="header" p={4} width={1 / 2}>
 					<Text as="h1" m={0} fontSize={2} fontWeight="normal">
 						Hey there, I'm Pete.
@@ -168,8 +168,6 @@ const BlogIndex = ({ data }) => {
 					</Flex>
 				</Box>
 			</Flex>
-
-			<Footer />
 		</Layout>
 	);
 };

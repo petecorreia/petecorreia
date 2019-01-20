@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { Box } from 'rebass';
+import Footer from './Footer';
 
 const primary = '#07c';
 
@@ -46,15 +47,17 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
 	<ThemeProvider theme={theme}>
-		<Box
-			as="main"
-			mx="auto"
-			css={{
-				maxWidth: 1290,
-			}}
-		>
+		<Box as="main">
 			<GlobalStyle />
-			{children}
+			<Box
+				mx="auto"
+				css={{
+					maxWidth: 1290,
+				}}
+			>
+				{children}
+			</Box>
+			<Footer />
 		</Box>
 	</ThemeProvider>
 );
