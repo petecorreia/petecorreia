@@ -26,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		min-width: 320px;
 		font-family: "NeueHaasUnica", "Helvetica Neue", helvetica, arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 	a {

@@ -144,7 +144,9 @@ const BlogIndex = ({ data }) => {
 									get(node, 'frontmatter.title') || node.fields.slug;
 								return (
 									<ListItem key={node.fields.slug} mt={!index ? 0 : 3}>
-										<AppLink to={node.fields.slug}>{title}</AppLink>
+										<AppLink to={node.fields.slug} css={{ lineHeight: 1.4 }}>
+											{title}
+										</AppLink>
 										<Text
 											as="small"
 											color="gray"

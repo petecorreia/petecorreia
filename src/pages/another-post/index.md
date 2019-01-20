@@ -1,5 +1,5 @@
 ---
-title: Why Do React Hooks Rely on Call Order?
+title: Another Post
 date: '2018-12-13'
 spoiler: Lessons learned from mixins, render props, HOCs, and classes.
 ---
@@ -36,22 +36,22 @@ There is one specific part that I’d like to focus on today. As you may recall,
 
 ```jsx{2,3,4}
 function Form() {
-	const [name, setName] = useState('Mary') // State variable 1
-	const [surname, setSurname] = useState('Poppins') // State variable 2
-	const [width, setWidth] = useState(window.innerWidth) // State variable 3
+	const [name, setName] = useState('Mary'); // State variable 1
+	const [surname, setSurname] = useState('Poppins'); // State variable 2
+	const [width, setWidth] = useState(window.innerWidth); // State variable 3
 
 	useEffect(() => {
-		const handleResize = () => setWidth(window.innerWidth)
-		window.addEventListener('resize', handleResize)
-		return () => window.removeEventListener('resize', handleResize)
-	})
+		const handleResize = () => setWidth(window.innerWidth);
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	});
 
 	function handleNameChange(e) {
-		setName(e.target.value)
+		setName(e.target.value);
 	}
 
 	function handleSurnameChange(e) {
-		setSurname(e.target.value)
+		setSurname(e.target.value);
 	}
 
 	return (
@@ -63,7 +63,7 @@ function Form() {
 			</p>
 			<p>Window width: {width}</p>
 		</>
-	)
+	);
 }
 ```
 
@@ -95,7 +95,7 @@ function Form() {
 		name: 'Mary',
 		surname: 'Poppins',
 		width: window.innerWidth,
-	})
+	});
 	// ...
 }
 ```
@@ -107,21 +107,21 @@ But the point of supporting multiple `useState()` calls is so that you can _extr
 ```jsx{6-7}
 function Form() {
 	// Declare some state variables directly in component body
-	const [name, setName] = useState('Mary')
-	const [surname, setSurname] = useState('Poppins')
+	const [name, setName] = useState('Mary');
+	const [surname, setSurname] = useState('Poppins');
 
 	// We moved some state and effects into a custom Hook
-	const width = useWindowWidth()
+	const width = useWindowWidth();
 	// ...
 }
 
 function useWindowWidth() {
 	// Declare some state and effects in a custom Hook
-	const [width, setWidth] = useState(window.innerWidth)
+	const [width, setWidth] = useState(window.innerWidth);
 	useEffect(() => {
 		// ...
-	})
-	return width
+	});
+	return width;
 }
 ```
 
@@ -179,19 +179,19 @@ This proposal seems to work for extracting the `useWindowWidth()` Hook:
 // ⚠️ This is NOT the React Hooks API
 function Form() {
 	// ...
-	const width = useWindowWidth()
+	const width = useWindowWidth();
 	// ...
 }
 
 /*********************
  * useWindowWidth.js *
  ********************/
-const widthKey = Symbol()
+const widthKey = Symbol();
 
 function useWindowWidth() {
-	const [width, setWidth] = useState(widthKey)
+	const [width, setWidth] = useState(widthKey);
 	// ...
-	return width
+	return width;
 }
 ```
 
@@ -201,8 +201,8 @@ But if we attempt to extract input handling, it would fail:
 // ⚠️ This is NOT the React Hooks API
 function Form() {
 	// ...
-	const name = useFormInput()
-	const surname = useFormInput()
+	const name = useFormInput();
+	const surname = useFormInput();
 	// ...
 	return (
 		<>
@@ -210,22 +210,22 @@ function Form() {
 			<input {...surname} />
 			{/* ... */}
 		</>
-	)
+	);
 }
 
 /*******************
  * useFormInput.js *
  ******************/
-const valueKey = Symbol()
+const valueKey = Symbol();
 
 function useFormInput() {
-	const [value, setValue] = useState(valueKey)
+	const [value, setValue] = useState(valueKey);
 	return {
 		value,
 		onChange(e) {
-			setValue(e.target.value)
+			setValue(e.target.value);
 		},
-	}
+	};
 }
 ```
 
@@ -236,8 +236,8 @@ Can you spot the bug?
 We’re calling `useFormInput()` twice but our `useFormInput()` always calls `useState()` with the same key. So effectively we’re doing something like:
 
 ```jsx
-const [name, setName] = useState(valueKey)
-const [surname, setSurname] = useState(valueKey)
+const [name, setName] = useState(valueKey);
+const [surname, setSurname] = useState(valueKey);
 ```
 
 And this is how we get a clash again.
@@ -254,24 +254,24 @@ Two custom Hooks like `useWindowWidth()` and `useNetworkStatus()` might want to 
 
 ```jsx{12,23-27,32-42}
 function StatusMessage() {
-	const width = useWindowWidth()
-	const isOnline = useNetworkStatus()
+	const width = useWindowWidth();
+	const isOnline = useNetworkStatus();
 	return (
 		<>
 			<p>Window width is {width}</p>
 			<p>You are {isOnline ? 'online' : 'offline'}</p>
 		</>
-	)
+	);
 }
 
 function useSubscription(subscribe, unsubscribe, getValue) {
-	const [state, setState] = useState(getValue())
+	const [state, setState] = useState(getValue());
 	useEffect(() => {
-		const handleChange = () => setState(getValue())
-		subscribe(handleChange)
-		return () => unsubscribe(handleChange)
-	})
-	return state
+		const handleChange = () => setState(getValue());
+		subscribe(handleChange);
+		return () => unsubscribe(handleChange);
+	});
+	return state;
 }
 
 function useWindowWidth() {
@@ -279,23 +279,23 @@ function useWindowWidth() {
 		handler => window.addEventListener('resize', handler),
 		handler => window.removeEventListener('resize', handler),
 		() => window.innerWidth
-	)
-	return width
+	);
+	return width;
 }
 
 function useNetworkStatus() {
 	const isOnline = useSubscription(
 		handler => {
-			window.addEventListener('online', handler)
-			window.addEventListener('offline', handler)
+			window.addEventListener('online', handler);
+			window.addEventListener('offline', handler);
 		},
 		handler => {
-			window.removeEventListener('online', handler)
-			window.removeEventListener('offline', handler)
+			window.removeEventListener('online', handler);
+			window.removeEventListener('offline', handler);
 		},
 		() => navigator.onLine
-	)
-	return isOnline
+	);
+	return isOnline;
 }
 ```
 
@@ -337,17 +337,17 @@ One way could be to isolate state keys with closures. This would require you to 
  ******************/
 function createUseFormInput() {
 	// Unique per instantiation
-	const valueKey = Symbol()
+	const valueKey = Symbol();
 
 	return function useFormInput() {
-		const [value, setValue] = useState(valueKey)
+		const [value, setValue] = useState(valueKey);
 		return {
 			value,
 			onChange(e) {
-				setValue(e.target.value)
+				setValue(e.target.value);
 			},
-		}
-	}
+		};
+	};
 }
 ```
 
@@ -357,13 +357,13 @@ Additionally, you have to repeat every custom Hook used in a component twice. On
 
 ```js{2,3,7,8}
 // ⚠️ This is NOT the React Hooks API
-const useNameFormInput = createUseFormInput()
-const useSurnameFormInput = createUseFormInput()
+const useNameFormInput = createUseFormInput();
+const useSurnameFormInput = createUseFormInput();
 
 function Form() {
 	// ...
-	const name = useNameFormInput()
-	const surname = useNameFormInput()
+	const name = useNameFormInput();
+	const surname = useNameFormInput();
 	// ...
 }
 ```
@@ -373,8 +373,8 @@ You also need to be very precise with their names. You would always have “two 
 If you call the same custom Hook “instance” twice you’d get a state clash. In fact, the code above has this mistake — have you noticed? It should be:
 
 ```js
-const name = useNameFormInput()
-const surname = useSurnameFormInput() // Not useNameFormInput!
+const name = useNameFormInput();
+const surname = useSurnameFormInput(); // Not useNameFormInput!
 ```
 
 These problems are not insurmountable but I would argue that they add _more_ friction than following the [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html).
@@ -391,8 +391,8 @@ The idea is that we could _compose_ keys every time we write a custom Hook. Some
 // ⚠️ This is NOT the React Hooks API
 function Form() {
 	// ...
-	const name = useFormInput('name')
-	const surname = useFormInput('surname')
+	const name = useFormInput('name');
+	const surname = useFormInput('surname');
 	// ...
 	return (
 		<>
@@ -400,17 +400,19 @@ function Form() {
 			<input {...surname} />
 			{/* ... */}
 		</>
-	)
+	);
 }
 
 function useFormInput(formInputKey) {
-	const [value, setValue] = useState('useFormInput(' + formInputKey + ').value')
+	const [value, setValue] = useState(
+		'useFormInput(' + formInputKey + ').value'
+	);
 	return {
 		value,
 		onChange(e) {
-			setValue(e.target.value)
+			setValue(e.target.value);
 		},
-	}
+	};
 }
 ```
 
@@ -470,9 +472,9 @@ If the state _does_ get reset when we don’t “use” it during a render, what
 function Counter(props) {
 	if (props.isActive) {
 		// Clearly has its own state
-		return <TickingCounter />
+		return <TickingCounter />;
 	}
-	return null
+	return null;
 }
 ```
 
@@ -493,11 +495,11 @@ const friendList = [
 	{ id: 1, name: 'Phoebe' },
 	{ id: 2, name: 'Rachel' },
 	{ id: 3, name: 'Ross' },
-]
+];
 
 function ChatRecipientPicker() {
-	const [recipientID, setRecipientID] = useState(1)
-	const isRecipientOnline = useFriendStatus(recipientID)
+	const [recipientID, setRecipientID] = useState(1);
+	const isRecipientOnline = useFriendStatus(recipientID);
 
 	return (
 		<>
@@ -513,19 +515,19 @@ function ChatRecipientPicker() {
 				))}
 			</select>
 		</>
-	)
+	);
 }
 
 function useFriendStatus(friendID) {
-	const [isOnline, setIsOnline] = useState(null)
-	const handleStatusChange = status => setIsOnline(status.isOnline)
+	const [isOnline, setIsOnline] = useState(null);
+	const handleStatusChange = status => setIsOnline(status.isOnline);
 	useEffect(() => {
-		ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange)
+		ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
 		return () => {
-			ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange)
-		}
-	})
-	return isOnline
+			ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
+		};
+	});
+	return isOnline;
 }
 ```
 
@@ -534,16 +536,16 @@ When you change the recipient, our `useFriendStatus()` Hook would unsubscribe fr
 This works because we can pass the return value of the `useState()` Hook to the `useFriendStatus()` Hook:
 
 ```js{2}
-const [recipientID, setRecipientID] = useState(1)
-const isRecipientOnline = useFriendStatus(recipientID)
+const [recipientID, setRecipientID] = useState(1);
+const isRecipientOnline = useFriendStatus(recipientID);
 ```
 
 Passing values between Hooks is very powerful. For example, [React Spring](https://medium.com/@drcmda/hooks-in-react-spring-a-tutorial-c6c436ad7ee4) lets you create a trailing animation of several values “following” each other:
 
 ```js
-const [{ pos1 }, set] = useSpring({ pos1: [0, 0], config: fast })
-const [{ pos2 }] = useSpring({ pos2: pos1, config: slow })
-const [{ pos3 }] = useSpring({ pos3: pos2, config: slow })
+const [{ pos1 }, set] = useSpring({ pos1: [0, 0], config: fast });
+const [{ pos2 }] = useSpring({ pos2: pos1, config: slow });
+const [{ pos3 }] = useSpring({ pos3: pos2, config: slow });
 ```
 
 (Here’s a [demo](https://codesandbox.io/s/ppxnl191zx).)
@@ -581,7 +583,7 @@ This is similar to how, when we define components, we just grab `Component` from
 function createModal(React) {
 	return class Modal extends React.Component {
 		// ...
-	}
+	};
 }
 ```
 
