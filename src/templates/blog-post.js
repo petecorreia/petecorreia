@@ -3,11 +3,11 @@ import { Link as AppLink, graphql } from 'gatsby';
 import get from 'lodash/get';
 import { Flex, Box, Text, Link } from 'rebass';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import Layout, { theme } from '../components/Layout';
 import SEO from '../components/SEO';
 import { formatReadingTime } from '../utils';
 
-const Post = styled(Box)`
+const Post = styled(Flex)`
 	line-height: 1.375em;
 
 	a {
@@ -15,21 +15,28 @@ const Post = styled(Box)`
 	}
 
 	h2 {
-		margin-top: 1.33333em;
-		margin-bottom: 0.66667em;
-		font-size: 2.25em;
-		font-weight: normal;
+		padding-top: ${theme.space[4]}px;
+		padding-bottom: ${theme.space[3]}px;
+		margin: 0;
+		font-size: ${theme.fontSizes[4]}px;
 		line-height: 1.11em;
 		letter-spacing: -0.015em;
+	}
+
+	.gatsby-resp-image-wrapper {
+		margin: ${theme.space[5]}px 0;
 	}
 `;
 Post.defaultProps = {
 	as: 'article',
 };
 
+const HTML = ({ content, ...props }) => (
+	<Box dangerouslySetInnerHTML={{ __html: content }} {...props} />
+);
+
 const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
-	console.log('post: ', post);
 	const siteTitle = get(data, 'site.siteMetadata.title');
 	const { previous, next } = pageContext;
 	return (
@@ -40,35 +47,56 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 				slug={post.fields.slug}
 			/>
 
-			<Post as="article" px={[4, 5, 5, 6]} pt={[5, 5, 6, 6]}>
-				<Text as="h1">{post.frontmatter.title}</Text>
+			<Post as="article" px={[4, 5, 5, 6]} pt={[5, 5, 6, 6]} flexWrap="wrap">
+				<Text as="h1" width={1} m={0} lineHeight={1.1} letterSpacing="-0.03em">
+					{post.frontmatter.title}
+				</Text>
 
-				<p>
-					{post.frontmatter.date}
-					{` • ${formatReadingTime(post.timeToRead)}`}
-				</p>
+				<Text as="p" width={1} mt={2} mb={5} color="gray">
+					{post.frontmatter.date} — {formatReadingTime(post.timeToRead)}
+				</Text>
 
-				<Flex>
-					<Box width={1 / 3}>
-						<div dangerouslySetInnerHTML={{ __html: post.tableOfContents }} />
-					</Box>
-					<Box width={2 / 3}>
-						<Text
-							as="p"
-							css={`
-								font-size: 1.5em;
-								line-height: 1.23em;
-								letter-spacing: -0.01em;
-								margin-top: 2em;
-								margin-bottom: 1em;
-							`}
-						>
-							{post.frontmatter.spoiler}
-						</Text>
+				<Box width={1 / 3} pr={4}>
+					<Text as="h2" style={{ paddingTop: 0, fontSize: theme.fontSizes[3] +'px' }}>Sections</Text>
 
-						<div dangerouslySetInnerHTML={{ __html: post.html }} />
-					</Box>
-				</Flex>
+					<HTML
+						content={post.tableOfContents}
+						css={`
+							ul {
+								padding-left: 0;
+								margin: 0;
+							}
+
+							li {
+								list-style-type: circle
+								list-style-position: inside;
+							}
+
+							a {
+								text-decoration: none;
+
+								&:hover,
+								&:focus {
+									text-decoration: underline;
+								}
+							}
+						`}
+					/>
+				</Box>
+
+				<Box width={2 / 3}>
+					<Text
+						as="p"
+						mt={0}
+						fontSize={3}
+						lineHeight={1.375}
+						letterSpacing="-0.01em"
+					>
+						{post.frontmatter.spoiler}
+					</Text>
+
+					<HTML content={post.html} />
+				</Box>
 
 				<h3>
 					<AppLink to={'/'}>petecorreia</AppLink>
