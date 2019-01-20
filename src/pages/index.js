@@ -44,6 +44,12 @@ const ListItem = ({ children, indented = false, ...props }) => (
 	</Text>
 );
 
+const Separator = () => (
+	<Text as="span" color="lightgray">
+		/
+	</Text>
+);
+
 const BlogIndex = ({ data }) => {
 	const siteTitle = get(data, 'site.siteMetadata.title');
 	const posts = get(data, 'allMarkdownRemark.edges');
@@ -70,7 +76,7 @@ const BlogIndex = ({ data }) => {
 						<ListTitle>Work</ListTitle>
 						<List>
 							<ListItem mt={0}>
-								<Link href="https://fath.om">Fathom</Link>
+								<Link href="https://fath.om">Fathom London</Link>
 							</ListItem>
 							<ListItem indented>
 								<Link href="https://commerzbank.com">Commerzbank</Link>
@@ -98,11 +104,13 @@ const BlogIndex = ({ data }) => {
 							</ListItem>
 							<ListItem indented>
 								<Link href="https://youtube.com/watch?v=MjoumVT070A">
-									Burble Paris / Samsung
+									Burble Paris <Separator /> Samsung
 								</Link>
 							</ListItem>
 							<ListItem>
-								<Link href="https://xively.com">Xively / Google</Link>
+								<Link href="https://xively.com">
+									Xively <Separator /> Google
+								</Link>
 							</ListItem>
 							<ListItem>
 								<Link href="https://www.telecom.pt/en-us">
@@ -139,8 +147,9 @@ const BlogIndex = ({ data }) => {
 										<AppLink to={node.fields.slug}>{title}</AppLink>
 										<Text
 											as="small"
-											css={{ display: 'block', color: '#666' }}
+											color="gray"
 											mt={2}
+											css={{ display: 'block' }}
 										>
 											{node.frontmatter.date}
 											{` — ${formatReadingTime(node.timeToRead)}`}
@@ -152,11 +161,13 @@ const BlogIndex = ({ data }) => {
 					</Section>
 
 					<Section>
-						<ListTitle>Stack</ListTitle>
+						<ListTitle>Interests</ListTitle>
 						<List>
 							<ListItem mt={0}>React</ListItem>
 							<ListItem>Typescript</ListItem>
-							<ListItem>D3</ListItem>
+							<ListItem>
+								Dataviz <Separator /> D3
+							</ListItem>
 							<ListItem>GraphQL</ListItem>
 							<ListItem>Design Systems</ListItem>
 						</List>
