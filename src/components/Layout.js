@@ -43,21 +43,23 @@ const GlobalStyle = createGlobalStyle`
 	}
 `;
 
-const Layout = ({ children }) => (
-	<ThemeProvider theme={theme}>
-		<Box as="main">
-			<GlobalStyle />
-			<Box
-				mx="auto"
-				css={{
-					maxWidth: 1290,
-				}}
-			>
-				{children}
+const Layout = ({ children, location }) => {
+	return (
+		<ThemeProvider theme={theme}>
+			<Box as="main">
+				<GlobalStyle />
+				<Box
+					mx="auto"
+					css={{
+						maxWidth: 1290,
+					}}
+				>
+					{children}
+				</Box>
+				<Footer location={location} />
 			</Box>
-			<Footer />
-		</Box>
-	</ThemeProvider>
-);
+		</ThemeProvider>
+	);
+};
 
 export default Layout;

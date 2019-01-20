@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as AppLink } from 'gatsby';
 import { Flex, Box, Text, Link } from 'rebass';
 
-const Footer = () => (
+const Footer = ({ location }) => (
 	<Box as="footer" css={{ textAlign: 'center' }}>
 		<Link
 			as={AppLink}
@@ -26,9 +26,9 @@ const Footer = () => (
 		>
 			<Box
 				pr={[4, 5, 5, 6]}
-				pl={[4, 4, 0, 0]}
+				pl={location ? [4, 5, 5, 4] : [4, 4, 0, 0]}
 				pb={4}
-				width={[1, 3 / 4, 1 / 2, 1 / 2]}
+				width={location ? [1, 1, 1, 2 / 3] : [1, 3 / 4, 1 / 2, 1 / 2]}
 			>
 				<Text>Making something very complex, very simple.</Text>
 				<Text as="small" mt={2} css={{ display: 'block', color: '#666' }}>

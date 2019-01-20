@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link as AppLink, graphql } from 'gatsby';
-import get from 'lodash/get';
-import { Flex, Box, Text, Link } from 'rebass';
+import { Flex, Box, Text } from 'rebass';
 import styled from 'styled-components';
 import Layout, { theme } from '../components/Layout';
 import SEO from '../components/SEO';
@@ -23,8 +22,20 @@ const Post = styled(Flex)`
 		letter-spacing: -0.015em;
 	}
 
-	.gatsby-resp-image-wrapper {
-		margin: ${theme.space[5]}px 0;
+	hr,
+	blockquote,
+	.gatsby-resp-image-wrapper,
+	.gatsby-highlight {
+		margin: ${theme.space[4]}px 0;
+	}
+
+	hr {
+		opacity: 0.5;
+	}
+
+	blockquote {
+		font-size: ${theme.fontSizes[3]}px;
+		line-height: 1.375;
 	}
 `;
 Post.defaultProps = {
@@ -35,12 +46,56 @@ const HTML = ({ content, ...props }) => (
 	<Box dangerouslySetInnerHTML={{ __html: content }} {...props} />
 );
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const TableOfContents = ({ content, ...props }) => (
+	<Box
+		as="nav"
+		{...props}
+		css={`
+			display: none;
+
+			@media screen and (min-width: ${theme.breakpoints[2]}) {
+				display: block;
+			}
+		`}
+	>
+		<Text
+			as="h2"
+			style={{ paddingTop: 0, fontSize: theme.fontSizes[3] + 'px' }}
+		>
+			Sections
+		</Text>
+
+		<HTML
+			content={content}
+			css={`
+				ul {
+					padding-left: 0;
+					margin: 0;
+				}
+
+				li {
+					list-style-type: circle
+					list-style-position: inside;
+				}
+
+				a {
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+			`}
+		/>
+	</Box>
+);
+
+const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
-	const siteTitle = get(data, 'site.siteMetadata.title');
-	const { previous, next } = pageContext;
+	const { next } = pageContext;
 	return (
-		<Layout title={siteTitle}>
+		<Layout location={location}>
 			<SEO
 				title={post.frontmatter.title}
 				description={post.frontmatter.spoiler}
@@ -56,35 +111,14 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 					{post.frontmatter.date} — {formatReadingTime(post.timeToRead)}
 				</Text>
 
-				<Box width={1 / 3} pr={4}>
-					<Text as="h2" style={{ paddingTop: 0, fontSize: theme.fontSizes[3] +'px' }}>Sections</Text>
+				<TableOfContents content={post.tableOfContents} width={1 / 3} pr={5} />
 
-					<HTML
-						content={post.tableOfContents}
-						css={`
-							ul {
-								padding-left: 0;
-								margin: 0;
-							}
-
-							li {
-								list-style-type: circle
-								list-style-position: inside;
-							}
-
-							a {
-								text-decoration: none;
-
-								&:hover,
-								&:focus {
-									text-decoration: underline;
-								}
-							}
-						`}
-					/>
-				</Box>
-
-				<Box width={2 / 3}>
+				<Box
+					width={[1, 1, 1, 2 / 3]}
+					css={`
+						max-width: 690px;
+					`}
+				>
 					<Text
 						as="p"
 						mt={0}
@@ -96,27 +130,19 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 					</Text>
 
 					<HTML content={post.html} />
-				</Box>
 
-				<h3>
-					<AppLink to={'/'}>petecorreia</AppLink>
-				</h3>
-				<ul>
-					<li>
-						{previous && (
-							<AppLink to={previous.fields.slug} rel="prev">
-								← {previous.frontmatter.title}
-							</AppLink>
-						)}
-					</li>
-					<li>
+					<Flex mt={5} justifyContent="space-between">
+						<Text as="p" m={0}>
+							Thank you for reading.
+						</Text>
+
 						{next && (
 							<AppLink to={next.fields.slug} rel="next">
 								{next.frontmatter.title} →
 							</AppLink>
 						)}
-					</li>
-				</ul>
+					</Flex>
+				</Box>
 			</Post>
 		</Layout>
 	);
