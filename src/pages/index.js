@@ -4,11 +4,14 @@ import get from 'lodash/get';
 import { Flex, Box, Text, Link } from 'rebass';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Footer from '../components/Footer';
 import { formatReadingTime, greeting } from '../utils';
 
+const Section = props => (
+	<Flex as="section" mt={5} flexWrap="wrap" {...props} />
+);
+
 const ListTitle = ({ children }) => (
-	<Box as="header" width={1 / 4}>
+	<Box as="header" width={[1, 1 / 4, 1, 1 / 4]}>
 		<Text as="h3" m={0} fontSize={2}>
 			{children}
 		</Text>
@@ -16,7 +19,14 @@ const ListTitle = ({ children }) => (
 );
 
 const List = ({ children, ...props }) => (
-	<Box as="ul" m={0} p={0} width={3 / 4} role="list">
+	<Box
+		as="ul"
+		m={0}
+		p={0}
+		mt={[2, 0, 2, 0]}
+		width={[1, 3 / 4, 1, 3 / 4]}
+		role="list"
+	>
 		{children}
 	</Box>
 );
@@ -41,8 +51,13 @@ const BlogIndex = ({ data }) => {
 	return (
 		<Layout title={siteTitle}>
 			<SEO />
-			<Flex px={4} pt={6}>
-				<Box as="header" p={4} width={1 / 2}>
+			<Flex
+				px={[4, 5, 5, 6]}
+				pt={[5, 5, 6, 6]}
+				flexWrap="wrap"
+				justifyContent="flex-end"
+			>
+				<Box as="header" pr={[0, 0, 5, 5]} width={[1, 3 / 4, 1 / 2, 1 / 2]}>
 					<Text as="h1" m={0} fontSize={2} fontWeight="normal">
 						Hey there, I'm Pete.
 					</Text>
@@ -50,8 +65,8 @@ const BlogIndex = ({ data }) => {
 						{greeting()}
 					</Text>
 				</Box>
-				<Box p={4} width={1 / 2}>
-					<Flex as="section">
+				<Box mt={[5, 5, 0, 0]} width={[1, 3 / 4, 1 / 2, 1 / 2]}>
+					<Section mt={0}>
 						<ListTitle>Work</ListTitle>
 						<List>
 							<ListItem mt={0}>
@@ -95,9 +110,9 @@ const BlogIndex = ({ data }) => {
 								</Link>
 							</ListItem>
 						</List>
-					</Flex>
+					</Section>
 
-					<Flex as="section" mt={5}>
+					<Section>
 						<ListTitle>OSS</ListTitle>
 						<List>
 							<ListItem mt={0}>
@@ -111,9 +126,9 @@ const BlogIndex = ({ data }) => {
 								</Link>
 							</ListItem>
 						</List>
-					</Flex>
+					</Section>
 
-					<Flex as="section" mt={5}>
+					<Section>
 						<ListTitle>Writing</ListTitle>
 						<List>
 							{posts.map(({ node }, index) => {
@@ -134,9 +149,9 @@ const BlogIndex = ({ data }) => {
 								);
 							})}
 						</List>
-					</Flex>
+					</Section>
 
-					<Flex as="section" mt={5}>
+					<Section>
 						<ListTitle>Stack</ListTitle>
 						<List>
 							<ListItem mt={0}>React</ListItem>
@@ -145,9 +160,9 @@ const BlogIndex = ({ data }) => {
 							<ListItem>GraphQL</ListItem>
 							<ListItem>Design Systems</ListItem>
 						</List>
-					</Flex>
+					</Section>
 
-					<Flex as="section" mt={5}>
+					<Section>
 						<ListTitle>Links</ListTitle>
 						<List>
 							<ListItem mt={0}>
@@ -165,7 +180,7 @@ const BlogIndex = ({ data }) => {
 								<Link href="/rss.xml">RSS</Link>
 							</ListItem>
 						</List>
-					</Flex>
+					</Section>
 				</Box>
 			</Flex>
 		</Layout>

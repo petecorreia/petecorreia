@@ -7,7 +7,7 @@ const Footer = () => (
 		<Link
 			as={AppLink}
 			to="/"
-			my={6}
+			my={[5, 6, 6, 6]}
 			css={{
 				display: 'block',
 				marginLeft: '-0.1em',
@@ -24,7 +24,12 @@ const Footer = () => (
 			justifyContent="flex-end"
 			css={{ maxWidth: 1290, textAlign: 'left' }}
 		>
-			<Box p={4} width={1 / 2}>
+			<Box
+				pr={[4, 5, 5, 6]}
+				pl={[4, 4, 0, 0]}
+				pb={4}
+				width={[1, 3 / 4, 1 / 2, 1 / 2]}
+			>
 				<Text>Making something very complex, very simple.</Text>
 				<Text as="small" mt={2} css={{ display: 'block', color: '#666' }}>
 					© {new Date().getFullYear()} Pete Correia
