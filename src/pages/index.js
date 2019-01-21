@@ -36,7 +36,7 @@ const ListItem = ({ children, indented = false, ...props }) => (
 		as="li"
 		role="listitem"
 		css={{ listStyle: 'none' }}
-		pl={indented ? 4 : 0}
+		pl={indented ? 3 : 0}
 		mt={2}
 		{...props}
 	>
@@ -171,7 +171,7 @@ const BlogIndex = ({ data }) => {
 					</Section>
 
 					<Section>
-						<ListTitle>Interests</ListTitle>
+						<ListTitle>Stack</ListTitle>
 						<List>
 							<ListItem mt={0}>React</ListItem>
 							<ListItem>Typescript</ListItem>
