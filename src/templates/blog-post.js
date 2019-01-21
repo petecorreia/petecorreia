@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link as AppLink, graphql } from 'gatsby';
-import { Flex, Box, Text } from 'rebass';
+import { Flex, Box, Text, Link } from 'rebass';
 import styled from 'styled-components';
 import Layout, { theme } from '../components/Layout';
 import SEO from '../components/SEO';
 import { formatReadingTime } from '../utils';
 
-const Post = styled(Flex)`
+const HTML = ({ content, ...props }) => (
+	<Box dangerouslySetInnerHTML={{ __html: content }} {...props} />
+);
+
+const Markdown = styled(HTML)`
 	line-height: 1.375em;
 
 	a {
@@ -38,58 +42,28 @@ const Post = styled(Flex)`
 		line-height: 1.375;
 	}
 `;
-Post.defaultProps = {
-	as: 'article',
-};
 
-const HTML = ({ content, ...props }) => (
-	<Box dangerouslySetInnerHTML={{ __html: content }} {...props} />
-);
+const TableOfContents = styled(HTML)`
+	ul {
+		padding-left: 1em;
+		margin: 0;
+	}
 
-const TableOfContents = ({ content, ...props }) => (
-	<Box
-		as="nav"
-		{...props}
-		css={`
-			display: none;
+	li {
+		margin-bottom: ${theme.space[2]}px;
+		line-height: 1.25;
+		list-style-type: circle;
+	}
 
-			@media screen and (min-width: ${theme.breakpoints[2]}) {
-				display: block;
-			}
-		`}
-	>
-		<Text
-			as="h2"
-			style={{ paddingTop: 0, fontSize: theme.fontSizes[3] + 'px' }}
-		>
-			Sections
-		</Text>
+	a {
+		text-decoration: none;
 
-		<HTML
-			content={content}
-			css={`
-				ul {
-					padding-left: 0;
-					margin: 0;
-				}
-
-				li {
-					list-style-type: circle
-					list-style-position: inside;
-				}
-
-				a {
-					text-decoration: none;
-
-					&:hover,
-					&:focus {
-						text-decoration: underline;
-					}
-				}
-			`}
-		/>
-	</Box>
-);
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+`;
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
@@ -102,16 +76,48 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 				slug={post.fields.slug}
 			/>
 
-			<Post as="article" px={[4, 5, 5, 6]} pt={[5, 5, 6, 6]} flexWrap="wrap">
-				<Text as="h1" width={1} m={0} lineHeight={1.1} letterSpacing="-0.03em">
+			<Flex
+				as="article"
+				px={[4, 5, 5, 6]}
+				pt={[5, 5, 5, 6]}
+				flexWrap="wrap"
+				css={`
+					position: relative;
+				`}
+			>
+				<Text
+					as="h1"
+					width={1}
+					m={0}
+					mt={[0, 0, 3, 0]}
+					lineHeight={1.2}
+					letterSpacing="-0.03em"
+				>
 					{post.frontmatter.title}
 				</Text>
 
-				<Text as="p" width={1} mt={2} mb={5} color="gray">
+				<Text as="p" width={1} mt={2} mb={[4, 4, 4, 5]} color="gray">
 					{post.frontmatter.date} — {formatReadingTime(post.timeToRead)}
 				</Text>
 
-				<TableOfContents content={post.tableOfContents} width={1 / 3} pr={5} />
+				<Box
+					as="nav"
+					width={1 / 3}
+					pr={5}
+					css={`
+						display: none;
+
+						@media screen and (min-width: ${theme.breakpoints[2]}) {
+							display: block;
+						}
+					`}
+				>
+					<Text as="h2" mt={1} fontSize={3}>
+						Sections
+					</Text>
+
+					<TableOfContents content={post.tableOfContents} />
+				</Box>
 
 				<Box
 					width={[1, 1, 1, 2 / 3]}
@@ -129,7 +135,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 						{post.frontmatter.spoiler}
 					</Text>
 
-					<HTML content={post.html} />
+					<Markdown content={post.html} />
 
 					<Flex mt={5} justifyContent="space-between">
 						<Text as="p" m={0}>
@@ -143,7 +149,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 						)}
 					</Flex>
 				</Box>
-			</Post>
+			</Flex>
 		</Layout>
 	);
 };

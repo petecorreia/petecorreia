@@ -59,11 +59,16 @@ const BlogIndex = ({ data }) => {
 			<SEO />
 			<Flex
 				px={[4, 5, 5, 6]}
-				pt={[5, 5, 6, 6]}
+				pt={[5, 5, 5, 6]}
 				flexWrap="wrap"
 				justifyContent="flex-end"
 			>
-				<Box as="header" pr={[0, 0, 5, 5]} width={[1, 3 / 4, 1 / 2, 1 / 2]}>
+				<Box
+					as="header"
+					pr={[0, 0, 5, 5]}
+					mt={[0, 0, 3, 0]}
+					width={[1, 1, 1 / 2, 1 / 2]}
+				>
 					<Text as="h1" m={0} fontSize={2} fontWeight="normal">
 						Hey there, I'm Pete.
 					</Text>
@@ -71,7 +76,7 @@ const BlogIndex = ({ data }) => {
 						{greeting()}
 					</Text>
 				</Box>
-				<Box mt={[5, 5, 0, 0]} width={[1, 3 / 4, 1 / 2, 1 / 2]}>
+				<Box mt={[5, 5, 3, 0]} width={[1, 1, 1 / 2, 1 / 2]}>
 					<Section mt={0}>
 						<ListTitle>Work</ListTitle>
 						<List>
