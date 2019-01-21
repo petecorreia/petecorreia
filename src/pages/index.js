@@ -82,6 +82,9 @@ const BlogIndex = ({ data }) => {
 								<Link href="https://commerzbank.com">Commerzbank</Link>
 							</ListItem>
 							<ListItem indented>
+								<Link href="https://alixpartners.com">AlixPartners</Link>
+							</ListItem>
+							<ListItem indented>
 								<Link href="https://accessfintech.com">Access Fintech</Link>
 							</ListItem>
 							<ListItem indented>
@@ -150,7 +153,7 @@ const BlogIndex = ({ data }) => {
 										<Text
 											as="small"
 											color="gray"
-											mt={2}
+											mt={1}
 											css={{ display: 'block' }}
 										>
 											{node.frontmatter.date}
