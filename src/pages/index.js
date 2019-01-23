@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import { Flex, Box, Text, Link } from 'rebass';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { formatReadingTime, greeting } from '../utils';
+import { formatReadingTime, getGreeting } from '../utils';
 
 const Section = props => (
 	<Flex as="section" mt={5} flexWrap="wrap" {...props} />
@@ -50,6 +50,8 @@ const Separator = () => (
 	</Text>
 );
 
+const greeting = getGreeting();
+
 const BlogIndex = ({ data }) => {
 	const siteTitle = get(data, 'site.siteMetadata.title');
 	const posts = get(data, 'allMarkdownRemark.edges');
@@ -73,7 +75,7 @@ const BlogIndex = ({ data }) => {
 						Hey there, I'm Pete.
 					</Text>
 					<Text as="h2" m={0} mt={2} fontSize={2} fontWeight="normal">
-						{greeting()}
+						{greeting}
 					</Text>
 				</Box>
 				<Box mt={[5, 5, 3, 0]} width={[1, 1, 1 / 2, 1 / 2]}>

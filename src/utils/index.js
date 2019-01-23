@@ -2,7 +2,7 @@ export function formatReadingTime(minutes) {
 	return `${minutes} min read`;
 }
 
-export function greeting() {
+export function getGreeting() {
 	const now = new Date();
 	const hours = now.getHours();
 
@@ -10,9 +10,9 @@ export function greeting() {
 
 	if (hours <= 6) {
 		timeOfDay = 'night';
-	} else if (hours >= 13 && hours < 19) {
+	} else if (hours >= 13 && hours < 18) {
 		timeOfDay = 'afternoon';
-	} else if (hours >= 19) {
+	} else if (hours >= 18) {
 		timeOfDay = 'evening';
 	}
 
