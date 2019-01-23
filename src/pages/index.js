@@ -125,6 +125,14 @@ const BlogIndex = ({ data }) => {
 									Portugal Telecom
 								</Link>
 							</ListItem>
+							<ListItem>
+								<Link
+									color="lightgray"
+									href="https://linkedin.com/in/petecorreia/"
+								>
+									More →
+								</Link>
+							</ListItem>
 						</List>
 					</Section>
 
@@ -175,6 +183,7 @@ const BlogIndex = ({ data }) => {
 						<List>
 							<ListItem mt={0}>React</ListItem>
 							<ListItem>Typescript</ListItem>
+							<ListItem>Styled Components</ListItem>
 							<ListItem>
 								Dataviz <Separator /> D3
 							</ListItem>
