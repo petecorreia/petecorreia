@@ -29,6 +29,7 @@
 	font-family: 'NeueHaasUnica';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url('/fonts/neuehaasunica/2F2779_3_0.eot');
 	src: url('/fonts/neuehaasunica/2F2779_3_0.eot?#iefix')
 			format('embedded-opentype'),
@@ -41,6 +42,7 @@
 	font-family: 'NeueHaasUnica';
 	font-weight: bold;
 	font-style: normal;
+	font-display: swap;
 	src: url('/fonts/neuehaasunica/2F2779_0_0.eot');
 	src: url('/fonts/neuehaasunica/2F2779_0_0.eot?#iefix')
 			format('embedded-opentype'),
