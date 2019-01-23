@@ -126,10 +126,7 @@ const BlogIndex = ({ data }) => {
 								</Link>
 							</ListItem>
 							<ListItem>
-								<Link
-									color="lightgray"
-									href="https://linkedin.com/in/petecorreia/"
-								>
+								<Link color="gray" href="https://linkedin.com/in/petecorreia/">
 									More →
 								</Link>
 							</ListItem>
