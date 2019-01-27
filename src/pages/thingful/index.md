@@ -62,9 +62,9 @@ We also knew the application had to be tailored for use in all contexts and scre
 
 The user interface I designed is currently part of a **US Patent Pending**, where I'm included as one of the inventors.
 
-## Frontend Development
+## front end Development
 
-I learned a wide range of skills developing this application, from things like **geographic information systems** to trying out an **event-based pattern** in Javascript without a framework. Working alone on the frontend development of Thingful helped me learn from first-hand experience the challenges of a fast-growing complex web application.
+I learned a wide range of skills developing this application, from things like **geographic information systems** to trying out an **event-based pattern** in Javascript without a framework. Working alone on the front end development of Thingful helped me learn from first-hand experience the challenges of a fast-growing complex web application.
 
 One of the first major obstacles was **how to place hundreds of thousands of things on a map** and not kill the browser. It’s not at all possible using DOM elements as you might know, there’s just no way you can hold and draw that many elements and be performant.
 

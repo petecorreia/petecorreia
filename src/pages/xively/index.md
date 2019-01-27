@@ -1,16 +1,16 @@
 ---
 title: Spearheading Xively's complex and ambitious redesign
 date: '2013-09-21'
-spoiler: From joining as the first Front-end Developer in the team to leading the ambitious redesign of the most popular Internet of Things platform.
+spoiler: From joining as the first Front end Developer in the team to leading the ambitious redesign of the most popular Internet of Things platform.
 ---
 
 Xively is a subsidiary of LogMeIn (LOGM : NASDAQ), and is the industry’s first public cloud, purpose-built for developing and managing commercial products on the Internet of Things. It simplifies the interconnection of devices, data, people and places, accelerating the creation of compelling connected products.
 
 ## Pachube and Cosm
 
-When I was hired in 2011, I was the first Front-end Developer to join the team. The company was then known as Pachube and was **at that time the world’s largest Internet of Things open data repository and community**. I had just moved to London from Lisbon, Portugal, after a 2 year job at Portugal Telecom's web team. Initially I was tasked with building the API documentation website and I was excited to include new HTML5 goodies like the History API to make the experience as seamless and easy as possible.
+When I was hired in 2011, I was the first Front end Developer to join the team. The company was then known as Pachube and was **at that time the world’s largest Internet of Things open data repository and community**. I had just moved to London from Lisbon, Portugal, after a 2 year job at Portugal Telecom's web team. Initially I was tasked with building the API documentation website and I was excited to include new HTML5 goodies like the History API to make the experience as seamless and easy as possible.
 
-After just a couple of months, the whole team started working on rebranding and redesigning as Cosm. My role in this effort was to **single-handedly develop the entire front-end**, which included a completely new marketing site and device management interface, and also a redesign of the documentation site I'd just built.
+After just a couple of months, the whole team started working on rebranding and redesigning as Cosm. My role in this effort was to **single-handedly develop the entire front end**, which included a completely new marketing site and device management interface, and also a redesign of the documentation site I'd just built.
 
 The design of the Cosm identity and user interface was done remotely by LogMeIn's design team in Boston but as the work progressed, I began to be included in the design discussions. This was mainly due to the London team picking up on my design skills and sensitivity, and taking the steps to get me in the design discussions.
 
@@ -18,7 +18,7 @@ Once the interface designs were signed off, I **built a custom UI toolkit from s
 
 ## The Xively Redesign
 
-In early January 2013, I was tasked with **leading both the design and front-end development of a complete rebrand and redesign** from Cosm to Xively. This was a massive challenge with an ambitious deadline — 4 months to pull it off, which we did — and it was a unique experience from which I learned many valuable lessons.
+In early January 2013, I was tasked with **leading both the design and front end development of a complete rebrand and redesign** from Cosm to Xively. This was a massive challenge with an ambitious deadline — 4 months to pull it off, which we did — and it was a unique experience from which I learned many valuable lessons.
 
 ## Identity
 
@@ -68,19 +68,19 @@ All of the interfaces were **designed to work across all screen sizes**. This wa
 
 ![Photo of the Xively user interface displayed on an iPhone and an iPad.](./xively-devices.jpg)
 
-## Front-end Development
+## Front end Development
 
-As we designed the user experience and interface, I **quickly started building a prototype of the device management application**. As I mentioned before, I believe that going quickly into prototyping is the only way to properly judge the experience of a product. This kind of approach comes with a tension in how quickly versus how well to code the prototype. Fortunately, if you happen to be leading both design and front-end, as I did, you have the benefit of managing this tension and balance the tension better.
+As we designed the user experience and interface, I **quickly started building a prototype of the device management application**. As I mentioned before, I believe that going quickly into prototyping is the only way to properly judge the experience of a product. This kind of approach comes with a tension in how quickly versus how well to code the prototype. Fortunately, if you happen to be leading both design and front end, as I did, you have the benefit of managing this tension and balance the tension better.
 
 > The UI library was key to meeting the deadline.
 
 **I built a custom UI library** with all the elements, modules and page-specific styles that were present in the user interface designs. This was beneficial in many ways, it was highly maintainable and scalable and it allowed the team to create pages much faster without my help. The UI library was key to meeting the deadline.
 
-The device management application was the **most challenging part of the front-end**, not just by the sheer volume of work that it needed but also by the ambitious user experience we had designed. We used [**Backbone.js**](http://backbonejs.org/) to handle the complexity of the modules' behaviour and to make it easy to work with all the data going back and forth. The modules were developed in conjunction with the backend team to knit them tightly with the RESTful API.
+The device management application was the **most challenging part of the front end**, not just by the sheer volume of work that it needed but also by the ambitious user experience we had designed. We used [**Backbone.js**](http://backbonejs.org/) to handle the complexity of the modules' behaviour and to make it easy to work with all the data going back and forth. The modules were developed in conjunction with the backend team to knit them tightly with the RESTful API.
 
 As a side project, [**I built a Javascript library for Xively's API**](http://xively.github.io/xively-js/) which later on was adopted as the official library. This came out of hack days and side projects where I'd get an Arduino to exchange data with a web application.
 
-> In just four months, we created a brand, designed its user experience and interface, and developed the front-end as well. I'm incredibly proud of what we achieved together as a team.
+> In just four months, we created a brand, designed its user experience and interface, and developed the front end as well. I'm incredibly proud of what we achieved together as a team.
 
 ## Awards
 

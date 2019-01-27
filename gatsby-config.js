@@ -2,7 +2,8 @@ module.exports = {
 	siteMetadata: {
 		title: 'Pete Correia',
 		author: 'Pete Correia',
-		description: 'Making something very complex, very simple.',
+		description:
+			'Freelance Lead Front End Developer — Making something very complex, very simple.',
 		siteUrl: 'https://petecorreia.com',
 		social: {
 			twitter: '@petecorreia',

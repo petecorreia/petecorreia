@@ -77,6 +77,9 @@ const BlogIndex = ({ data }) => {
 					<Text as="h2" m={0} mt={2} fontSize={2} fontWeight="normal">
 						{greeting}
 					</Text>
+					<Text as="small" color="gray" mt={3} css={{ display: 'block' }}>
+						Available from Feb 2019.
+					</Text>
 				</Box>
 				<Box mt={[5, 5, 3, 0]} width={[1, 1, 1 / 2, 1 / 2]}>
 					<Section mt={0}>
