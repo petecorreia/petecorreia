@@ -107,7 +107,7 @@ const BlogIndex = ({ data }) => {
 								<Link href="https://barclays.co.uk">Barclays</Link>
 							</ListItem>
 							<ListItem>
-								<Link href="https://seymourpowell.com">Seymourpowell</Link>
+								<Link href="https://www.seymourpowell.com">Seymourpowell</Link>
 							</ListItem>
 							<ListItem>
 								<Link href="http://umbrellium.co.uk">Umbrellium</Link>
