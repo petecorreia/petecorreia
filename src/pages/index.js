@@ -186,7 +186,7 @@ const BlogIndex = ({ data }) => {
 									react-circular-input
 								</Link>
 							</ListItem>
-							<ListItem mt={0}>
+							<ListItem>
 								<Link href="https://tsx-docs.now.sh/">tsx-docs</Link>
 							</ListItem>
 							<ListItem>
