@@ -182,9 +182,12 @@ const BlogIndex = ({ data }) => {
 						<ListTitle>OSS</ListTitle>
 						<List>
 							<ListItem mt={0}>
-								<Link href="https://react-circular-input.netlify.com/">
+								<Link href="https://react-circular-input.now.sh/">
 									react-circular-input
 								</Link>
+							</ListItem>
+							<ListItem mt={0}>
+								<Link href="https://tsx-docs.now.sh/">tsx-docs</Link>
 							</ListItem>
 							<ListItem>
 								<Link href="https://github.com/petecorreia/analyze-cra-bundle">
