@@ -139,6 +139,25 @@ const BlogIndex = ({ data }) => {
 					</Section>
 
 					<Section>
+						<ListTitle>OSS</ListTitle>
+						<List>
+							<ListItem mt={0}>
+								<Link href="https://react-circular-input.now.sh/">
+									react-circular-input
+								</Link>
+							</ListItem>
+							<ListItem>
+								<Link href="https://tsx-docs.now.sh/">tsx-docs</Link>
+							</ListItem>
+							<ListItem>
+								<Link href="https://github.com/petecorreia/analyze-cra-bundle">
+									analyze-cra-bundle
+								</Link>
+							</ListItem>
+						</List>
+					</Section>
+
+					<Section>
 						<ListTitle>Writing</ListTitle>
 						<List>
 							{posts.map(({ node }, index) => {
@@ -175,25 +194,6 @@ const BlogIndex = ({ data }) => {
 							</ListItem>
 							<ListItem>GraphQL</ListItem>
 							<ListItem>Design Systems</ListItem>
-						</List>
-					</Section>
-
-					<Section>
-						<ListTitle>OSS</ListTitle>
-						<List>
-							<ListItem mt={0}>
-								<Link href="https://react-circular-input.now.sh/">
-									react-circular-input
-								</Link>
-							</ListItem>
-							<ListItem>
-								<Link href="https://tsx-docs.now.sh/">tsx-docs</Link>
-							</ListItem>
-							<ListItem>
-								<Link href="https://github.com/petecorreia/analyze-cra-bundle">
-									analyze-cra-bundle
-								</Link>
-							</ListItem>
 						</List>
 					</Section>
 
