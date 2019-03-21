@@ -78,7 +78,7 @@ const BlogIndex = ({ data }) => {
 						{greeting}
 					</Text>
 					<Text as="small" color="gray" mt={3} css={{ display: 'block' }}>
-						Available from Aug 2019.
+						Co-Founder / CTO — Appital
 					</Text>
 				</Box>
 				<Box mt={[5, 5, 3, 0]} width={[1, 1, 1 / 2, 1 / 2]}>
