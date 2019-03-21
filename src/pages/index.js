@@ -77,8 +77,11 @@ const BlogIndex = ({ data }) => {
 					<Text as="h2" m={0} mt={2} fontSize={2} fontWeight="normal">
 						{greeting}
 					</Text>
-					<Text as="small" color="gray" mt={3} css={{ display: 'block' }}>
-						Co-Founder / CTO — Appital
+					<Text as="small" color="gray" mt={4} css={{ display: 'block' }}>
+						Co-Founder of Appital
+					</Text>
+					<Text as="small" color="gray" mt={2} css={{ display: 'block' }}>
+						Engineering Lead, Global Innovation at EY
 					</Text>
 				</Box>
 				<Box mt={[5, 5, 3, 0]} width={[1, 1, 1 / 2, 1 / 2]}>
