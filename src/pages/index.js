@@ -86,6 +86,12 @@ const BlogIndex = ({ data }) => {
 						<ListTitle>Work</ListTitle>
 						<List>
 							<ListItem mt={0}>
+								<Link href="https://appital.io">Appital</Link>
+							</ListItem>
+							<ListItem>
+								<Link href="https://ey.com">Ernst & Young</Link>
+							</ListItem>
+							<ListItem>
 								<Link href="https://fath.om">Fathom London</Link>
 							</ListItem>
 							<ListItem indented>
