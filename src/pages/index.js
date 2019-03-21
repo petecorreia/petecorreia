@@ -78,7 +78,7 @@ const BlogIndex = ({ data }) => {
 						{greeting}
 					</Text>
 					<Text as="small" color="gray" mt={4} css={{ display: 'block' }}>
-						Co-Founder, CTO of Appital
+						Co-Founder of Appital
 					</Text>
 					<Text as="small" color="gray" mt={2} css={{ display: 'block' }}>
 						Engineering Lead, Global Innovation at EY
