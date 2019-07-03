@@ -194,11 +194,11 @@ const BlogIndex = ({ data }) => {
 						<List>
 							<ListItem mt={0}>React</ListItem>
 							<ListItem>Typescript</ListItem>
-							<ListItem>Styled Components</ListItem>
+							<ListItem>Node</ListItem>
+							<ListItem>GraphQL</ListItem>
 							<ListItem>
 								Dataviz <Separator /> D3
 							</ListItem>
-							<ListItem>GraphQL</ListItem>
 							<ListItem>Design Systems</ListItem>
 						</List>
 					</Section>
