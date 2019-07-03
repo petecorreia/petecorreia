@@ -3,7 +3,7 @@ module.exports = {
 		title: 'Pete Correia',
 		author: 'Pete Correia',
 		description:
-			'Freelance Lead Front End Developer — Making something very complex, very simple.',
+			'Co-founder, CTO at Appital — Making something very complex, very simple.',
 		siteUrl: 'https://petecorreia.com',
 		social: {
 			twitter: '@petecorreia',
