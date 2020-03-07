@@ -67,7 +67,8 @@ const TableOfContents = styled(HTML)`
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
-	const { next } = pageContext;
+	const { next, previous } = pageContext;
+	const nextPost = next || previous;
 	return (
 		<Layout location={location}>
 			<SEO
@@ -137,14 +138,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
 					<Markdown content={post.html} />
 
-					<Flex mt={5} justifyContent="space-between">
-						<Text as="p" m={0}>
+					<Flex
+						mt={5}
+						justifyContent="space-between"
+						flexDirection={['column', 'column', 'row']}
+					>
+						<Text as="p" m={0} mb={nextPost ? [30, 30, 0] : 0}>
 							Thank you for reading.
 						</Text>
 
-						{next && (
-							<AppLink to={next.fields.slug} rel="next">
-								{next.frontmatter.title} →
+						{nextPost && (
+							<AppLink to={nextPost.fields.slug} rel="next">
+								{nextPost.frontmatter.title}&nbsp;→
 							</AppLink>
 						)}
 					</Flex>
