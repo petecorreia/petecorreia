@@ -173,10 +173,9 @@ const BlogIndex = ({ data }) => {
 					<Section>
 						<ListTitle>Stack</ListTitle>
 						<List>
-							<ListItem mt={0}>TypeScript</ListItem>
+							<ListItem mt={0}>Go</ListItem>
+							<ListItem>TypeScript</ListItem>
 							<ListItem>React</ListItem>
-							<ListItem>Node</ListItem>
-							<ListItem>Go</ListItem>
 							<ListItem>GraphQL</ListItem>
 							<ListItem>Kubernetes</ListItem>
 							<ListItem>Design Systems</ListItem>
